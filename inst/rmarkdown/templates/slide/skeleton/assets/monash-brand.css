@@ -2,7 +2,7 @@
 
 PRIMARY PALETTE
 
-Monash Blue is our most identifiable colour. It conveys youthfulness, possibility and openness. It should always be considered first.
+uarizona Blue is our most identifiable colour. It conveys youthfulness, possibility and openness. It should always be considered first.
 
 Black conveys prestige, timelessness and sophistication.
 
@@ -14,26 +14,26 @@ The primary colour palette is preferred for digital work.
 
 ****/
 
-.monash-bg-blue { background-color: #006DAE!important; }
-.monash-bg-gray80 { background-color: #5A5A5A!important; }
-.monash-bg-gray50 { background-color: #969696;!important }
-.monash-bg-gray10 { background-color: #E6E6E6;!important }
-.monash-bg-white { background-color: #FFFFFF!important; }
-.monash-bg-black { background-color: #000000!important; }
+.uarizona-bg-blue { background-color: #006DAE!important; }
+.uarizona-bg-gray80 { background-color: #5A5A5A!important; }
+.uarizona-bg-gray50 { background-color: #969696;!important }
+.uarizona-bg-gray10 { background-color: #E6E6E6;!important }
+.uarizona-bg-white { background-color: #FFFFFF!important; }
+.uarizona-bg-black { background-color: #000000!important; }
 
-.monash-blue, .monash-blue code, .monash-blue a { color: #006DAE!important; }
-.monash-black, .monash-black code, .monash-black a { color: #000000!important; }
-.monash-white, .monash-white code, .monash-white a { color: #FFFFFF!important; }
-.monash-gray80, .monash-gray80 code, .monash-gray80 a { color: #5A5A5A!important; }
-.monash-gray50, .monash-gray50 code, .monash-gray50 a { color: #969696!important; }
-.monash-gray10, .monash-gray10 code, .monash-gray10 a { color: #E6E6E6!important; }
+.uarizona-blue, .uarizona-blue code, .uarizona-blue a { color: #006DAE!important; }
+.uarizona-black, .uarizona-black code, .uarizona-black a { color: #000000!important; }
+.uarizona-white, .uarizona-white code, .uarizona-white a { color: #FFFFFF!important; }
+.uarizona-gray80, .uarizona-gray80 code, .uarizona-gray80 a { color: #5A5A5A!important; }
+.uarizona-gray50, .uarizona-gray50 code, .uarizona-gray50 a { color: #969696!important; }
+.uarizona-gray10, .uarizona-gray10 code, .uarizona-gray10 a { color: #E6E6E6!important; }
 
-.monash-border-blue { border-color: #006DAE!important; }
-.monash-border-black { border-color: #000000!important; }
-.monash-border-white { border-color: #FFFFFF!important; }
-.monash-border-gray80 { border-color: #5A5A5A!important; }
-.monash-border-gray50 { border-color: #969696!important; }
-.monash-border-gray10 { border-color: #E6E6E6!important; }
+.uarizona-border-blue { border-color: #006DAE!important; }
+.uarizona-border-black { border-color: #000000!important; }
+.uarizona-border-white { border-color: #FFFFFF!important; }
+.uarizona-border-gray80 { border-color: #5A5A5A!important; }
+.uarizona-border-gray50 { border-color: #969696!important; }
+.uarizona-border-gray10 { border-color: #E6E6E6!important; }
 
 /****
 
@@ -51,38 +51,38 @@ Secondary colours are to be used:
 ****/
 
 
-.monash-bg-blue2 { background-color: #027EB6!important; }
-.monash-bg-purple2 { background-color: #746FB2!important; }
-.monash-bg-fuchsia2 { background-color: #9651A0!important; }
-.monash-bg-ruby2 { background-color: #C8008F!important; }
-.monash-bg-pink2 { background-color: #ee64a4!important; }
-.monash-bg-red2 { background-color: #EE0220!important; }
-.monash-bg-orange2 { background-color: #D93F00!important; }
-.monash-bg-umber2 { background-color: #795549!important; }
-.monash-bg-olive2 { background-color: #6F7C4D!important; }
-.monash-bg-green2 { background-color: #008A25!important; }
+.uarizona-bg-blue2 { background-color: #027EB6!important; }
+.uarizona-bg-purple2 { background-color: #746FB2!important; }
+.uarizona-bg-fuchsia2 { background-color: #9651A0!important; }
+.uarizona-bg-ruby2 { background-color: #C8008F!important; }
+.uarizona-bg-pink2 { background-color: #ee64a4!important; }
+.uarizona-bg-red2 { background-color: #EE0220!important; }
+.uarizona-bg-orange2 { background-color: #D93F00!important; }
+.uarizona-bg-umber2 { background-color: #795549!important; }
+.uarizona-bg-olive2 { background-color: #6F7C4D!important; }
+.uarizona-bg-green2 { background-color: #008A25!important; }
 
-.monash-border-blue2 { border-color: #027EB6!important; }
-.monash-border-purple2 { border-color: #746FB2!important; }
-.monash-border-fuchsia2 { border-color: #9651A0!important; }
-.monash-border-ruby2 { border-color: #C8008F!important; }
-.monash-border-pink2 { border-color: #ee64a4!important; }
-.monash-border-red2 { border-color: #EE0220!important; }
-.monash-border-orange2 { border-color: #D93F00!important; }
-.monash-border-umber2 { border-color: #795549!important; }
-.monash-border-olive2 { border-color: #6F7C4D!important; }
-.monash-border-green2 { border-color: #008A25!important; }
+.uarizona-border-blue2 { border-color: #027EB6!important; }
+.uarizona-border-purple2 { border-color: #746FB2!important; }
+.uarizona-border-fuchsia2 { border-color: #9651A0!important; }
+.uarizona-border-ruby2 { border-color: #C8008F!important; }
+.uarizona-border-pink2 { border-color: #ee64a4!important; }
+.uarizona-border-red2 { border-color: #EE0220!important; }
+.uarizona-border-orange2 { border-color: #D93F00!important; }
+.uarizona-border-umber2 { border-color: #795549!important; }
+.uarizona-border-olive2 { border-color: #6F7C4D!important; }
+.uarizona-border-green2 { border-color: #008A25!important; }
 
-.monash-blue2, .monash-blue2 code, .monash-blue2 a { color: #027EB6!important; }
-.monash-purple2, .monash-purple2 code, .monash-purple2 a { color: #746FB2!important; }
-.monash-fuchsia2, .monash-fuchsia2 code, .monash-fuchsia2 a { color: #9651A0!important; }
-.monash-ruby2, .monash-ruby2 code, .monash-ruby2 a { color: #C8008F!important; }
-.monash-pink2, .monash-pink2 code, .monash-pink2 a { color: #ee64a4!important; }
-.monash-red2, .monash-red2 code, .monash-red2 a { color: #EE0220!important; }
-.monash-orange2, .monash-orange2 code, .monash-orange2 a { color: #D93F00;!important }
-.monash-umber2, .monash-umber2 code, .monash-umber2 a { color: #795549!important; }
-.monash-olive2, .monash-olive2 code, .monash-olive2 a { color: #6F7C4D!important; }
-.monash-green2, .monash-green2 code, .monash-green2 a { color: #008A25!important; }
+.uarizona-blue2, .uarizona-blue2 code, .uarizona-blue2 a { color: #027EB6!important; }
+.uarizona-purple2, .uarizona-purple2 code, .uarizona-purple2 a { color: #746FB2!important; }
+.uarizona-fuchsia2, .uarizona-fuchsia2 code, .uarizona-fuchsia2 a { color: #9651A0!important; }
+.uarizona-ruby2, .uarizona-ruby2 code, .uarizona-ruby2 a { color: #C8008F!important; }
+.uarizona-pink2, .uarizona-pink2 code, .uarizona-pink2 a { color: #ee64a4!important; }
+.uarizona-red2, .uarizona-red2 code, .uarizona-red2 a { color: #EE0220!important; }
+.uarizona-orange2, .uarizona-orange2 code, .uarizona-orange2 a { color: #D93F00;!important }
+.uarizona-umber2, .uarizona-umber2 code, .uarizona-umber2 a { color: #795549!important; }
+.uarizona-olive2, .uarizona-olive2 code, .uarizona-olive2 a { color: #6F7C4D!important; }
+.uarizona-green2, .uarizona-green2 code, .uarizona-green2 a { color: #008A25!important; }
 
 
 :not(.no-logo):not(.footer-slide) > .remark-slide-number:before {
@@ -91,7 +91,7 @@ Secondary colours are to be used:
   margin-bottom: -10px;
   display: inline-block;
   content: "";
-  background-image: url("../images/accessories/monash-stacked-blue-rgb-transparent.png");
+  background-image: url("../images/accessories/uarizona-stacked-blue-rgb-transparent.png");
   background-size: 80px;
   background-repeat: no-repeat;
   background-position: 90% 100%;

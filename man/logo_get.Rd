@@ -2,9 +2,9 @@
 % Please edit documentation in R/logo.R
 \name{logo_get}
 \alias{logo_get}
-\title{Get Monash logo}
+\title{Get uarizona logo}
 \source{
-https://www.monash.edu/brandbook/brand-elements/our-logo
+https://www.uarizona.edu/brandbook/brand-elements/our-logo
 }
 \usage{
 logo_get(
@@ -33,5 +33,5 @@ logo_get(
 \item{filename}{A new file name for the logo. Not implemented yet.}
 }
 \description{
-A quick way of getting the Monash logo.
+A quick way of getting the uarizona logo.
 }

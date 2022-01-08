@@ -6,7 +6,7 @@
 \alias{workingpaper}
 \alias{report}
 \alias{memo}
-\title{Output formats for Monash EBS documents}
+\title{Output formats for uarizona EBS documents}
 \usage{
 letter(...)
 
@@ -26,7 +26,7 @@ An R Markdown output format object.
 }
 \description{
 Each function is a wrapper for \code{\link[bookdown]{pdf_document2}} to
-produce documents in Monash EBS style.
+produce documents in uarizona EBS style.
 }
 \author{
 Rob J Hyndman

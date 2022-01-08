@@ -10,7 +10,7 @@ examperiod: Examination Period
 openbook: false
 calculators: true
 output: 
-  monash::exam:
+  uarizona::exam:
     fig_caption: true
     fig_height: 3.7
     fig_width: 6

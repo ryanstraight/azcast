@@ -66,9 +66,9 @@ create_layout_dir <- function(code,
 #' @describeIn working-dir Create a skeleton workshop directory.
 #' @export
 create_workshop_dir <- function(code, name = code, full_name = name,
-                                destdir = getOption("monash.workshop.dir"),
+                                destdir = getOption("uarizona.workshop.dir"),
                                 rstudio = TRUE, open = TRUE) {
-  layout <- system.file("templates", "_workshop_structure.yml", package = "monash")
+  layout <- system.file("templates", "_workshop_structure.yml", package = "uarizona")
   destdir <- destdir %||% getwd()
   create_layout_dir(code, name = name, full_name = full_name, destdir = destdir,
                   rstudio = rstudio, layout = layout, open = open)
@@ -77,9 +77,9 @@ create_workshop_dir <- function(code, name = code, full_name = name,
 #' @describeIn working-dir Create a skeleton teaching directory.
 #' @export
 create_teaching_dir <- function(code, name = code, full_name = name,
-                                destdir = getOption("monash.teaching.dir"),
+                                destdir = getOption("uarizona.teaching.dir"),
                                 rstudio = TRUE, open = TRUE) {
-  layout <- system.file("templates", "_teaching_structure.yml", package = "monash")
+  layout <- system.file("templates", "_teaching_structure.yml", package = "uarizona")
   destdir <- destdir %||% getwd()
   create_layout_dir(code, name = name, full_name = full_name, destdir = destdir,
                   rstudio = rstudio, layout = layout, open = open)

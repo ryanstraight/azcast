@@ -22,7 +22,7 @@ create_workshop_dir(
   code,
   name = code,
   full_name = name,
-  destdir = getOption("monash.workshop.dir"),
+  destdir = getOption("uarizona.workshop.dir"),
   rstudio = TRUE,
   open = TRUE
 )
@@ -31,7 +31,7 @@ create_teaching_dir(
   code,
   name = code,
   full_name = name,
-  destdir = getOption("monash.teaching.dir"),
+  destdir = getOption("uarizona.teaching.dir"),
   rstudio = TRUE,
   open = TRUE
 )

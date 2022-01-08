@@ -23,9 +23,9 @@ count: false
 
 <br>
 
-# .monash-blue.outline-text[`r rmarkdown::metadata$title`]
+# .uarizona-blue.outline-text[`r rmarkdown::metadata$title`]
 
-<h2 class="monash-blue2 outline-text" style="font-size: 30pt!important;">`r rmarkdown::metadata$week`</h2>
+<h2 class="uarizona-blue2 outline-text" style="font-size: 30pt!important;">`r rmarkdown::metadata$week`</h2>
 
 <br>
 
@@ -49,7 +49,7 @@ Department of Econometrics and Business Statistics
 
 
 
-<div class="column transition monash-m-new delay-1s" style="clip-path:url(#swipe__clip-path);">
+<div class="column transition uarizona-m-new delay-1s" style="clip-path:url(#swipe__clip-path);">
 <div class="background-image" style="background-image:url('images/large.png');background-position: center;background-size:cover;margin-left:3px;">
 <svg class="clip-svg absolute">
 <defs>

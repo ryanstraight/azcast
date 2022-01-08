@@ -24,6 +24,6 @@ not because the student happens to be lingering before/after.
 }
 \details{
 In order to identify the student, the zoom meeting should be
-set to authenticate and restricted to Monash id alone.
+set to authenticate and restricted to uarizona id alone.
 This makes the data linkage easier with record in LMS.
 }

@@ -2,7 +2,7 @@
 title: Note to self
 author: Marie Curie
 branding: true
-output: monash::memo
+output: uarizona::memo
 ---
 
 

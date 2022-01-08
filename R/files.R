@@ -13,7 +13,7 @@ can_overwrite <- function(path) {
 
 use_file <- function(file, new_path) {
   path <- tryCatch(
-    path_package(package = "monash", file),
+    path_package(package = "uarizona", file),
     error = function(e) ""
   )
   if (identical(path, "")) {

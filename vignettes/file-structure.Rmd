@@ -21,8 +21,8 @@ knitr::opts_chunk$set(
 │   └── data01.csv
 ├── lectures
 │   ├── assets
-│   │   ├── monash-brand.css
-│   │   └── monash-font.css  
+│   │   ├── uarizona-brand.css
+│   │   └── uarizona-font.css  
 │   ├── images
 │   │   ├── lecture-01-image01.png
 │   │   └── lecture-02-image01.png  
@@ -45,8 +45,8 @@ knitr::opts_chunk$set(
 │   │   └── data01.csv
 │   ├── lectures
 │   │   ├── assets
-│   │   │   ├── monash-brand.css
-│   │   │   └── monash-font.css  
+│   │   │   ├── uarizona-brand.css
+│   │   │   └── uarizona-font.css  
 │   │   ├── images
 │   │   │   ├── lecture-01-image01.png
 │   │   │   └── lecture-02-image01.png  

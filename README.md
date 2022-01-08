@@ -1,58 +1,58 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# monash
+# uarizona
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The `monash` R-package is a utility package with consolidated tools and
-templates for staffs at Monash University. The package contains three
+The `uarizona` R-package is a utility package with consolidated tools and
+templates for staffs at uarizona University. The package contains three
 primary themes:
 
 -   **workflow**: automating repetitive tasks, particularly teaching
     related activities;
--   **template**: Monash branded R Markdown templates for teaching,
+-   **template**: uarizona branded R Markdown templates for teaching,
     presentation, etc; and
 -   **data**: easy access to relevant information (may require access
     privileges).
 
 ## Installation
 
-You can install `monash` R-package as below:
+You can install `uarizona` R-package as below:
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("numbats/monash")
+remotes::install_github("numbats/uarizona")
 ```
 
-## Get Monash logo
+## Get uarizona logo
 
 You can get a copy of the logo into the directory you wish with below.
 
 ``` r
 # default logo
-monash::logo_get(path = "man/figures")
-#> ✔ The 'monash-stacked-blue-rgb.png' is now in 'man/figures/'
-#> man/figures/monash-stacked-blue-rgb.png
+uarizona::logo_get(path = "man/figures")
+#> ✔ The 'uarizona-stacked-blue-rgb.png' is now in 'man/figures/'
+#> man/figures/uarizona-stacked-blue-rgb.png
 # black and white & one-line version of the logo
-monash::logo_get(path = "man/figures", color = "black", stack = FALSE, filename = "monash-logo-black.png")
-#> ✔ The 'monash-logo-black.png' is now in 'man/figures/'
-#> man/figures/monash-logo-black.png
+uarizona::logo_get(path = "man/figures", color = "black", stack = FALSE, filename = "uarizona-logo-black.png")
+#> ✔ The 'uarizona-logo-black.png' is now in 'man/figures/'
+#> man/figures/uarizona-logo-black.png
 ```
 
 And then you can reference the logo file that you copied.
 
-![](man/figures/monash-stacked-blue-rgb.png)
-![](man/figures/monash-logo-black.png)
+![](man/figures/uarizona-stacked-blue-rgb.png)
+![](man/figures/uarizona-logo-black.png)
 
-## Get Monash brand colors
+## Get uarizona brand colors
 
-These are handy commands to quickly see Monash brand colors and be able
+These are handy commands to quickly see uarizona brand colors and be able
 to copy-and-paste the hex color codes.
 
 ``` r
-monash::color_show()
+uarizona::color_show()
 ```
 
 <img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
@@ -64,15 +64,15 @@ monash::color_show()
 
 ## Settings
 
-(WIP) The monash package makes use of some values, listed below, from
+(WIP) The uarizona package makes use of some values, listed below, from
 your R profile. You can modify this by using `usethis::edit_r_profile()`
 and adding below with values modified to your own values.
 
-    options(monash.full_name = "Emi Tanaka",
-            monash.email = "emi.tanaka@monash.edu",
-            monash.orgunit = "Department of Econometrics and Business Statistics",
-            monash.teaching_dir = "~/teaching/monash/",
-            monash.workshop_dir = "~/workshop/")
+    options(uarizona.full_name = "Emi Tanaka",
+            uarizona.email = "emi.tanaka@uarizona.edu",
+            uarizona.orgunit = "Department of Econometrics and Business Statistics",
+            uarizona.teaching_dir = "~/teaching/uarizona/",
+            uarizona.workshop_dir = "~/workshop/")
 
 ## Teaching
 
@@ -97,8 +97,8 @@ appropriate place in the `release` folder.
     │   └── data01.csv
     ├── lectures
     │   ├── assets
-    │   │   ├── monash-brand.css
-    │   │   └── monash-font.css  
+    │   │   ├── uarizona-brand.css
+    │   │   └── uarizona-font.css  
     │   ├── images
     │   │   ├── lecture-01-image01.png
     │   │   └── lecture-02-image01.png  

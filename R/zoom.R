@@ -44,7 +44,7 @@ zoom_attendance <- function(.data, .sheet, sheetname = "Lecture", week,
 #' not because the student happens to be lingering before/after.
 #'
 #' In order to identify the student, the zoom meeting should be
-#' set to authenticate and restricted to Monash id alone.
+#' set to authenticate and restricted to uarizona id alone.
 #' This makes the data linkage easier with record in LMS.
 #' @param file The file name for the zoom meeting report.
 #' @param info TRUE or FALSE of whether the meeting information is included in the file.

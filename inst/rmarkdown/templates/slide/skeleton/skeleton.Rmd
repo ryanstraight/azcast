@@ -2,7 +2,7 @@
 title: "ETCXXXX: Course Name"
 subtitle: "Subtitle"
 author: "FirstName LastName"
-email: "XXX@monash.edu"
+email: "XXX@uarizona.edu"
 date: "Week 1 Session A"
 length: "10 minutes"
 department: "Department of Econometrics and Business Statistics"
@@ -17,8 +17,8 @@ output:
       - "assets/boxes.css"
       - "assets/table.css"
       - "assets/styles.css"
-      - "assets/monash-brand.css"
-      - "assets/monash-fonts.css"
+      - "assets/uarizona-brand.css"
+      - "assets/uarizona-fonts.css"
       - "assets/slide-types.css"
       - "assets/custom.css"
     self_contained: false 
@@ -81,47 +81,47 @@ class: transition
 ---
 
 
-class: monash-bg-purple2 white
+class: uarizona-bg-purple2 white
 
-# Monash Color Palettes
+# uarizona Color Palettes
 
 
 .flex[
-.w-33.border-box.monash-border-black.black.bg-white[
-* .monash-blue[`.monash-blue`]
-* .monash-black[`.monash-black`]
-* .monash-gray80[`.monash-gray80`]
-* .monash-gray50[`.monash-gray50`]
-* .monash-gray10[`.monash-gray10`]
-* .monash-bg-blue.white[`.monash-bg-blue`]
-* .monash-bg-black.white[`.monash-bg-black`]
-* .monash-bg-gray80.white[`.monash-bg-gray80`]
-* .monash-bg-gray50.white[`.monash-bg-gray50`]
-* .monash-bg-gray10[`.monash-bg-gray10`]
+.w-33.border-box.uarizona-border-black.black.bg-white[
+* .uarizona-blue[`.uarizona-blue`]
+* .uarizona-black[`.uarizona-black`]
+* .uarizona-gray80[`.uarizona-gray80`]
+* .uarizona-gray50[`.uarizona-gray50`]
+* .uarizona-gray10[`.uarizona-gray10`]
+* .uarizona-bg-blue.white[`.uarizona-bg-blue`]
+* .uarizona-bg-black.white[`.uarizona-bg-black`]
+* .uarizona-bg-gray80.white[`.uarizona-bg-gray80`]
+* .uarizona-bg-gray50.white[`.uarizona-bg-gray50`]
+* .uarizona-bg-gray10[`.uarizona-bg-gray10`]
 ]
-.w33.border-box.monash-border-black.black.bg-white[
-* .monash-blue2[`.monash-blue2`]
-* .monash-purple2[`.monash-purple2`]
-* .monash-fuchsia2[`.monash-fuchsia2`]
-* .monash-ruby2[`.monash-ruby2`]
-* .monash-pink2[`.monash-pink2`]
-* .monash-red2[`.monash-red2`]
-* .monash-orange2[`.monash-orange2`]
-* .monash-umber2[`.monash-umber2`]
-* .monash-olive2[`.monash-olive2`]
-* .monash-green2[`.monash-green2`]
+.w33.border-box.uarizona-border-black.black.bg-white[
+* .uarizona-blue2[`.uarizona-blue2`]
+* .uarizona-purple2[`.uarizona-purple2`]
+* .uarizona-fuchsia2[`.uarizona-fuchsia2`]
+* .uarizona-ruby2[`.uarizona-ruby2`]
+* .uarizona-pink2[`.uarizona-pink2`]
+* .uarizona-red2[`.uarizona-red2`]
+* .uarizona-orange2[`.uarizona-orange2`]
+* .uarizona-umber2[`.uarizona-umber2`]
+* .uarizona-olive2[`.uarizona-olive2`]
+* .uarizona-green2[`.uarizona-green2`]
 ]
-.w33.border-box.monash-border-black.black.bg-white[
-* .monash-bg-blue2[`.monash-bg-blue2`]
-* .monash-bg-purple2[`.monash-bg-purple2`]
-* .monash-bg-fuchsia2[`.monash-fbg-uchsia2`]
-* .monash-bg-ruby2[`.monash-bg-ruby2`]
-* .monash-bg-pink2[`.monash-bg-pink2`]
-* .monash-bg-red2[`.monash-bg-red2`]
-* .monash-bg-orange2[`.monash-bg-orange2`]
-* .monash-bg-umber2[`.monash-bg-umber2`]
-* .monash-bg-olive2[`.monash-bg-olive2`]
-* .monash-bg-green2[`.monash-bg-green2`]
+.w33.border-box.uarizona-border-black.black.bg-white[
+* .uarizona-bg-blue2[`.uarizona-bg-blue2`]
+* .uarizona-bg-purple2[`.uarizona-bg-purple2`]
+* .uarizona-bg-fuchsia2[`.uarizona-fbg-uchsia2`]
+* .uarizona-bg-ruby2[`.uarizona-bg-ruby2`]
+* .uarizona-bg-pink2[`.uarizona-bg-pink2`]
+* .uarizona-bg-red2[`.uarizona-bg-red2`]
+* .uarizona-bg-orange2[`.uarizona-bg-orange2`]
+* .uarizona-bg-umber2[`.uarizona-bg-umber2`]
+* .uarizona-bg-olive2[`.uarizona-bg-olive2`]
+* .uarizona-bg-green2[`.uarizona-bg-green2`]
 ]
 ]
 
@@ -131,12 +131,12 @@ You can make a footnote with `.footnote[]`
 
 ---
 
-class: monash-bg-ruby2 white
+class: uarizona-bg-ruby2 white
 
 # Material UI Color from `ninjutsu`
 
 .flex[
-.border-box.monash-border-black.black.bg-white.w-25[
+.border-box.uarizona-border-black.black.bg-white.w-25[
 * .red[`.red`]
 * .pink[`.pink`]
 * .purple[`.purple`]
@@ -149,7 +149,7 @@ class: monash-bg-ruby2 white
 * .green[`.green`]
 * .light-green[`.light-green`]
 ]
-.border-box.monash-border-black.black.bg-white.w-20[
+.border-box.uarizona-border-black.black.bg-white.w-20[
 * .lime[`.lime`]
 * .yellow[`.yellow`]
 * .amber[`.amber`]
@@ -161,7 +161,7 @@ class: monash-bg-ruby2 white
 * .white.bg-gray[`.white`]
 * .black[`.black`]
 ]
-.border-box.monash-border-black.black.bg-white.w-30[
+.border-box.uarizona-border-black.black.bg-white.w-30[
 * .bg-red[`.bg-red`]
 * .bg-pink[`.bg-pink`]
 * .bg-purple[`.bg-purple`]
@@ -174,7 +174,7 @@ class: monash-bg-ruby2 white
 * .bg-green[`.bg-green`]
 * .bg-light-green[`.bg-light-green`]
 ]
-.border-box.monash-border-black.black.bg-white.w-25[
+.border-box.uarizona-border-black.black.bg-white.w-25[
 * .bg-lime[`.bg-lime`]
 * .bg-yellow[`.bg-yellow`]
 * .bg-amber[`.bg-amber`]
@@ -283,25 +283,25 @@ To be or not to be. That is the question.
 
 # Make your own boxes
 
-.color-box.monash-bg-blue.w-50[
+.color-box.uarizona-bg-blue.w-50[
 
-Combine `.color-box` with `.monash-bg-` colors.
+Combine `.color-box` with `.uarizona-bg-` colors.
 
 <br>
 
-.white[This box is made using `.color-box.monash-bg-blue.w-50[]`
+.white[This box is made using `.color-box.uarizona-bg-blue.w-50[]`
 ]]
 
 
 
 
 
-.border-box.monash-border-blue.w-50[
-Combine `.border-box` with `.monash-border-` colors.
+.border-box.uarizona-border-blue.w-50[
+Combine `.border-box` with `.uarizona-border-` colors.
 
 <br>
 
-This box is made using `.border-box.monash-border-blue.w-50[]`
+This box is made using `.border-box.uarizona-border-blue.w-50[]`
 ]
 
 ---
@@ -310,7 +310,7 @@ This box is made using `.border-box.monash-border-blue.w-50[]`
 # Logo
 
 .measure[
-* Every slide that has a slide number comes with a monash logo on its right. 
+* Every slide that has a slide number comes with a uarizona logo on its right. 
 * Use `class: hide-slide-number` to hide the logo and the slide number. 
 * Use `class: no-logo` to hide the logo only.
 ]
@@ -365,13 +365,13 @@ background-image: url("images/bg-04.png")
 
 ---
 
-class: monash-slide
+class: uarizona-slide
 background-image: url("images/bg-05.png")
 
-# Default background for `monash-slide`
+# Default background for `uarizona-slide`
 
 ```
-class: monash-slide
+class: uarizona-slide
 background-image: url("images/bg-05.png")
 ```
 
@@ -379,22 +379,22 @@ i.e. you don't need to add `background-image: url("images/bg-05.png")`
 
 ---
 
-class: monash-slide
+class: uarizona-slide
 background-image: url("images/bg-06.png")
 
 ```
-class: monash-slide
+class: uarizona-slide
 background-image: url("images/bg-06.png")
 ```
 
 
 
 ---
-class: monash-slide
+class: uarizona-slide
 background-image: url("images/bg-07.png")
 
 ```
-class: monash-slide
+class: uarizona-slide
 background-image: url("images/bg-07.png")
 ```
 
@@ -411,7 +411,7 @@ background-image: url("images/bg-08.png")
 
 This is the default footer background image.
 
-.footnote.monash-black[
+.footnote.uarizona-black[
 You can add footnote using `.footnote[]`.
 <br><br>
 ]
@@ -428,21 +428,21 @@ background-image: url("images/bg-09.png")
 
 ---
 
-class: monash-slide
+class: uarizona-slide
 background-image: url("images/bg-10.png")
 
 ```
-class: monash-slide
+class: uarizona-slide
 background-image: url("images/bg-10.png")
 ```
 
 ---
 
-class: monash-slide
+class: uarizona-slide
 background-image: url("images/bg-11.png")
 
 ```
-class: monash-slide
+class: uarizona-slide
 background-image: url("images/bg-11.png")
 ```
 

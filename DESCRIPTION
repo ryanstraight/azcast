@@ -1,5 +1,5 @@
-Package: monash
-Title: Consolidated tools and templates for staff at Monash University
+Package: uarizona
+Title: Consolidated tools and templates for staff at uarizona University
 Version: 0.0.0.9000
 Authors@R: 
     c(person(given = "Emi",
@@ -9,13 +9,13 @@ Authors@R:
            comment = c(ORCID = "0000-0002-1455-259X")),
       person(given = "Rob", 
              family = "Hyndman", 
-             email = "Rob.Hyndman@monash.edu", 
+             email = "Rob.Hyndman@uarizona.edu", 
              role = "aut"),
       person(given = "Mitchell",
              family = "O'Hara-Wild",
              role = c("ctb"), 
              comment = c(ORCID = "0000-0001-6729-7695")))
-Description: Rmarkdown templates and other tools for use at Monash University, Department of Econometrics & Business Statistics.
+Description: Rmarkdown templates and other tools for use at uarizona University, Department of Econometrics & Business Statistics.
 License: GPL-3
 Encoding: UTF-8
 Language: en

@@ -26,7 +26,7 @@ Department of Econometrics and Business Statistics<br>
 
 
 
-<div class="column transition monash-m-new delay-1s" style="clip-path:url(#swipe__clip-path);">
+<div class="column transition uarizona-m-new delay-1s" style="clip-path:url(#swipe__clip-path);">
 <div class="background-image" style="background-image:url('images/large.png');background-position: center;background-size:cover;margin-left:3px;">
 <svg class="clip-svg absolute">
 <defs>

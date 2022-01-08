@@ -1,11 +1,11 @@
 ---
-title: Monash Beamer Class Slides
+title: uarizona Beamer Class Slides
 author: Marie Curie
 date: \today
 toc: true
 titlefontsize: 22pt
 output:
-  binb::monash:
+  binb::uarizona:
     fig_width: 7
     fig_height: 3.5
 ---

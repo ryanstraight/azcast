@@ -13,7 +13,7 @@ Once you create the GitHub organisation:
 
 1. invite your teaching team as owners
 2. add the description of your repo to be meaningful. I recommend the course code followed by the course name and the year, e.g. "ETC5523: Communicating with Data 2021". 
-3. optionally add the Monash logo as a profile photo
+3. optionally add the uarizona logo as a profile photo
 
 Next to create the GitHub classroom, go to https://classroom.github.com/ and select new classroom. You should select the GitHub organisation you created in the previous step. 
 

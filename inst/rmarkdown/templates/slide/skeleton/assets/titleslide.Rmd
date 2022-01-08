@@ -1,5 +1,5 @@
 
-class: middle center hide-slide-number monash-bg-gray80
+class: middle center hide-slide-number uarizona-bg-gray80
 
 
 ```{r, include = FALSE}
@@ -27,9 +27,9 @@ background-size: cover
 class: title-slide
 count: false
 
-# .monash-blue[`r rmarkdown::metadata$title`]
+# .uarizona-blue[`r rmarkdown::metadata$title`]
 
-<h1 class="monash-blue" style="font-size: 30pt!important;">`r rmarkdown::metadata$week`</h1>
+<h1 class="uarizona-blue" style="font-size: 30pt!important;">`r rmarkdown::metadata$week`</h1>
 
 <br>
 

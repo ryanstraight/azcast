@@ -13,10 +13,10 @@ navbar:
       href: index.html
     - text: "Moodle"
       icon: fa-archive
-      href: https://lms.monash.edu/course/view.php?id=XXXXX
+      href: https://lms.uarizona.edu/course/view.php?id=XXXXX
     - text: "Unit Guide"
       icon: fa-book
-      href: https://handbook.monash.edu/2021/units/ETCXXXX
+      href: https://handbook.uarizona.edu/2021/units/ETCXXXX
   right:
     - icon: fa-github fa-lg
       href: https://github.com/numbats/XXX

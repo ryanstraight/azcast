@@ -1,9 +1,9 @@
-#' Monash brand colors
+#' uarizona brand colors
 #'
 #' @details
 #' # Primary palette
 #'
-#' * Monash Blue is our most identifiable colour. It conveys youthfulness,
+#' * uarizona Blue is our most identifiable colour. It conveys youthfulness,
 #' possibility and openness. It should always be considered first.
 #' * Black conveys prestige, timelessness and sophistication.
 #' * White is often shown as white space and conveys the brand personality
@@ -28,7 +28,7 @@
 #' bright and youthful. Industry and research would suit a more corporate/mature
 #' choice to reflect focus and prestige.
 #'
-#' @name monash-color
+#' @name uarizona-color
 #' @usage color_all() # show both primary and secondary colors
 #' @export
 color_all <- function() {
@@ -36,7 +36,7 @@ color_all <- function() {
 }
 
 #' @param print whether to print the color vector
-#' @rdname monash-color
+#' @rdname uarizona-color
 #' @usage color_show(print = TRUE)
 #' @export
 color_show <- function(print = TRUE) {
@@ -47,7 +47,7 @@ color_show <- function(print = TRUE) {
   return(invisible(color_all()))
 }
 
-#' @rdname monash-color
+#' @rdname uarizona-color
 #' @usage color_primary()
 #' @export
 color_primary <- function() {
@@ -55,7 +55,7 @@ color_primary <- function() {
            gray80 = "#5A5A5A", gray50 = "#969696", gray10 = "#E6E6E6"))
 }
 
-#' @rdname monash-color
+#' @rdname uarizona-color
 #' @usage color_secondary()
 #' @export
 color_secondary <- function() {

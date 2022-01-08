@@ -1,9 +1,9 @@
 
 
-#' Get Monash logo
+#' Get uarizona logo
 #'
 #' @description
-#' A quick way of getting the Monash logo.
+#' A quick way of getting the uarizona logo.
 #'
 #' @param path the path to save the file to
 #' @param stack TRUE for stacked logo, FALSE for one-line logo
@@ -13,7 +13,7 @@
 #' @param overwrite TRUE for overwriting (should it enquire?), FALSE for not. Not implemented yet.
 #' @param filename A new file name for the logo. Not implemented yet.
 #'
-#' @source https://www.monash.edu/brandbook/brand-elements/our-logo
+#' @source https://www.uarizona.edu/brandbook/brand-elements/our-logo
 #' @export
 logo_get <- function(path = ".",
                      stack = TRUE,
@@ -49,7 +49,7 @@ logo_path <- function(stack = TRUE,
                   black = ifelse(hq, "black-cmyk", "black-rgb"),
                   white = ifelse(stack, "reversed-white", "reversed"))
   stack <- ifelse(stack, "stacked", "one-line")
-  filename <- glue("monash-{stack}-{color}.{type}")
+  filename <- glue("uarizona-{stack}-{color}.{type}")
   logo <- logo_find(filename)
   logo
 }
@@ -59,7 +59,7 @@ logo_path <- function(stack = TRUE,
 
 logo_find <- function(logo_filename) {
   path <- tryCatch(
-    path_package(package = "monash", "logos", logo_filename),
+    path_package(package = "uarizona", "logos", logo_filename),
     error = function(e) ""
   )
   if (identical(path, "")) {

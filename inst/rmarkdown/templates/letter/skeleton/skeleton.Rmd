@@ -3,7 +3,7 @@ from: Pierre Curie
 fromqualifications: Nobel Prize, PhD
 fromtitle: Professor
 fromWWW: curie.com
-fromemail: Pierre.Curie@monash.edu
+fromemail: Pierre.Curie@uarizona.edu
 fromphone: +61 3 9905 5555
 fromsignature: sigfile.png
 toname: Jacques Curie
@@ -11,7 +11,7 @@ toaddress: University of Montpellier
 opening: Dear Jacques
 closing: Best wishes
 spacing: 1.4
-output: monash::letter
+output: uarizona::letter
 ---
 
 I am writing to ask you to \dots

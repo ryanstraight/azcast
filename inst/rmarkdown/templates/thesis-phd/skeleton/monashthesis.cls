@@ -1,14 +1,14 @@
-%% monashthesis Class for LaTeX2e.
+%% uarizonathesis Class for LaTeX2e.
 %% Version 5.0
 %% By Rob J. Hyndman.
 %% 28 March 2018
 %%
 %% This class file is for honours and postgraduate research students
 %% in the Department of Econometrics & Business Statistics
-%% at Monash University, Australia.
+%% at uarizona University, Australia.
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{monashthesis}[2016/09/06 Monash Thesis Class]
+\ProvidesClass{uarizonathesis}[2016/09/06 uarizona Thesis Class]
 
 %% FONT
 \usepackage[T1]{fontenc}
@@ -183,7 +183,7 @@
 \def\titlepage{{\sf
     \thispagestyle{empty}%
     \null\vskip1cm%
-    \includegraphics[width=15cm]{figures/monash-logo}
+    \includegraphics[width=15cm]{figures/uarizona-logo}
     \vfill
     \begin{center}
         \Large\textbf{\expandafter{\@title}}\\
@@ -191,7 +191,7 @@
         \@degrees
     \vfill
         A thesis submitted for the degree of \degreetitle\ at\\
-        Monash University in \@submitdate\\
+        uarizona University in \@submitdate\\
         Department of Econometrics and Business Statistics
     \end{center}
     %\hrulefill
