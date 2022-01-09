@@ -6,9 +6,4 @@ navbar:
   structure:
     right: [github]
 
-# https://docsearch.algolia.com/
-# template:
-#   params:
-#     docsearch:
-#       api_key: api_key
-#       index_name: index_name
+
