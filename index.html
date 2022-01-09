@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Consolidated tools and templates for staff at Monash University • monash</title>
+<title>Consolidated tools and templates for staff at University of Arizona's College of Applied Science and Technology • azcast</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
@@ -17,8 +17,8 @@
 <script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
-<script src="pkgdown.js"></script><meta property="og:title" content="Consolidated tools and templates for staff at Monash University">
-<meta property="og:description" content="Rmarkdown templates and other tools for use at Monash University, Department of Econometrics &amp; Business Statistics.">
+<script src="pkgdown.js"></script><meta property="og:title" content="Consolidated tools and templates for staff at University of Arizona's College of Applied Science and Technology">
+<meta property="og:description" content="Rmarkdown templates and other tools for use at the University of Arizona, Applied Computing program. It is a fork of numats/monash.">
 <meta property="og:image" content="/logo.png">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -39,8 +39,8 @@
         <span class="icon-bar"></span>
       </button>
       <span class="navbar-brand">
-        <a class="navbar-link" href="index.html">monash</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.9000</span>
+        <a class="navbar-link" href="index.html">azcast</a>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.1</span>
       </span>
     </div>
 
@@ -84,99 +84,62 @@
       </header><div class="row">
   <div class="contents col-md-9">
 <div class="section level1">
-<div class="page-header"><h1 id="monash">monash<a class="anchor" aria-label="anchor" href="#monash"></a>
+<div class="page-header"><h1 id="azcast">azcast<a class="anchor" aria-label="anchor" href="#azcast"></a>
 </h1></div>
 <!-- badges: start -->
 <!-- badges: end -->
-<p>The <code>monash</code> R-package is a utility package with consolidated tools and templates for staffs at Monash University. The package contains three primary themes:</p>
-<ul>
-<li>
-<strong>workflow</strong>: automating repetitive tasks, particularly teaching related activities;</li>
-<li>
-<strong>template</strong>: Monash branded R Markdown templates for teaching, presentation, etc; and</li>
-<li>
-<strong>data</strong>: easy access to relevant information (may require access privileges).</li>
-</ul>
+<p>The <code>azcast</code> R-package is a utility package with consolidated tools and templates prepared for the University of Arizona’s College of Applied Science and Technology. It contains a variety of templates that I have been using and tweaking for some time, as well as new-to-me templates from the wonderful <code>numbats/monash</code> package. A good amount of the original Monash content is still here and will be altered or removed as appropriate. The package is mainly templates and easy access to assets like logos and colors.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>You can install <code>monash</code> R-package as below:</p>
+<p>You can install <code>azcast</code> R-package as below:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># install.packages("remotes")</span>
-<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"numbats/monash"</span><span class="op">)</span></code></pre></div>
+<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"ryanstraight/azcast"</span><span class="op">)</span></code></pre></div>
 </div>
 <div class="section level2">
-<h2 id="get-monash-logo">Get Monash logo<a class="anchor" aria-label="anchor" href="#get-monash-logo"></a>
+<h2 id="templates">Templates<a class="anchor" aria-label="anchor" href="#templates"></a>
+</h2>
+<ul>
+<li>Exam: a paper exam.</li>
+<li>Xaringan: a themed Xaringan slide deck.</li>
+</ul>
+</div>
+<div class="section level2">
+<h2 id="get-uarizona-logo">Get UArizona logo<a class="anchor" aria-label="anchor" href="#get-uarizona-logo"></a>
 </h2>
 <p>You can get a copy of the logo into the directory you wish with below.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># default logo</span>
-<span class="fu">monash</span><span class="fu">::</span><span class="fu"><a href="reference/logo_get.html">logo_get</a></span><span class="op">(</span>path <span class="op">=</span> <span class="st">"man/figures"</span><span class="op">)</span>
-<span class="co">#&gt; ✔ The 'monash-stacked-blue-rgb.png' is now in 'man/figures/'</span>
-<span class="co">#&gt; man/figures/monash-stacked-blue-rgb.png</span>
-<span class="co"># black and white &amp; one-line version of the logo</span>
-<span class="fu">monash</span><span class="fu">::</span><span class="fu"><a href="reference/logo_get.html">logo_get</a></span><span class="op">(</span>path <span class="op">=</span> <span class="st">"man/figures"</span>, color <span class="op">=</span> <span class="st">"black"</span>, stack <span class="op">=</span> <span class="cn">FALSE</span>, filename <span class="op">=</span> <span class="st">"monash-logo-black.png"</span><span class="op">)</span>
-<span class="co">#&gt; ✔ The 'monash-logo-black.png' is now in 'man/figures/'</span>
-<span class="co">#&gt; man/figures/monash-logo-black.png</span></code></pre></div>
+<span class="fu">azcast</span><span class="fu">::</span><span class="fu"><a href="reference/logo_get.html">logo_get</a></span><span class="op">(</span><span class="op">)</span>
+<span class="co"># monochrome block version of the logo</span>
+<span class="fu">azcast</span><span class="fu">::</span><span class="fu"><a href="reference/logo_get.html">logo_get</a></span><span class="op">(</span>color <span class="op">=</span> <span class="st">"black"</span>, style <span class="op">=</span> <span class="st">"block"</span><span class="op">)</span></code></pre></div>
 <p>And then you can reference the logo file that you copied.</p>
-<p><img src="reference/figures/monash-stacked-blue-rgb.png"><img src="reference/figures/monash-logo-black.png"></p>
+<p><img src="reference/figures/ua_horiz_rgb.png"><img src="reference/figures/ua_block_rgb_black.png"></p>
 </div>
 <div class="section level2">
-<h2 id="get-monash-brand-colors">Get Monash brand colors<a class="anchor" aria-label="anchor" href="#get-monash-brand-colors"></a>
+<h2 id="get-uarizona-brand-colors">Get UArizona brand colors<a class="anchor" aria-label="anchor" href="#get-uarizona-brand-colors"></a>
 </h2>
-<p>These are handy commands to quickly see Monash brand colors and be able to copy-and-paste the hex color codes.</p>
+<p>These are handy commands to quickly see University of Arizona brand colors and be able to copy-and-paste the hex color codes. You can find more info like <code>cmyk</code>, <code>rgb</code>, and <code>Pantone</code> codes and formulas here: <a href="https://brand.arizona.edu/applying-the-brand/colors" class="external-link">Colors | University of Arizona Brand Resources</a></p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">monash</span><span class="fu">::</span><span class="fu"><a href="reference/monash-color.html">color_show</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span class="fu">azcast</span><span class="fu">::</span><span class="fu"><a href="reference/monash-color.html">color_show</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-2-1.png" width="100%"></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co">#&gt;      blue     black     white    gray80    gray50    gray10      blue    purple </span></span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="co">#&gt; "#006DAE" "#000000" "#FFFFFF" "#5A5A5A" "#969696" "#E6E6E6" "#027EB6" "#746FB2" </span></span>
-<span id="cb4-3"><a href="#cb4-3"></a><span class="co">#&gt;   fuchsia      ruby      pink       red    orange     umber     olive     green </span></span>
-<span id="cb4-4"><a href="#cb4-4"></a><span class="co">#&gt; "#9651A0" "#C8008F" "#ee64a4" "#EE0220" "#D93F00" "#795549" "#6F7C4D" "#008A25"</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co">#&gt; arizonablue  arizonared       bloom         sky       oasis       chili </span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="co">#&gt;   "#0C234B"   "#AB0520"   "#EF4056"   "#81D3EB"   "#378DBD"   "#8B0015" </span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="co">#&gt;     azurite    midnight       black       white    warmgray    coolgray </span></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="co">#&gt;   "#1E5288"   "#001C48"   "#000000"   "#FFFFFF"   "#F4EDE5"   "#E2E9EB" </span></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="co">#&gt;        leaf       river      silver        mesa </span></span>
+<span id="cb4-6"><a href="#cb4-6"></a><span class="co">#&gt;   "#70B865"   "#007D84"   "#9EABAE"   "#A95C42"</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="settings">Settings<a class="anchor" aria-label="anchor" href="#settings"></a>
 </h2>
-<p>(WIP) The monash package makes use of some values, listed below, from your R profile. You can modify this by using <code><a href="https://usethis.r-lib.org/reference/edit.html" class="external-link">usethis::edit_r_profile()</a></code> and adding below with values modified to your own values.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">options</span>(<span class="dt">monash.full_name =</span> <span class="st">"Emi Tanaka"</span>,</span>
-<span id="cb5-2"><a href="#cb5-2"></a>        <span class="dt">monash.email =</span> <span class="st">"emi.tanaka@monash.edu"</span>,</span>
-<span id="cb5-3"><a href="#cb5-3"></a>        <span class="dt">monash.orgunit =</span> <span class="st">"Department of Econometrics and Business Statistics"</span>,</span>
-<span id="cb5-4"><a href="#cb5-4"></a>        <span class="dt">monash.teaching_dir =</span> <span class="st">"~/teaching/monash/"</span>,</span>
-<span id="cb5-5"><a href="#cb5-5"></a>        <span class="dt">monash.workshop_dir =</span> <span class="st">"~/workshop/"</span>)</span></code></pre></div>
-</div>
-<div class="section level2">
-<h2 id="teaching">Teaching<a class="anchor" aria-label="anchor" href="#teaching"></a>
-</h2>
-<p>(WIP) <code>create_teaching_directory("ETCXXXX")</code> would create a skeleton directory with folder and file structure below for development of teaching material. What is the advantage of this structure? It’s designed to be synced with a private github repository and the materials in the <code>release</code> folder are <em>automatically</em> pushed using Github Repository to the public github repository for public release. The website associated with it will be also be built automatically as well. The website format will closely resemble <a href="https://wcd.numbat.space/" class="external-link">ETC5512: Wild-Caught Data</a>.</p>
-<p>(WIP) <code>release_tutorial(1)</code> moves <code>tutorial-01.html</code> (and .Rmd) to the appropriate place in the <code>release</code> folder.</p>
-<p>(WIP) Tutorial, slides and other templates for teaching.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>├── ETCXXXX.Rproj</span>
-<span id="cb6-2"><a href="#cb6-2"></a>├── .git</span>
-<span id="cb6-3"><a href="#cb6-3"></a>├── data</span>
-<span id="cb6-4"><a href="#cb6-4"></a>│   └── data01.csv</span>
-<span id="cb6-5"><a href="#cb6-5"></a>├── lectures</span>
-<span id="cb6-6"><a href="#cb6-6"></a>│   ├── assets</span>
-<span id="cb6-7"><a href="#cb6-7"></a>│   │   ├── monash<span class="op">-</span>brand.css</span>
-<span id="cb6-8"><a href="#cb6-8"></a>│   │   └── monash<span class="op">-</span>font.css  </span>
-<span id="cb6-9"><a href="#cb6-9"></a>│   ├── images</span>
-<span id="cb6-10"><a href="#cb6-10"></a>│   │   ├── lecture<span class="dv">-01</span><span class="op">-</span>image01.png</span>
-<span id="cb6-11"><a href="#cb6-11"></a>│   │   └── lecture<span class="dv">-02</span><span class="op">-</span>image01.png  </span>
-<span id="cb6-12"><a href="#cb6-12"></a>│   ├── lecture<span class="fl">-01.</span>Rmd</span>
-<span id="cb6-13"><a href="#cb6-13"></a>│   ├── lecture<span class="fl">-02.</span>Rmd</span>
-<span id="cb6-14"><a href="#cb6-14"></a>│   └── lecture<span class="fl">-03.</span>Rmd</span>
-<span id="cb6-15"><a href="#cb6-15"></a>├── tutorials</span>
-<span id="cb6-16"><a href="#cb6-16"></a>│   ├── images</span>
-<span id="cb6-17"><a href="#cb6-17"></a>│   │   ├── tutorial<span class="dv">-01</span><span class="op">-</span>image01.png</span>
-<span id="cb6-18"><a href="#cb6-18"></a>│   │   └── tutorial<span class="dv">-02</span><span class="op">-</span>image01.png </span>
-<span id="cb6-19"><a href="#cb6-19"></a>│   ├── tutorial<span class="fl">-01.</span>Rmd</span>
-<span id="cb6-20"><a href="#cb6-20"></a>├── assessments</span>
-<span id="cb6-21"><a href="#cb6-21"></a>│   ├── assignment<span class="fl">-01.</span>Rmd</span>
-<span id="cb6-22"><a href="#cb6-22"></a>│   └── quiz<span class="fl">-01.</span>Rmd</span>
-<span id="cb6-23"><a href="#cb6-23"></a>├── release <span class="co"># for public release</span></span>
-<span id="cb6-24"><a href="#cb6-24"></a>│   ├── site</span>
-<span id="cb6-25"><a href="#cb6-25"></a>│   │   └── _site.yml</span>
-<span id="cb6-26"><a href="#cb6-26"></a>│   ├── data</span>
-<span id="cb6-27"><a href="#cb6-27"></a>│   ├── lectures</span>
-<span id="cb6-28"><a href="#cb6-28"></a>│   ├── tutorials</span></code></pre></div>
+<p>(WIP) The uarizona package makes use of some values, listed below, from your R profile. You can modify this by using <code><a href="https://usethis.r-lib.org/reference/edit.html" class="external-link">usethis::edit_r_profile()</a></code> and adding below with values modified to your own values.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">options</span>(<span class="dt">azcast.full_name =</span> <span class="st">"Dr. Ryan Straight"</span>,</span>
+<span id="cb5-2"><a href="#cb5-2"></a>        <span class="dt">azcast.email =</span> <span class="st">"ryanstraight@arizona.edu"</span>,</span>
+<span id="cb5-3"><a href="#cb5-3"></a>        <span class="dt">azcast.orgunit =</span> <span class="st">"College of Applied Science and Technology"</span>,</span>
+<span id="cb5-4"><a href="#cb5-4"></a>        <span class="dt">azcast.teaching_dir =</span> <span class="st">"~/teaching/uarizona/"</span>,</span>
+<span id="cb5-5"><a href="#cb5-5"></a>        <span class="dt">azcast.workshop_dir =</span> <span class="st">"~/workshop/"</span>)</span></code></pre></div>
 </div>
 </div>
   </div>
@@ -185,7 +148,8 @@
     <div class="license">
 <h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
-<li><a href="https://www.r-project.org/Licenses/GPL-3" class="external-link">GPL-3</a></li>
+<li><a href="LICENSE.html">Full license</a></li>
+<li><small>GPL (&gt;= 3)</small></li>
 </ul>
 </div>
 
@@ -193,16 +157,14 @@
 <div class="citation">
 <h2 data-toc-skip>Citation</h2>
 <ul class="list-unstyled">
-<li><a href="authors.html#citation">Citing monash</a></li>
+<li><a href="authors.html#citation">Citing azcast</a></li>
 </ul>
 </div>
 
 <div class="developers">
 <h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
-<li>Emi Tanaka <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0002-1455-259X" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
-<li>Rob Hyndman <br><small class="roles"> Author </small>  </li>
-<li><a href="authors.html">More about authors...</a></li>
+<li>Ryan Straight <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0002-6251-5662" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 </ul>
 </div>
 
@@ -214,7 +176,7 @@
 
       <footer><div class="copyright">
   <p></p>
-<p>Developed by Emi Tanaka, Rob Hyndman.</p>
+<p>Developed by Ryan Straight.</p>
 </div>
 
 <div class="pkgdown">
