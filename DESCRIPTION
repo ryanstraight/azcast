@@ -1,6 +1,6 @@
 Package: azcast
 Title: Consolidated tools and templates for staff at University of Arizona's College of Applied Science and Technology
-Version: 0.0.0.1
+Version: 0.0.1
 Authors@R: 
     c(person(given = "Ryan",
            family = "Straight",

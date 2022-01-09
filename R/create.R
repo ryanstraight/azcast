@@ -1,4 +1,4 @@
-#' Create skeleton working directories
+#' Create skeleton working directories (depreciated)
 #'
 #' Functions to create a default directory structure.
 #'

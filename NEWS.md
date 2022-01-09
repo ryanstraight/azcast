@@ -1,5 +1,4 @@
-# azcast 0.0.0.9000
+# azcast 0.0.1
 
-* Added `upload` argument to `zoom_attendance()` for automatically uploading
-  to the spreadsheet.
-* Added a `NEWS.md` file to track changes to the package.
+* Original fork and attempt at rebranding for CAST at UArizona.
+* Still have some original `numbats/monash` content, which will be removed eventually.

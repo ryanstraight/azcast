@@ -1,4 +1,4 @@
-#' Release materials
+#' (Depreciated) Release materials
 #'
 #' @name release-functions
 #' @param week the week number

@@ -11,18 +11,25 @@ knitr::opts_chunk$set(
   fig.path = "man/figures/README-",
   out.width = "100%"
 )
+
+library(badger)
+repo <- "ryanstraight/azcast"
 ```
 
 # azcast <img src="man/figures/logo.png" align="right" width=200 />
 
 <!-- badges: start -->
+`r badge_last_commit(repo)`
+`r badge_lifecycle("experimental", "orange")`
+![](https://img.shields.io/github/license/ryanstraight/azcast)
+![](https://img.shields.io/github/v/release/ryanstraight/azcast?include_prereleases)
 <!-- badges: end -->
 
 The `azcast` R-package is a utility package with consolidated tools and templates prepared for the University of Arizona's College of Applied Science and Technology. It contains a variety of templates that I have been using and tweaking for some time, as well as new-to-me templates from the wonderful `numbats/monash` package. A good amount of the original Monash content is still here and will be altered or removed as appropriate. The package is mainly templates and easy access to assets like logos and colors.
 
 ## Installation
 
-You can install `azcast` R-package as below:
+You can install the `azcast` R-package like this:
 
 ``` r
 # install.packages("remotes")
@@ -31,9 +38,11 @@ remotes::install_github("ryanstraight/azcast")
 
 ## Templates
 
-+ Exam: a paper exam.
-+ Letter: letter with CAST banner at top left.
-+ Memo: a casual memo with optional branding.
++ Exam: a paper exam. [Example](/inst/rmarkdown/templates/exam/skeleton/skeleton.pdf)
++ Letter: letter with CAST banner at top left. [Example](/inst/rmarkdown/templates/letter/skeleton/skeleton.pdf)
++ Memo: a casual memo with optional branding. [Example](/inst/rmarkdown/templates/memo/skeleton/skeleton.pdf)
++ Report: for reports sent to external clients. [Example](/inst/rmarkdown/templates/report/skeleton/skeleton.pdf)
++ Working paper: a mask-able working paper template. [Example](/inst/rmarkdown/templates/working-paper/skeleton/skeleton.pdf)
 + Xaringan: a themed Xaringan slide deck.
 
 (The original `monash` package includes theses templates. These were not updated and included in this package. Using [kelseygonzalez/beardown: An updated R Markdown thesis template using the bookdown package for University of Arizona](https://github.com/kelseygonzalez/beardown) is preferred.)

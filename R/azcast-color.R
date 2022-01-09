@@ -1,32 +1,7 @@
-#' azcast brand colors
+#' azcast branded colors
 #'
 #' @details
 #' # Primary palette
-#'
-#' * azcast Blue is our most identifiable colour. It conveys youthfulness,
-#' possibility and openness. It should always be considered first.
-#' * Black conveys prestige, timelessness and sophistication.
-#' * White is often shown as white space and conveys the brand personality
-#' of being open and youthful.
-#' * Greys can be any percentage of black and provides additional flexibility
-#'  to our primary colour palette.
-#'
-#' The primary colour palette is preferred for digital work.
-#'
-#' # Secondary palette
-#'
-#' Inspired by the colours of our academic robes, we have a range of bright,
-#' colourful secondary colours.
-#'
-#' Secondary colours are to be used:
-#' * in charts and diagrams to highlight key findings
-#' * as headings and subheadings
-#' * sparingly to provide highlights or accents – ideally one or two secondary
-#' colours per double page spread
-#' * to speak to a particular audience group. For instance, colours that would
-#' resonate best with our prospective undergraduate audience would be colourful,
-#' bright and youthful. Industry and research would suit a more corporate/mature
-#' choice to reflect focus and prestige.
 #'
 #' @name azcast-color
 #' @usage color_all() # show both primary and secondary colors

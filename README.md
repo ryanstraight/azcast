@@ -4,6 +4,11 @@
 # azcast <img src="man/figures/logo.png" align="right" width=200 />
 
 <!-- badges: start -->
+
+[![](https://img.shields.io/github/last-commit/ryanstraight/azcast.svg)](https://github.com/ryanstraight/azcast/commits/master)
+[![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+![](https://img.shields.io/github/license/ryanstraight/azcast)
+![](https://img.shields.io/github/v/release/ryanstraight/azcast?include_prereleases)
 <!-- badges: end -->
 
 The `azcast` R-package is a utility package with consolidated tools and
@@ -17,7 +22,7 @@ like logos and colors.
 
 ## Installation
 
-You can install `azcast` R-package as below:
+You can install the `azcast` R-package like this:
 
 ``` r
 # install.packages("remotes")
@@ -27,8 +32,15 @@ remotes::install_github("ryanstraight/azcast")
 ## Templates
 
 -   Exam: a paper exam.
+    [Example](/inst/rmarkdown/templates/exam/skeleton/skeleton.pdf)
 -   Letter: letter with CAST banner at top left.
+    [Example](/inst/rmarkdown/templates/letter/skeleton/skeleton.pdf)
 -   Memo: a casual memo with optional branding.
+    [Example](/inst/rmarkdown/templates/memo/skeleton/skeleton.pdf)
+-   Report: for reports sent to external clients.
+    [Example](/inst/rmarkdown/templates/report/skeleton/skeleton.pdf)
+-   Working paper: a mask-able working paper template.
+    [Example](/inst/rmarkdown/templates/working-paper/skeleton/skeleton.pdf)
 -   Xaringan: a themed Xaringan slide deck.
 
 (The original `monash` package includes theses templates. These were not
