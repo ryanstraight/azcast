@@ -9,8 +9,8 @@ citEntry(
   volume   = ,
   number   = ,
   pages    = ,
-  url      = https://osf.io/48zv2/,
-  doi      = https://doi.org/10.17605/OSF.IO/48ZV2,
+  url      = "osf.io/48zv2",
+  doi      = "10.17605/OSF.IO/48ZV2",
   key      = "straightAZCASTpackage2022",
   textVersion = paste(
 
