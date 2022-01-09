@@ -24,16 +24,17 @@ repo <- "ryanstraight/azcast"
 ![License](https://img.shields.io/github/license/ryanstraight/azcast)
 ![Release](https://img.shields.io/github/v/release/ryanstraight/azcast?include_prereleases)
 [![pkgdown](https://github.com/ryanstraight/azcast/actions/workflows/pkgdown.yaml/badge.svg)](https://github.com/ryanstraight/azcast/actions/workflows/pkgdown.yaml)
-[![CITATION-cff](https://github.com/ryanstraight/azcast/actions/workflows/cff-validator.yml/badge.svg)](https://github.com/ryanstraight/azcast/actions/workflows/cff-validator.yml)
+[![Update CITATION.cff](https://github.com/ryanstraight/azcast/actions/workflows/update-citation-cff.yaml/badge.svg)](https://github.com/ryanstraight/azcast/actions/workflows/update-citation-cff.yaml)
+[![GitHub Pages build](https://github.com/ryanstraight/azcast/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ryanstraight/azcast/actions/workflows/pages/pages-build-deployment)
 <!-- badges: end -->
 
 The `azcast` R-package is a utility package with consolidated tools and templates prepared for the University of Arizona's College of Applied Science and Technology. It contains a variety of templates that I have been using and tweaking for some time, as well as new-to-me templates from the wonderful `numbats/monash` package. A good amount of the original Monash content is still here and will be altered or removed as appropriate. The package is mainly templates and easy access to assets like logos and colors.
 
-## Package Information
+## Package Details
 
 ### Installation
 
-You can install the `azcast` R-package like this:
+`azcast` is not on CRAN, so you need to install it from this repository. You can install the `azcast` R-package like this:
 
 ``` r
 # install.packages("remotes")
@@ -86,7 +87,7 @@ These are handy commands to quickly see University of Arizona brand colors and b
 azcast::color_show()
 ```
 
-
+The `xaringan` themed slide deck mentioned in the template list above employs heavy use of these colors, as you can imagine.
 
 ### Settings
 

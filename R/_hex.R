@@ -10,4 +10,4 @@
 
 #imgloc <- here::here("man", "figures", "cat.png")
 
-#sticker(imgloc, package="AZCAST", p_size=20, s_x=1, s_y=.75, s_width=.6, p_family = "Aller_Rg", filename="man/figures/logo.png")
+#sticker(imgloc, package="AZCAST", p_size=20, s_x=1, s_y=.75, h_fill="#0C234B", h_color="#8B0015", s_width=.6, p_family = "Aller_Rg", filename="man/figures/logo.png")

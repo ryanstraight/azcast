@@ -10,7 +10,10 @@
 ![License](https://img.shields.io/github/license/ryanstraight/azcast)
 ![Release](https://img.shields.io/github/v/release/ryanstraight/azcast?include_prereleases)
 [![pkgdown](https://github.com/ryanstraight/azcast/actions/workflows/pkgdown.yaml/badge.svg)](https://github.com/ryanstraight/azcast/actions/workflows/pkgdown.yaml)
-[![CITATION-cff](https://github.com/ryanstraight/azcast/actions/workflows/cff-validator.yml/badge.svg)](https://github.com/ryanstraight/azcast/actions/workflows/cff-validator.yml)
+[![Update
+CITATION.cff](https://github.com/ryanstraight/azcast/actions/workflows/update-citation-cff.yaml/badge.svg)](https://github.com/ryanstraight/azcast/actions/workflows/update-citation-cff.yaml)
+[![GitHub Pages
+build](https://github.com/ryanstraight/azcast/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ryanstraight/azcast/actions/workflows/pages/pages-build-deployment)
 <!-- badges: end -->
 
 The `azcast` R-package is a utility package with consolidated tools and
@@ -22,10 +25,11 @@ original Monash content is still here and will be altered or removed as
 appropriate. The package is mainly templates and easy access to assets
 like logos and colors.
 
-## Package Information
+## Package Details
 
 ### Installation
 
+`azcast` is not on CRAN, so you need to install it from this repository.
 You can install the `azcast` R-package like this:
 
 ``` r
@@ -107,6 +111,9 @@ azcast::color_show()
     #>        leaf       river      silver        mesa 
     #>   "#70B865"   "#007D84"   "#9EABAE"   "#A95C42"
 
+The `xaringan` themed slide deck mentioned in the template list above
+employs heavy use of these colors, as you can imagine.
+
 ### Settings
 
 (WIP) The azcast package makes use of some values, listed below, from
@@ -123,22 +130,23 @@ and adding below with values modified to your own values.
 
 *Information about the university follows.*
 
-The University of Arizona, a land-grant university with two
-independently accredited medical schools, is one of the nation’s top 40
-public universities, according to U.S. News & World Report. Established
-in 1885, the university is widely recognized as a student-centric
-university and has been designated as a Hispanic Serving Institution by
-the U.S. Department of Education. The university ranked in the top 20 in
-2019 in research expenditures among all public universities, according
-to the National Science Foundation, and is a leading Research 1
-institution with $734 million in annual research expenditures. The
-university advances the frontiers of interdisciplinary scholarship and
-entrepreneurial partnerships as a member of the Association of American
-Universities, the 65 leading public and private research universities in
-the U.S. It benefits the state with an estimated economic impact of $4.1
-billion annually. For the latest on the University of Arizona response
-to the novel coronavirus, visit the university’s [COVID-19
-webpage](https://covid19.arizona.edu/).
+> The University of Arizona, a land-grant university with two
+> independently accredited medical schools, is one of the nation’s top
+> 40 public universities, according to U.S. News & World Report.
+> Established in 1885, the university is widely recognized as a
+> student-centric university and has been designated as a Hispanic
+> Serving Institution by the U.S. Department of Education. The
+> university ranked in the top 20 in 2019 in research expenditures among
+> all public universities, according to the National Science Foundation,
+> and is a leading Research 1 institution with $734 million in annual
+> research expenditures. The university advances the frontiers of
+> interdisciplinary scholarship and entrepreneurial partnerships as a
+> member of the Association of American Universities, the 65 leading
+> public and private research universities in the U.S. It benefits the
+> state with an estimated economic impact of $4.1 billion annually. For
+> the latest on the University of Arizona response to the novel
+> coronavirus, visit the university’s [COVID-19
+> webpage](https://covid19.arizona.edu/).
 
 ### The College of Applied Science and Technology (CAST)
 
@@ -168,10 +176,10 @@ Who we are and what we stand for:
 
 ### Land Acknowledgment
 
-We respectfully acknowledge the University of Arizona is on the land and
-territories of Indigenous peoples. Today, Arizona is home to 22
-federally recognized tribes, with Tucson being home to the O’odham and
-the Yaqui. Committed to diversity and inclusion, the University strives
-to build sustainable relationships with sovereign Native Nations and
-Indigenous communities through education offerings, partnerships, and
-community service.
+> We respectfully acknowledge the University of Arizona is on the land
+> and territories of Indigenous peoples. Today, Arizona is home to 22
+> federally recognized tribes, with Tucson being home to the O’odham and
+> the Yaqui. Committed to diversity and inclusion, the University
+> strives to build sustainable relationships with sovereign Native
+> Nations and Indigenous communities through education offerings,
+> partnerships, and community service.
