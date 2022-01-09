@@ -1,6 +1,6 @@
-#' UNUSED: Create skeleton working directories
+#' Create skeleton working directories
 #'
-#' UNUSED: Functions to create a default directory structure.
+#' Functions to create a default directory structure.
 #'
 #' @param code the code of the course
 #' @param name the short name of the course. There should be no spaces.

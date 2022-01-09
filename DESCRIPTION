@@ -25,6 +25,7 @@ Imports:
     glue,
     googlesheets4,
     lubridate,
+    magrittr,
     purrr,
     readr,
     rlang,
@@ -40,5 +41,6 @@ Suggests:
     xaringan,
     knitr,
     rmarkdown,
-    testthat
+    testthat (>= 3.0.0)
 VignetteBuilder: knitr
+Config/testthat/edition: 3

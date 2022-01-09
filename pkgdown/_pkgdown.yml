@@ -2,6 +2,8 @@
 development:
   mode: release
 
+title: AZCAST
+
 navbar:
   structure:
     right: [github]
