@@ -1,0 +1,35 @@
+---
+title: "Creating a document from a template"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Creating a document from a template}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  echo = FALSE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(azcast)
+```
+
+While the package provides functions like `letter()` and `exam()` to quickly and easy create documents, you may also create them directly from the `File -> New File -> R Markdown` menu. This is currently the only way to create a `xaringan` slide deck.
+
+## Steps
+
+```{r template-steps, fig.cap = "Creating a new file from a template."}
+knitr::include_graphics(here::here("vignettes", "supp", "template-steps.png"))
+```
+
+1. Choose `From Template`
+1. Select the type of file to create from the options to the right.
+1. Give the document a name.
+1. Select a location.
+1. Choose `OK`.
+
