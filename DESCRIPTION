@@ -1,5 +1,5 @@
 Package: AZCAST
-Title: Templates for the College of Applied Science and Technology at the University of Arizona"
+Title: "Templates for the College of Applied Science and Technology at the University of Arizona"
 Version: 0.0.1
 Authors@R: 
     c(person(given = "Ryan",
