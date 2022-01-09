@@ -1,8 +1,8 @@
 citHeader("To cite azcast in publications, please use the OSF entry:")
 
 citEntry(
-  entry    = "Article",
-  title    = "AZCAST: Templates for the College of Applied Science and Technology at the University of Arizona",
+  entry    = "Manual",
+  title    = 'azcast: Templates for the College of Applied Science and Technology at the University of Arizona',
   author   = person("Ryan", "Straight"),
   journal  = ,
   year     = 2022,

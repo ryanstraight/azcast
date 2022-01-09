@@ -1,5 +1,5 @@
-Package: AZCAST
-Title: "Templates for the College of Applied Science and Technology at the University of Arizona"
+Package: azcast
+Title: Templates for the College of Applied Science and Technology at the University of Arizona
 Version: 0.0.1
 Authors@R: 
     c(person(given = "Ryan",
@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "ryanstraight@arizona.edu",
            comment = c(ORCID = "0000-0002-6251-5662")))
-Description: "RMarkdown templates and other tools for use at the University of Arizona's College of Applied Science and Technology."
+Description: RMarkdown templates and other tools for use in the College of Applied Science and Technology at the University of Arizona.
 License: GPL (>= 3)
 Encoding: UTF-8
 Language: en
