@@ -1,0 +1,18 @@
+citHeader("To cite azcast in publications, please use the OSF entry:")
+
+citEntry(
+  entry    = "Article",
+  title    = "AZCAST: Templates for the College of Applied Science and Technology at the University of Arizona",
+  author   = person("Ryan", "Straight"),
+  journal  = ,
+  year     = 2022,
+  volume   = ,
+  number   = ,
+  pages    = ,
+  url      = https://osf.io/48zv2/,
+  doi      = https://doi.org/10.17605/OSF.IO/48ZV2,
+  key      = "straightAZCASTpackage2022",
+  textVersion = paste(
+
+  )
+)
