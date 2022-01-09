@@ -1,4 +1,4 @@
-#' azcast branded colors
+#' azcast branded colors from https://brand.arizona.edu/applying-the-brand/colors
 #'
 #' @details
 #' # Primary palette

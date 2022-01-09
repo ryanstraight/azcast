@@ -1,4 +1,4 @@
-#' (Depreciated) Link attendance record to google sheet
+#' UNUSED: Link attendance record to google sheet
 #'
 #' @param .data The summary data frame with email, total and letter grade.
 #' @param .sheet The link to the googlesheet
@@ -34,7 +34,7 @@ zoom_attendance <- function(.data, .sheet, sheetname = "Lecture", week,
   out
 }
 
-#' (Depreciated) This reads in the zoom report
+#' UNUSED: This reads in the zoom report
 #'
 #' The zoom meeting report is expected to have the meeting
 #' information and uncheck the "unique users" so that the
@@ -68,7 +68,7 @@ zoom_read <- function(file, info = TRUE, date_format = "%m/%d/%Y %I:%M:%S %p") {
 
 }
 
-#' (Depreciated) Process the data frame from zoom meeting to total duration of attendance
+#' UNUSED: Process the data frame from zoom meeting to total duration of attendance
 #'
 #' @param .data Data frame
 #' @param start,end A date time of when the zoom meeting started or ended.

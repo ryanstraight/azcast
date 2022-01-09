@@ -3,7 +3,7 @@
 #' Get azcast logo
 #'
 #' @description
-#' A quick way of getting the azcast logo.
+#' A quick way of getting the University of Arizona logo.
 #'
 #' @param path the path to save the file to
 #' @param style `horiz`, `stack` or `block`
