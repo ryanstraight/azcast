@@ -7,8 +7,13 @@ cff-version: 1.2.0
 message: 'To cite package "azcast" in publications use:'
 type: software
 license: GPL-3.0-or-later
+<<<<<<< HEAD
 title: 'azcast: Templates for the College of Applied Science and Technology at the
   University of Arizona'
+=======
+title: 'AZCAST: "Templates for the College of Applied Science and Technology at the
+  University of Arizona"'
+>>>>>>> master
 version: 0.0.1
 abstract: RMarkdown templates and other tools for use in the College of Applied Science
   and Technology at the University of Arizona.
@@ -19,8 +24,13 @@ authors:
   orcid: https://orcid.org/0000-0002-6251-5662
 preferred-citation:
   type: manual
+<<<<<<< HEAD
   title: 'azcast: Templates for the College of Applied Science and Technology at the
     University of Arizona'
+=======
+  title: 'AZCAST: "Templates for the College of Applied Science and Technology at
+    the University of Arizona"'
+>>>>>>> master
   authors:
   - family-names: Straight
     given-names: Ryan
