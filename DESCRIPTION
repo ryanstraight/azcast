@@ -1,6 +1,7 @@
 Package: azcast
 Title: Templates for the College of Applied Science and Technology at the University of Arizona
 Version: 0.0.1
+URL: https://osf.io/48zv2/
 Authors@R: 
     c(person(given = "Ryan",
            family = "Straight",
