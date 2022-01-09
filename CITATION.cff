@@ -29,6 +29,7 @@ preferred-citation:
   version: 0.0.1
   abstract: RMarkdown templates and other tools for use in the College of Applied
     Science and Technology at the University of Arizona.
+  url: https://osf.io/48zv2/
   contact:
   - family-names: Straight
     given-names: Ryan
@@ -36,6 +37,7 @@ preferred-citation:
     orcid: https://orcid.org/0000-0002-6251-5662
   license: GPL-3.0-or-later
   year: '2022'
+url: https://osf.io/48zv2/
 contact:
 - family-names: Straight
   given-names: Ryan
@@ -160,6 +162,16 @@ references:
   year: '2022'
   notes: Imports
   url: https://CRAN.R-project.org/package=googlesheets4
+- type: software
+  title: 'here: A Simpler Way to Find Your Files'
+  authors:
+  - family-names: Müller
+    given-names: Kirill
+    email: krlmlr+r@mailbox.org
+    orcid: https://orcid.org/0000-0002-1416-3412
+  year: '2022'
+  notes: Imports
+  url: https://CRAN.R-project.org/package=here
 - type: software
   title: 'lubridate: Make Dealing with Dates a Little Easier'
   authors:
