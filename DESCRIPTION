@@ -38,7 +38,6 @@ Imports:
     yaml
 Suggests: 
     xaringan,
-    xaringanExtra,
     knitr,
     rmarkdown,
     testthat
