@@ -7,7 +7,7 @@ cff-version: 1.2.0
 message: 'To cite package "AZCAST" in publications use:'
 type: software
 license: GPL-3.0-or-later
-title: 'AZCAST: Templates for the College of Applied Science and Technology at the
+title: 'AZCAST: "Templates for the College of Applied Science and Technology at the
   University of Arizona"'
 version: 0.0.1
 abstract: '"RMarkdown templates and other tools for use at the University of Arizona''s
@@ -19,8 +19,8 @@ authors:
   orcid: https://orcid.org/0000-0002-6251-5662
 preferred-citation:
   type: manual
-  title: 'AZCAST: Templates for the College of Applied Science and Technology at the
-    University of Arizona"'
+  title: 'AZCAST: "Templates for the College of Applied Science and Technology at
+    the University of Arizona"'
   authors:
   - family-names: Straight
     given-names: Ryan
@@ -336,20 +336,6 @@ references:
   year: '2022'
   notes: Suggests
   url: https://CRAN.R-project.org/package=xaringan
-- type: software
-  title: 'xaringanExtra: Extras And Extensions for Xaringan Slides'
-  authors:
-  - family-names: Aden-Buie
-    given-names: Garrick
-    email: garrick@adenbuie.com
-    orcid: https://orcid.org/0000-0002-7111-0077
-  - family-names: Warkentin
-    given-names: Matthew T.
-    email: warkentin@lunenfeld.ca
-    orcid: https://orcid.org/0000-0001-8730-3511
-  year: '2022'
-  notes: Suggests
-  url: https://github.com/gadenbuie/xaringanExtra
 - type: software
   title: 'knitr: A General-Purpose Package for Dynamic Report Generation in R'
   authors:
