@@ -9,6 +9,7 @@
 [![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 ![](https://img.shields.io/github/license/ryanstraight/azcast)
 ![](https://img.shields.io/github/v/release/ryanstraight/azcast?include_prereleases)
+[![pkgdown](https://github.com/ryanstraight/azcast/actions/workflows/pkgdown.yaml/badge.svg)](https://github.com/ryanstraight/azcast/actions/workflows/pkgdown.yaml)
 <!-- badges: end -->
 
 The `azcast` R-package is a utility package with consolidated tools and

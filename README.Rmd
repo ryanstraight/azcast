@@ -23,6 +23,7 @@ repo <- "ryanstraight/azcast"
 `r badge_lifecycle("experimental", "orange")`
 ![](https://img.shields.io/github/license/ryanstraight/azcast)
 ![](https://img.shields.io/github/v/release/ryanstraight/azcast?include_prereleases)
+[![pkgdown](https://github.com/ryanstraight/azcast/actions/workflows/pkgdown.yaml/badge.svg)](https://github.com/ryanstraight/azcast/actions/workflows/pkgdown.yaml)
 <!-- badges: end -->
 
 The `azcast` R-package is a utility package with consolidated tools and templates prepared for the University of Arizona's College of Applied Science and Technology. It contains a variety of templates that I have been using and tweaking for some time, as well as new-to-me templates from the wonderful `numbats/monash` package. A good amount of the original Monash content is still here and will be altered or removed as appropriate. The package is mainly templates and easy access to assets like logos and colors.
