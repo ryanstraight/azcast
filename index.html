@@ -40,7 +40,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">azcast</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.0.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.1</span>
       </span>
     </div>
 
@@ -84,15 +84,15 @@
       </header><div class="row">
   <div class="contents col-md-9">
 <div class="section level1">
-<div class="page-header"><h1 id="azcast">azcast<a class="anchor" aria-label="anchor" href="#azcast"></a>
+<div class="page-header"><h1 id="azcast-">azcast <img src="reference/figures/logo.png" align="right" width="200"><a class="anchor" aria-label="anchor" href="#azcast-"></a>
 </h1></div>
 <!-- badges: start -->
-<!-- badges: end -->
+
 <p>The <code>azcast</code> R-package is a utility package with consolidated tools and templates prepared for the University of Arizona’s College of Applied Science and Technology. It contains a variety of templates that I have been using and tweaking for some time, as well as new-to-me templates from the wonderful <code>numbats/monash</code> package. A good amount of the original Monash content is still here and will be altered or removed as appropriate. The package is mainly templates and easy access to assets like logos and colors.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>You can install <code>azcast</code> R-package as below:</p>
+<p>You can install the <code>azcast</code> R-package like this:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># install.packages("remotes")</span>
 <span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"ryanstraight/azcast"</span><span class="op">)</span></code></pre></div>
@@ -101,12 +101,22 @@
 <h2 id="templates">Templates<a class="anchor" aria-label="anchor" href="#templates"></a>
 </h2>
 <ul>
-<li>Exam: a paper exam.</li>
+<li>Exam: a paper exam. <a href="/inst/rmarkdown/templates/exam/skeleton/skeleton.pdf">Example</a>
+</li>
+<li>Letter: letter with CAST banner at top left. <a href="/inst/rmarkdown/templates/letter/skeleton/skeleton.pdf">Example</a>
+</li>
+<li>Memo: a casual memo with optional branding. <a href="/inst/rmarkdown/templates/memo/skeleton/skeleton.pdf">Example</a>
+</li>
+<li>Report: for reports sent to external clients. <a href="/inst/rmarkdown/templates/report/skeleton/skeleton.pdf">Example</a>
+</li>
+<li>Working paper: a mask-able working paper template. <a href="/inst/rmarkdown/templates/working-paper/skeleton/skeleton.pdf">Example</a>
+</li>
 <li>Xaringan: a themed Xaringan slide deck.</li>
 </ul>
+<p>(The original <code>monash</code> package includes theses templates. These were not updated and included in this package. Using <a href="https://github.com/kelseygonzalez/beardown" class="external-link">kelseygonzalez/beardown: An updated R Markdown thesis template using the bookdown package for University of Arizona</a> is preferred.)</p>
 </div>
 <div class="section level2">
-<h2 id="get-uarizona-logo">Get UArizona logo<a class="anchor" aria-label="anchor" href="#get-uarizona-logo"></a>
+<h2 id="get-azcast-logo">Get azcast logo<a class="anchor" aria-label="anchor" href="#get-azcast-logo"></a>
 </h2>
 <p>You can get a copy of the logo into the directory you wish with below.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
@@ -118,12 +128,12 @@
 <p><img src="reference/figures/ua_horiz_rgb.png"><img src="reference/figures/ua_block_rgb_black.png"></p>
 </div>
 <div class="section level2">
-<h2 id="get-uarizona-brand-colors">Get UArizona brand colors<a class="anchor" aria-label="anchor" href="#get-uarizona-brand-colors"></a>
+<h2 id="get-azcast-brand-colors">Get azcast brand colors<a class="anchor" aria-label="anchor" href="#get-azcast-brand-colors"></a>
 </h2>
 <p>These are handy commands to quickly see University of Arizona brand colors and be able to copy-and-paste the hex color codes. You can find more info like <code>cmyk</code>, <code>rgb</code>, and <code>Pantone</code> codes and formulas here: <a href="https://brand.arizona.edu/applying-the-brand/colors" class="external-link">Colors | University of Arizona Brand Resources</a></p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">azcast</span><span class="fu">::</span><span class="fu"><a href="reference/monash-color.html">color_show</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-2-1.png" width="100%"></p>
+<code class="sourceCode R"><span class="fu">azcast</span><span class="fu">::</span><span class="fu"><a href="reference/azcast-color.html">color_show</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<p><img src="reference/figures/README-colors-1.png" width="100%"></p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co">#&gt; arizonablue  arizonared       bloom         sky       oasis       chili </span></span>
 <span id="cb4-2"><a href="#cb4-2"></a><span class="co">#&gt;   "#0C234B"   "#AB0520"   "#EF4056"   "#81D3EB"   "#378DBD"   "#8B0015" </span></span>
 <span id="cb4-3"><a href="#cb4-3"></a><span class="co">#&gt;     azurite    midnight       black       white    warmgray    coolgray </span></span>
@@ -134,11 +144,11 @@
 <div class="section level2">
 <h2 id="settings">Settings<a class="anchor" aria-label="anchor" href="#settings"></a>
 </h2>
-<p>(WIP) The uarizona package makes use of some values, listed below, from your R profile. You can modify this by using <code><a href="https://usethis.r-lib.org/reference/edit.html" class="external-link">usethis::edit_r_profile()</a></code> and adding below with values modified to your own values.</p>
+<p>(WIP) The azcast package makes use of some values, listed below, from your R profile. You can modify this by using <code><a href="https://usethis.r-lib.org/reference/edit.html" class="external-link">usethis::edit_r_profile()</a></code> and adding below with values modified to your own values.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">options</span>(<span class="dt">azcast.full_name =</span> <span class="st">"Dr. Ryan Straight"</span>,</span>
 <span id="cb5-2"><a href="#cb5-2"></a>        <span class="dt">azcast.email =</span> <span class="st">"ryanstraight@arizona.edu"</span>,</span>
 <span id="cb5-3"><a href="#cb5-3"></a>        <span class="dt">azcast.orgunit =</span> <span class="st">"College of Applied Science and Technology"</span>,</span>
-<span id="cb5-4"><a href="#cb5-4"></a>        <span class="dt">azcast.teaching_dir =</span> <span class="st">"~/teaching/uarizona/"</span>,</span>
+<span id="cb5-4"><a href="#cb5-4"></a>        <span class="dt">azcast.teaching_dir =</span> <span class="st">"~/teaching/azcast/"</span>,</span>
 <span id="cb5-5"><a href="#cb5-5"></a>        <span class="dt">azcast.workshop_dir =</span> <span class="st">"~/workshop/"</span>)</span></code></pre></div>
 </div>
 </div>
@@ -168,7 +178,13 @@
 </ul>
 </div>
 
-
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://github.com/ryanstraight/azcast/commits/master" class="external-link"><img src="https://img.shields.io/github/last-commit/ryanstraight/azcast.svg"></a></li>
+<li><a href="https://lifecycle.r-lib.org/articles/stages.html#experimental" class="external-link"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg"></a></li>
+</ul>
+</div>
 
   </div>
 </div>
