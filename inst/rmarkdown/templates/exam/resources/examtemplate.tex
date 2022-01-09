@@ -279,7 +279,7 @@ $endif$
 \posttitle{\newpage}
 \pretitle{\fontsize{12}{14}\sf
   \begin{textblock}{13}(2,0.7)
-    \includegraphics[height=1.2cm]{uarizona1line}
+    \includegraphics[height=1.2cm]{ua_horiz_rgb}
   \end{textblock}
   \begin{textblock}{5}(15.5,1.5)\footnotesize\sf
     Office Use Only\newline
@@ -293,7 +293,9 @@ $endif$
     \begin{center}\bfseries\Large
       $semester$\\
       $examperiod$\\[0.8cm]
-      Faculty of Business \& Economics
+      College of Applied Science \& Technology\\
+      $program$
+
     \end{center}\vspace*{0.4cm}
     \begin{tabular}{@{}p{4.5cm}p{10cm}}
       \bfseries EXAM CODES:  & \bfseries {$unitcode$} \tabularnewline[0.4cm]
@@ -302,27 +304,24 @@ $endif$
       \bfseries READING TIME: & {$reading$}
     \end{tabular}
     \vspace*{0.4cm}\par\fontsize{10}{11}\sf
-    \textbf{\textit{THIS PAPER IS FOR STUDENTS STUDYING AT: (tick where applicable)}}\par
+    \textbf{\textit{THIS PAPER IS FOR STUDENTS STUDYING AT: (check where applicable)}}\par
     \begin{tabular}{llll}
-      $if(caulfield)$ \tick $else$ \Square $endif$ Caulfield &
-      $if(clayton)$ \tick $else$ \Square $endif$ Clayton &
-      \Square Parkville &
-      $if(peninsula)$ \tick $else$ \Square $endif$ Peninsula \tabularnewline[0.1cm]
-      \Square uarizona Extension &
-      \Square Off Campus Learning &
-      \Square Malaysia &
-      \Square South Africa \tabularnewline[0.1cm]
+      \Square Sierra Vista &
+      \Square Yuma &
+      \Square Douglas &
+      \Square Tucson \tabularnewline[0.1cm]
+      \Square Location 5 &
+      \Square Location 6 &
+      \Square Locatin 7 &
       \Square Other (specify)
     \end{tabular}
   \end{textblock}
   \begin{textblock}{17}(2,13.2)\fontsize{10}{11}\sf\raggedright
   During an exam, you must not have in your possession any item/material that has not been authorised for your exam. This includes books, notes, paper, electronic device/s, mobile phone, smart watch/device, calculator, pencil case, or writing on any part of your body. Any authorised items are listed below. Items/materials on your desk, chair, in your clothing or otherwise on your person will be deemed to be in your possession.
 
-    \textbf{No examination materials are to be removed from the room.} This includes retaining, copying, memorising or noting down content of exam material for personal use or to share with any other person by any means following your exam.
+    \textbf{No examination materials are to be removed from the room.} This includes retaining, copying, memorising or noting down content of exam material for personal use or to share with any other person by any means following your exam.
 
-    Failure to comply with the above instructions, or attempting to cheat or cheating in an exam is a discipline
-offence under Part 7 of the uarizona University (Council) Regulations, or a breach of instructions under Part
-3 of the uarizona University (Academic Board) Regulations.
+    Failure to comply with the above instructions, or attempting to cheat or cheating in an exam will result in disciplinary action from the Dean of Students.
   \end{textblock}
   \begin{textblock}{17}(2,17.7)\fontsize{10}{11}\sf
     \underline{\textbf{AUTHORISED MATERIALS}}
@@ -334,9 +333,11 @@ offence under Part 7 of the uarizona University (Council) Regulations, or a brea
     \bfseries CALCULATORS
       & $if(calculators)$ \tick $else$ \Square $endif$ YES
       & $if(calculators)$ \Square $else$ \tick $endif$ NO  \\
-    \hspace*{0.4cm} {\footnotesize  Only HP 10bII+ or Casio FX82 (any suffix) calculator permitted}\\[0.3cm]
-    \bfseries SPECIFICALLY PERMITTED ITEMS  & \Square  YES & \tick NO \\
-    \textbf{if yes, items permitted are:  }
+    \hspace*{0.4cm} {\footnotesize  TI-92 or similar}\\[0.3cm]
+    \bfseries SPECIFICALLY PERMITTED ITEMS
+      & $if(special)$ \tick $else$ \Square $endif$ YES
+      & $if(special)$ \Square $else$ \tick $endif$ NO
+    \textbf{if yes, items permitted are: $special$ }
     \end{tabular}
   \end{textblock}
   \begin{textblock}{17}(2,24.6)\fontsize{10}{11}\sf

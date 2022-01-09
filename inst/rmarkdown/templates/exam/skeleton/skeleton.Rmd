@@ -1,14 +1,14 @@
 ---
-unitcode: ETCXXXX
-title: "Advanced Bean Counting"
-clayton: true
-caulfield: false
+unitcode: APCV 101
+program: Applied Computing
+title: "Final Exam"
 duration: 2 hours writing time
 reading: 10 minutes
-semester: Semester One 2017
+semester: 2022 Spring 7W1
 examperiod: Examination Period
 openbook: false
 calculators: true
+special: "Laptops" # List any special materials they can use.
 output: 
   uarizona::exam:
     fig_caption: true
@@ -41,9 +41,7 @@ $$ \hat{\sigma}^2 = \frac{1}{n} \sum_{i=1}^n (x_i-\bar{x})^2$$
 
 Second question.
 
-(a)
-
-    Part a. \marks{4}
+(a) Part a. \marks{4}
 
 (b) More stuff. \marks{10}
 

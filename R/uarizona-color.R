@@ -32,7 +32,7 @@
 #' @usage color_all() # show both primary and secondary colors
 #' @export
 color_all <- function() {
-  c(color_primary(), color_secondary())
+  c(color_primary(), color_highlight(), color_neutral(),color_secondary())
 }
 
 #' @param print whether to print the color vector
@@ -40,8 +40,10 @@ color_all <- function() {
 #' @usage color_show(print = TRUE)
 #' @export
 color_show <- function(print = TRUE) {
-  par(mfrow = c(1, 2))
+  par(mfrow = c(2, 2))
   scales::show_col(color_primary())
+  scales::show_col(color_highlight())
+  scales::show_col(color_neutral())
   scales::show_col(color_secondary())
   if(print) print(color_all())
   return(invisible(color_all()))
@@ -51,16 +53,31 @@ color_show <- function(print = TRUE) {
 #' @usage color_primary()
 #' @export
 color_primary <- function() {
-  return(c(blue = "#006DAE", black = "#000000", white = "#FFFFFF",
-           gray80 = "#5A5A5A", gray50 = "#969696", gray10 = "#E6E6E6"))
+  return(c(arizonablue = "#0C234B", arizonared = "#AB0520"))
+}
+
+#' @rdname uarizona-color
+#' @usage color_highlight()
+#' @export
+color_highlight <- function() {
+  return(c(bloom = "#EF4056", sky = "#81D3EB", oasis = "#378DBD",
+           chili = "#8B0015", azurite = "#1E5288", midnight = "#001C48"))
+}
+
+#' @rdname uarizona-color
+#' @usage color_neutral()
+#' @export
+color_neutral <- function() {
+  return(c(black = "#000000",
+           white = "#FFFFFF",
+           warmgray = "#F4EDE5",
+           coolgray = "#E2E9EB"))
 }
 
 #' @rdname uarizona-color
 #' @usage color_secondary()
 #' @export
 color_secondary <- function() {
-  return(c(blue = "#027EB6", purple = "#746FB2", fuchsia = "#9651A0",
-           ruby = "#C8008F", pink = "#ee64a4", red = "#EE0220",
-           orange = "#D93F00", umber = "#795549", olive = "#6F7C4D",
-           green = "#008A25"))
+  return(c(leaf = "#70B865", river = "#007D84", silver = "#9EABAE",
+           mesa = "#A95C42"))
 }

@@ -1,0 +1,1108 @@
+---
+title: "Beardown"
+subtitle: "A Xaringan slide theme for the University of Arizona"
+author: "Dr. Ryan Straight"
+date: "2021 March 19"
+output:
+  xaringan::moon_reader:
+    css: ["assets/arizona-fonts.css", "assets/arizona.css", "default"]
+    self_contained: false # if true, fonts will be stored locally
+    seal: true # show a title slide with YAML information
+    nature:
+      beforeInit: ["assets/remark-zoom.js"]
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9' # alternatives '16:9' or '4:3' or others e.g. 13:9
+      navigation:
+        scroll: false # disable slide transitions by scrolling
+---
+```{r setup, include=FALSE}
+# A University of Arizona theme for Xaringan RMarkdown slide decks
+
+# Based on [Garth Tarr's `sydney_xaringan` theme](https://github.com/garthtarr/sydney_xaringan), itself based on the original [xaringan](https://github.com/yihui/xaringan) theme by Yihui Xie.
+
+# Fonts, colors, and other assets from [brand.arizona.edu](https://brand.arizona.edu). Please note that _Proximia Nova_ is a licensed font that should only be used with permission, so is not included here. Instead, MiloWeb is used.
+
+options(htmltools.dir.version = FALSE)
+library(xaringan)
+library(xaringanExtra)
+library(DT)
+library(kableExtra)
+library(tidyverse)
+
+# Xaringan extras
+xaringanExtra::use_scribble()     #<< turns on Scribbling
+
+# Code highlighting on over
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = TRUE  #<<
+)
+# xaringanExtra::use_slide_tone() # unmute when publishing
+
+# Turns on clipboard options. Great for giving code to students.
+htmltools::tagList(               # # turns on the clipboard option
+  xaringanExtra::use_clipboard(
+    button_text = "<i class=\"fa fa-clipboard\"></i>",
+    success_text = "<i class=\"fa fa-check\" style=\"color: #90BE6D\"></i>",
+    error_text = "<i class=\"fa fa-times-circle\" style=\"color: #F94144\"></i>"
+  ),
+  rmarkdown::html_dependency_font_awesome()
+)
+
+# Editable slides
+xaringanExtra::use_editable(expires = 1)
+```
+
+```{r, load_refs, echo=FALSE, cache=FALSE, message=FALSE, warning=FALSE}
+library(RefManageR)
+BibOptions(check.entries = FALSE, 
+           bib.style = "authoryear", 
+           cite.style = 'authoryear', 
+           style = "markdown",
+           hyperlink = FALSE, 
+           dashed = FALSE)
+myBib <- ReadBib("assets/example.bib", check = FALSE)
+```
+
+## Installing `r icon::fa("download",pull = "right")`
+
+The **xaringan** package is on CRAN, but I recommend installing the development release from `r icon::fa("github")`
+
+```{r, eval = FALSE}
+devtools::install_github('yihui/xaringan')
+```
+
+.pull-left[
+You will also need two other CSS files for the custom University of Arizona styling:
+
+- `arizona-fonts.css`
+- `arizona.css`
+]
+.pull-right[
+If you want the horizontal logo to show up on the title slide, you'll also need
+
+- `ua_horiz_rgb_4.svg`
+]
+
+All of the University of Arizona brand assets can be found at https://brand.arizona.edu
+
+---
+
+## Xaringan basics
+
+.pull-left[
+
+```
+Bold text: **Bold text**
+
+Italic text: _Italic text_
+
+Bold and italic text: _**Bold and italic text**_
+
+Strikethrough: ~~Strikethrough~~
+
+Image: ![](assets/mini-A.png)
+
+Link: [link text](url)
+
+Next slide: ---
+
+Horizontal line: -----
+```
+
+]
+
+.pull-right[
+
+Bold text: **Bold text**
+
+Italic text: _Italic text_
+
+Bold and italic text: _**Bold and italic text**_
+
+Strikethrough: ~~Strikethrough~~
+
+Image: ![](assets/mini-A.png)
+
+Link: [link text](url)
+
+Next slide: ---
+
+Horizontal line: -----
+
+]
+
+
+---
+
+## xaringanExtra tools
+
+The [xaringanExtra]() package provides a variety of tools to increase the interactivity and ease-of-use in your presentations. Of particular use (enabled in this slide deck) are:
+
++ [`scribble`](https://pkg.garrickadenbuie.com/xaringanExtra/#/scribble): press .content-box-bloom[s] on your keyboard to enable on-slide annotation. These annotations are persistent on a slide-by-slide basis until you reload the presentation. 
++ [`clipboard`](https://pkg.garrickadenbuie.com/xaringanExtra/#/clipboard): allows for easy copying of code chunks. Hover over any code box and click the `r icon::fa("clipboard")` icon. 
++ [`hover` and `highlight`](https://pkg.garrickadenbuie.com/xaringanExtra/#/extra-styles): makes for very easy code highlighting (if that kind of thing is useful for you)
++ [`slide tone`](https://pkg.garrickadenbuie.com/xaringanExtra/#/slide-tone): provides an audible notification when the slide changes (great accessibility option; not enabled in this deck)
++ [`editable`](https://pkg.garrickadenbuie.com/xaringanExtra/#/editable): allows you to edit areas of the slide deck live, like this: .can-edit[change me!]. Good for recording audience participation.
+
+---
+
+## Content boxes `r icon::fa("box", pull = "right")`
+
+.content-box-bloom[This is the `.content-box-bloom[]` option. The colors used for content boxes are the `highlight` branded colors.
+
+]
+
+--
+
+If you have just a few words, it only highlights the words:
+
+
+.content-box-bloom[`.content-box-bloom[]`] .content-box-sky[`.content-box-sky[]`]
+
+.content-box-oasis[`.content-box-oasis[]`] .content-box-chili[`.content-box-chili[]`]
+
+--
+
+If the text includes a new line character, you get a 100% width box. This is equivalent to an R code chunk vs inline R code. Here is `.columns-2[]` at 100% of the column width.
+
+.columns-2[
+
+.content-box-azurite[
+`.content-box-azurite[]`
+]
+.content-box-midnight[.black[
+`.content-box-midnight[.black[]]`
+]]
+
+]
+
+You'll notice `chili`, `azurite`, and `midnight` have white fonts by default but that can be overridden, as in the case of `midnight`, having the black font applied.
+---
+
+## Quotes `r icon::fa("quote-right", pull = "right")`
+
+.small[
+Three ways to identify **block quotes**:<br>
+`<blockquote>Quote goes here</blockquote>` 
+
+or<br>
+`> Quote goes here`
+
+or `.blockquote[Quote here]`
+]
+.pull-left[
+
+<blockquote>
+Tell them... tell the team to bear down. 
+.right[-- <cite>John Salmon (1926)</cite>]
+</blockquote>
+
+.blockquote[Tell them... tell the team to bear down. 
+.right[-- <cite>John Salmon (1926)</cite>]]
+
+> Tell them... tell the team to bear down. 
+>.right[-- <cite>John Salmon (1926)</cite>]  
+]
+
+
+
+.pull-right[.small[
+```
+<blockquote>
+Tell them... tell the team to bear down. 
+.right[-- <cite>John Salmon (1926)</cite>]
+</blockquote>
+
+
+
+.blockquote[Tell them... tell the team to bear down. 
+.right[-- <cite>John Salmon (1926)</cite>]]
+
+
+
+> Tell them... tell the team to bear down. 
+>.right[-- <cite>John Salmon (1926)</cite>] 
+```
+
+]]
+
+---
+
+## Call-outs
+
+You can include `icons` in the blockquotes to create call-outs or modals:
+
+.pull-left[
+.small[
+```r
+.blockquote[
+### `r knitr::inline_expr('anicon::faa("question-circle",
+animate = "pulse", speed = "slow")')` Knowledge Check!
+- Knowledge check
+]
+```
+]
+.blockquote[
+### `r anicon::faa("question-circle", animate = "pulse", speed = "slow")` Knowledge Check!
+- Knowledge check
+]
+
+]
+.pull-right[
+
+.small[
+```r
+.blockquote[
+### `r knitr::inline_expr('anicon::faa("balance-scale",
+animate = "wrench", speed = "slow")')` Debate
+- Side A
+- Side B
+]
+```
+]
+.blockquote[
+### `r anicon::faa("balance-scale", animate = "wrench", speed = "slow")` Debate
+- Side A
+- Side B
+]
+
+]
+
+.footnote[
+My advice is to use these sparingly, however, as they can easily clutter an otherwise clean presentation. Also of note, using `###` in the actual R code produces the H3-sized headers with the icons, while it (unfortunately) makes it appear like a comment in the example code blocks.
+]
+
+---
+
+
+## Lists, increments, and footnotes (Oh, my!)`r icon::fa("list", pull = "right")`
+
+.pull-left[
+
++ Unordered lists<sup>1</sup>
+    + Can be created using 
+    `-` or `+` (`+` is preferred)
+    + This is level 2
+    + They can be nested using
+    **4** spaces.<sup>2</sup>
+        + As deeply as you want, really
+        + Like level 3
+    + Back to level 2
+
+]
+
+.pull-right[
+Is produced by:
+
+```
++ Unordered lists<sup>1</sup>
+    + Can be created using 
+    `-` or `+` (`+` is preferred)
+    + This is level 2
+    + They can be nested using
+    **4** spaces.<sup>2</sup>
+        + As deeply as you want, really
+        + Like level 3
+    + Back to level 2
+```
+
+.tiny[
+Remember that single line breaks in RMarkdown aren't recognized as carriage returns! See?
+]
+
+]
+
+---
+
+## Ordered list
+
+.pull-left[
+Same with ordered lists. This:
+
+1. one
+    1. A
+    1. B
+1. two
+1. three
+]
+
+.pull-right[
+is produced by this:
+```
+1. one
+    1. A
+    1. B
+1. two
+1. three
+```
+]
+
+.footnote[
+[1] Footnotes are not automatic.  In the text use `<sup>1</sup>`.
+
+[2] At the end of the slide `.footnote[[1] Text associated with footnote 1.]` (but, again, it's manual)
+]
+
+
+
+---
+
+## Incremental slides
+
+If you want to create slides that appear piece by piece...
+
+--
+
+...use two dashes `--` on a new line with no trailing white space. If the dashes aren't on their own line or there's a white space after it won't work.
+
+.font80[.content-box-purple[
+The two dash increments don't work inside class calls.  For example, you can't have an increment in a  `.pull-right[...]` block or in a `.columns-2[...]` block as the dashes are not considered to be special in the markdown processing when they're inside one of these blocks.
+]]
+
+--
+
+By default, these increments will *not* be included in the total slide count. To turn this on, set `countIncrementalSlides` to `true`.
+
+```yaml
+output:
+  xaringan::moon_reader:
+    nature:
+      countIncrementalSlides: false
+```
+
+---
+
+## Icons `r icon::fa("exclamation", pull = "right")`
+
+While the `icon` package is one option for having simple, static icons, I prefer to use the `anicon` package by Emi Tanaka as it provides the option for animated icons and text.
+
+
+Install using the following:
+
+```{r, eval = FALSE}
+devtools::install_github('emitanaka/anicon')
+```
+
+--
+
+.pull-left[
+
+```{r}
+anicon::faa("rocket", animate="falling", rotate=135)
+
+anicon::nia("BEARDOWN", animate="burst")
+```
+
+]
+
+--
+
+.pull-right[
+
+You can include them inline, like so:
+
+`r anicon::faa("leaf", animate="spin")` created using 
+
+`` `r knitr::inline_expr('anicon::faa("leaf", animate="spin")')` ``
+
+Static icons can be created with:<br>
+`` `r knitr::inline_expr('icon::fa("leaf")')` `` `r icon::fa("leaf")`
+
+<br>
+]
+
+.footnote[
+[See the `anicon` vignette](https://anicon.netlify.com/) for details on the options available.
+]
+
+
+---
+
+## Interactive tables `r icon::fa("table", pull = "right")`
+
+Creating tables in Xaringan that have more content than can fit on a single slide is best accomplished with the `DT` package.
+
+.font80[
+```{r, message = FALSE}
+iris %>% 
+  DT::datatable(class = "compact", rownames = FALSE, extensions = "Buttons",
+                options = list(dom = 'tBp', buttons = c("csv","excel"), 
+                               pageLength = 6)) %>% 
+  DT::formatRound(1:4, digits = 1) 
+```
+]
+
+
+
+.footnote[
+**Note**: adding `buttons = c("csv", "excel")` allows the user to download the entire dataset used in the table.
+]
+
+---
+background-image: url("assets/title-image1.jpg")
+background-position: 100% 50%
+background-size: 50% 75%
+
+## Background images
+
+.pull-left[
+
+- We can place images anywhere on the screen by using `background-image` in conjunction with <br>`background-position`
+- The image, size and position are defined immediately after the `---` that starts a new slide.
+
+
+Assuming `image.jpg` is in the same folder as your `.Rmd` file, the code is:
+
+```
+---
+background-image: url("image.jpg")
+background-position: 100% 50%
+background-size: 50% 75%
+
+## Background images
+
+.pull-left[
+
+... Left column text here ...
+
+]
+
+```
+
+]
+
+---
+class: center, middle
+
+# Text adjustments
+
+It is also possible to change the .blue[color] of any text by using `.color[text here]`
+
+--
+
+For example `brand-oasis[text here]` will make text .brand-oasis[oasis colored].
+
+--
+
+We can do this with .white[white], 
+.brand-red[Arizona Red], 
+.brand-blue[Arizona Blue], 
+.brand-leaf[leaf], 
+.brand-river[river], 
+.brand-mesa[mesa], 
+.brand-cool[cool grey], 
+.brand-bloom[bloom], 
+.brand-sky[sky], 
+.brand-oasis[oasis], 
+.brand-chili[chili], 
+.brand-azurite[azurite], 
+.brand-midnight[midnight], 
+.brand-warm[warm gray].
+
+Note that text colors are `brand-color` while background colors are `arizona-color` or `secondary-color`.
+
+--
+
+To make text stand out we can use standard markdown `**text**` like **this** 
+or `.bold[this]` .bold[this].  Or italics using `_italic_` _italic_.
+
+You can string together these formats, e.g. `.brand-blue[.bold[...]]` 
+to get .brand-blue[.bold[Arizona blue and bold text]].
+
+--
+
+.left[.footnote[The text on this slide is centered and in the middle of the slide because the slide began with:
+```
+---
+class: center, middle
+```
+
+]]
+
+---
+class: brand-mesa
+
+## Two columns! `r icon::fa("columns", pull = "right")`
+
+.pull-left[
+
+### Some things on the left
+
+1. List of things;
+
+1. Plain Markdown;
+
+1. blah blah; and
+
+1. Plain Markdown
+
+]
+
+--
+
+.pull-right[
+
+### and other things on the right
+
+We do this by using the `.pull-left[]` and `.pull-right[]` commands. Just put any text inside the  brackets and you're good to go
+
+]
+
+Code below (or above) these two has no problem extending the full width of the slide.
+
+.footnote[The font color on this slide is Arizona University "mesa" because the slide began with:
+```
+---
+class: brand-mesa
+```
+]
+
+---
+
+## R code and highlighting `r icon::fa("r-project", pull = "right")`
+
+.pull-left[
+An example using a leading `*`:
+
+    ```r
+    if (TRUE) {
+    ** message("Very important!")
+    }
+    ```
+Output:
+```r
+if (TRUE) {
+* message("Very important!")
+}
+```
+
+This is invalid R code, so it is a plain fenced code block that is not executed.
+]
+
+.pull-right[
+An example using `{{}}`:
+
+    `r ''````{r tidy=FALSE}
+    if (TRUE) {
+    *{{ message("Very important!") }}
+    }
+    ```
+Output:
+```{r tidy=FALSE}
+if (TRUE) {
+{{ message("Very important!") }}
+}
+```
+
+It is valid R code so you can run it.
+]
+
+
+---
+
+## R code and plot output `r icon::fa("r-project", pull = "right")`
+
+```{r, fig.height=4.5, fig.width=12, fig.retina=2, fig.align='center', message=FALSE, warning=FALSE}
+library("tidyverse")
+cars %>% 
+  ggplot(aes(x = dist, y = speed)) + 
+  geom_point() + 
+{{ geom_smooth(method = 'lm', # highlighted using {{...}}
+             formula = y ~ poly(x, 2))}} + 
+  theme_bw(base_size = 24) + 
+  labs(y = "Speed (mph)", x = "Stopping distance (ft)")
+```
+
+
+---
+class: middle, bottom
+background-image: url("assets/ua_horiz_rgb_4.svg")
+background-size: 50%
+background-position: 90% 10%
+
+
+This slide starts with 
+
+```
+---
+class: middle, bottom
+background-image: url("assets/ua_horiz_rgb_4.svg")
+background-size: 50%
+background-position: 90% 10%
+```
+
+If you want the background image to take up the full slide use
+
+```
+---
+class: middle, bottom
+background-image: url("assets/ua_horiz_rgb_4.svg")
+*background-size: contain
+*background-position: 50% 50%
+```
+
+---
+class: secondary
+
+# Next section
+
+
+.left[.footnote[
+
+```
+---
+class: secondary
+```
+
+]]
+
+
+---
+class: secondary-river
+
+# Next section
+
+
+.left[.footnote[
+
+```
+---
+class: secondary-river
+```
+
+]]
+
+
+
+---
+class: secondary-silver
+background-image: url("assets/ua_horiz_rgb_black_4.svg")
+background-size: 20%
+background-position: 95% 95%
+
+# Next section
+
+
+.left[.footnote[
+
+```
+---
+class: secondary-silver
+background-image: url("assets/ua_horiz_rgb_black_4.svg")
+background-size: 20%
+background-position: 95% 95%
+```
+
+]]
+
+
+---
+class: brand-blue
+
+## Title for arizona-blue class
+
+text here
+
+.footnote[
+
+```
+---
+class: arizona-blue
+```
+
+]
+
+---
+class: arizona-red
+
+## .white[Title for arizona-red class]
+
+text here
+
+.footnote[
+
+```
+---
+class: arizona-red
+```
+
+]
+
+---
+class: secondary-river
+
+## Title for secondary-river class
+
+text here
+
+.footnote[
+
+```
+---
+class: secondary-river
+```
+
+]
+
+---
+
+## Title slide image
+
+.small[
+I don't have a good solution for the title slide image.  I considered hard coding it to look for a file called `title-image.jpg` in the same folder as the `arizona.css` file. This is possible and if this file is missing, it's no problem, it just won't show an image.  The image would be hardcoded to be stretched the full height of the title slide and to only take up 50% of the width.  But I decided this was less than optimal.
+
+In the longer term, I'd like to make this more general, being able to specify the file path in the yaml along with the size and position.  I'd also like to be able to specify the background colour.  But I have no idea if this is technically feasible or not.
+
+In the iterim, you can specify `seal: false` in the yaml to disable the default title slide and create your own.  For example:
+]
+
+.code70[
+
+```
+---
+class: title-slide
+  background-image: url("assets/ua_horiz_rgb_4.svg"),
+  url("assets/title-image1.jpg")
+  background-position: 10% 90%;
+  background-size: 160px;
+  background-color: #E2E9EB;
+
+# .black[Manual title slide]
+
+## Subtitle
+
+### Author
+
+### Date
+```
+
+]
+
+
+
+---
+class: title-slide
+background-image: url("assets/ua_stack_rgb_4.svg"), url("assets/title-image1.jpg")
+background-position: 90% 90%, 100% 50%
+background-size: 160px, 100% 100%
+
+# .text-shadow[.black[Manual title slide (with title-image1.jpg)]]
+
+## Subtitle
+
+### Author
+
+### Date
+
+
+---
+class: title-slide
+background-image: url("assets/ua_stack_rgb_4.svg"), url("assets/title-image1.jpg")
+background-position: 10% 90%, 100% 50%
+background-size: 160px, 50% 100%
+background-color: #0148A4
+
+
+# .text-shadow[.white[Manual title slide]]
+
+## .white[Subtitle]
+
+### .white[Author]
+
+### .white[Date]
+
+---
+class: title-slide
+background-image: url("assets/ua_horiz_rgb_black_4.svg"), url("assets/title-image2.jpg")
+background-position: 10% 90%, 100% 50%
+background-size: 160px, 100% 100%
+
+# .text-shadow[.black[Manual title slide]]
+
+## Subtitle
+
+### Author
+
+### Date
+
+---
+
+## Example YAML
+
+.code70[
+
+```r
+---
+title: "Xaringan"
+subtitle: "A theme for the <br>University of Arizona"
+author: "Your Name"
+date: "2021 March 24"
+output:
+  xaringan::moon_reader:
+    css: ["assets/arizona-fonts.css", "assets/arizona.css", "default"]
+    self_contained: false # if true, fonts will be stored locally
+    seal: false # show a title slide with YAML information
+    nature:
+      beforeInit: ["assets/remark-zoom.js"]
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9' # alternatives '4:3' or others e.g. 13:9
+      navigation:
+        scroll: false # disable slide transitions by scrolling
+---
+class: title-slide
+background-image: url("assets/ua_stack_rgb_4.svg"), url("assets/title-image1.jpg")
+background-position: 10% 90%, 100% 50%
+background-size: 160px, 50% 100%
+background-color: #0148A4
+
+
+# .text-shadow[.white[Manual title slide]]
+
+## .white[Subtitle]
+
+### .white[Author]
+
+### .white[Date]
+```
+
+]
+
+---
+
+## Font sizes
+
+.pull-left[
+
+.pull-left[
+.font10[.font10]
+.font20[.font20]
+.font30[.font30]
+.font40[.font40]
+.font50[.font50]
+.font60[.font60]
+.font70[.font70]
+.font80[.font80]
+.font90[.font90]
+Standard
+.font110[.font110]
+.font120[.font120]
+.font130[.font130]
+.font140[.font140]
+.font150[.font150]
+.font160[.font160]
+.font170[.font170]
+.font180[.font180]
+.font190[.font190]
+.font200[.font200]
+
+]
+
+.pull-right[
+
+.code10[`.code10[]`]
+.code20[`.code20[]`]
+.code30[`.code30[]`]
+.code40[`.code40[]`]
+.code50[`.code50[]`]
+.code60[`.code60[]`]
+.code70[`.code70[]`]
+.code80[`.code80[]`]
+.code90[`.code90[]`]
+`standard`
+.code110[`.code110[]`]
+.code120[`.code120[]`]
+.code130[`.code130[]`]
+.code140[`.code140[]`]
+.code150[`.code150[]`]
+.code160[`.code160[]`]
+.code170[`.code170[]`]
+.code180[`.code180[]`]
+.code190[`.code190[]`]
+.code200[`.code200[]`]
+
+]
+
+]
+
+.pull-right[
+
+I've also enabled an alternate approach, that operates on all text: inline code, code chunks and regular text.
+
+.Large[.Large `.Large[]` 144%]
+
+.large[.large `.large[]` 120%]
+
+.small[.small `.small[]` 90%]
+
+.footnotesize[.footnotesize `.footnotesize[]` 80%] 
+
+.scriptsize[.scriptsize `.scriptsize[]` 70%] 
+
+.tiny[.tiny `.tiny[]` 60%]
+
+]
+
+
+---
+
+## Font sizes
+
+This is normal sized and coloured text. With a normal size code and output:
+
+```{r}
+rnorm(2)
+```
+
+.blue[.small[This blue text is in a `.blue[.small[...]]` chunk. Everything is shrunk to 90% including the `inline code` as well as code chunks and their output:
+
+```{r}
+rnorm(2)
+```
+
+]]
+
+---
+class: columns-2
+
+## Equations
+
+
+MathJax is supported out of the box.  You can put inline equations inside dollar signs, e.g. `$\alpha + \beta$` renders as $\alpha + \beta$.   Display style works with double dollar signs: 
+
+<span>`$`</span><span>`$`</span>`\bar{X} = \frac{1}{n} \sum_{i=1}^n X_i`<span>`$`</span><span>`$`</span>
+$$\bar{X} = \frac{1}{n}\sum_{i=1}^n X_i$$
+For multi-line equations you can use <span>`\`</span>`begin{align} ...  `</span>`\`</span>`end{align}`
+\begin{align}
+\bar{X} & = X_1 + X_2 + \ldots + X_n \nonumber \\
+ & = \frac{1}{n}\sum_{i=1}^nX_i \label{good-eq}
+\end{align}
+Note the equation number! We can reference it in the usual way, using <span>`\`</span>`eqref{label}`, \eqref{good-eq}, or <span>`\`</span>`ref{label}`, \ref{good-eq}.
+
+---
+
+## Central limit theorem 
+
+
+Let $X_{1}, X_{2},\ldots$ be independent random variables with characteristic functions $\phi_{1},\phi_{2},\ldots$ and distribution functions $F_{1},F_{2},\ldots$ and let $\mathbb{E} X_{i}=0$ and $\mathbb{E} X_{i}^{2}=\sigma_{i}^{2}<\infty$, $i=1,2,\ldots$.
+
+Write $S_{n} = \sum_{i=1}^{n}X_{i}$ and $s_{n}=\textrm{Var}(S_{n}) = \sum_{i=1}^{n}\sigma^{2}_{i}$.  Let
+\begin{align}
+L_{n}(\varepsilon) & = s^{-2}_{n}\sum_{i=1}^{n}\mathbb{E}\big[ X_{i}^{2}\mathbb{I}\big(|X_{i}|>\varepsilon s_{n}\big)\big] \nonumber \\
+& = s_{n}^{-2}\sum_{i=1}^{n}\int_{|x|>\varepsilon s_{n}}x^{2}\operatorname{d}F_{n}(x)
+\end{align}
+The _Lindeberg condition_ states:
+$$\begin{equation}\text{for all } \varepsilon>0,\ L_{n}(\varepsilon)\rightarrow0 \text{ as }n\rightarrow\infty.\label{LindCond}\end{equation}$$
+If $\mathbb{E}|X_{1}|^{3}<\infty$ and $s_{n}^{-3}\sum_{i=1}^{n}\mathbb{E}|X_{i}^{3}|\rightarrow 0$ as $n\rightarrow\infty$ then Lindeberg's condition holds.  This condition under which the Lindeberg's condition holds is known as Liapounov's condition \eqref{LindCond}.
+
+
+---
+
+# Tables
+
+.pull-left[
+
+- Tables are centered by default in **xaringan**. 
+- We can override this using `.pull-left[]` and 
+  `.pull-right[]`
+
+
+
+
+|  This |  is |   a    |    table     |
+| :---- | :-- | -----: | :----------: |
+| It is | now | pulled | to the left  |
+| 12    | 34  | 56     |      78      |
+
+]
+
+.pull-right[
+```{r, eval = FALSE}
+knitr::kable(iris[1:10, 1:4], 
+             format = "html")
+```
+.small[
+```{r, echo = FALSE}
+colnames(iris) = gsub(pattern = "\\.",
+                      replacement = " ", 
+                      colnames(iris))
+knitr::kable(iris[1:10, 1:4], format = "html")
+```
+]
+]
+
+---
+
+## Citations and references `r icon::fa("book", pull="right")`
+
+.pull-left[
+Xaringan doesn't support bibliographies in the usual markdown way (i.e. specifying a bibtex file in the yaml).
+
+It is possible to cite sources from a `.bib` file using the **RefManageR** package.  To do this, specify the `BibOptions()`:
+
+.small[
+```{r, eval = FALSE}
+library(RefManageR)
+BibOptions(
+  check.entries = FALSE, 
+  bib.style = "authoryear", 
+  cite.style = "authoryear", 
+  style = "markdown",
+  hyperlink = FALSE, 
+  dashed = FALSE)
+{{myBib = ReadBib("myBib.bib")}}
+```
+]
+]
+
+
+.pull-right[
+
+
+
+Make sure you update the highlighted line.
+
+Then you can cite any entry from your `.bib` file inline using `Citet()`, `Citep()`, `AutoCite()`, etc. (see [RefManageR](https://github.com/ropensci/RefManageR)). 
+
+
+- `r Citet(myBib,"Tarr:2016csda")`
+- `r Citep(myBib,"Tarr:2016csda")`
+
+]
+
+---
+
+## Reference list
+
+
+To generate your bibliography, use the `PrintBibliography()` function inside a knitr chunk with options `results='asis', echo=FALSE`. The function will search the entire `.Rmd` document for your citations and include them in the output. 
+
+```{r, results = "asis", echo=FALSE}
+PrintBibliography(myBib)
+```
+
+If you have a long list of references, and want to split them over multiple slides, you can use the `start` and `end` arguments to the `PrintBibliography()` function.  E.g.
+
+.small[
+`PrintBibliography(bib, start=1, end=7)`
+]
+
+---
+class: arizona-blue
+background-image: url(assets/ua_horiz_rgb_4.svg)
+background-size: 260px
+background-position: 5% 95%
+
+# Thanks!
+
+.pull-right[.pull-down[
+
+(contact info here)
+
+<br><br><br>
+
+]]

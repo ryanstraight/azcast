@@ -1,8 +1,10 @@
 ---
-title: Note to self
-author: Marie Curie
+title: Memo on Current Policies
+author: Dr. Ryan Straight
 branding: true
-output: uarizona::memo
+output: azcast::memo
 ---
 
-
+```{r lorem, echo=FALSE}
+lorem::ipsum(paragraphs = 3, sentences = c(1, 2, 3))
+```

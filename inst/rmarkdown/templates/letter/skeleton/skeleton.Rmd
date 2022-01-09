@@ -1,13 +1,17 @@
 ---
-from: Pierre Curie
-fromqualifications: Nobel Prize, PhD
-fromtitle: Professor
-fromWWW: curie.com
-fromemail: Pierre.Curie@uarizona.edu
-fromphone: +61 3 9905 5555
+from: Ryan Straight
+fromdept: "Applied Computing & Cyber Operations"
+fromqualifications: PhD
+fromtitle: "Assistant Professor of Practice & MA{VR}X Lab Director"
+fromWWW: azcast.arizona.edu
+fromemail: ryanstraight@arizona.edu
+fromphone: "(520) 458-8278"
+fromaddress: "1140 N. Colombo Ave, Sierra Vista, AZ 85635"
 fromsignature: sigfile.png
+
 toname: Jacques Curie
 toaddress: University of Montpellier
+
 opening: Dear Jacques
 closing: Best wishes
 spacing: 1.4

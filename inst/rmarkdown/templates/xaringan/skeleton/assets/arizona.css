@@ -1,0 +1,494 @@
+/***********
+ Slide margins and spacings
+ ***********/
+.remark-slide-content {
+  padding-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 25px;
+}
+/* 
+To specify the margin of the first title h1
+*/
+.remark-slide-content > h1:first-of-type {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.remark-slide-content > h2:first-of-type {
+  color: #AB0520;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.remark-slide-content > h3:first-of-type {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.remark-slide-content > h4:first-of-type {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+
+/*************************
+  Custom classes 
+**************************/
+
+.pull-left-2 {
+  float: left;
+  width: 60%;
+}
+.pull-right-1 {
+  float: right;
+  width: 36%;
+}
+
+.pull-left-1 {
+  float: left;
+  width: 36%;
+}
+.pull-right-2 {
+  float: right;
+  width: 60%;
+}
+
+
+/* use to position text at the bottom */
+.pull-down {
+  position: absolute;
+  bottom: 50px;
+}
+
+/* Change default inverse background colour */
+.inverse {
+  background-color: #1D1614;
+  text-shadow: 0 0 20px #CCC;
+}
+.inverse .remark-slide-number {
+  display: none;
+}
+
+/* Arizona primary Brand colors
+https://brand.arizona.edu/applying-the-brand/colors
+*/
+.arizona-blue {
+  background-color: #0C234B;
+  color: white;
+}
+.arizona-red {
+  background-color: #AB0520;
+  color: white;
+}
+/* Arizona neutral Brand colors */
+.arizona-warm {
+  background-color: #F4EDE5;
+  color: #111;
+}
+.arizona-cool {
+  background-color: #E2E9EB;
+  color: #111;
+}
+
+/* 
+Arizona Secondry Brand colors
+Useful for segue slides for attention
+*/
+.secondary {
+  text-align:center;
+  vertical-align: middle;
+  background-color: #0148A4;
+  color: #ffffff;
+  text-shadow: 0 0 20px #333;
+}
+.secondary .remark-slide-number {
+  display: none;
+}
+
+.secondary-leaf {
+  text-align:center;
+  vertical-align: middle;
+  background-color: #70B865;
+  color: #ffffff;
+  text-shadow: 0 0 20px #333;
+}
+.secondary-leaf .remark-slide-number {
+  display: none;
+}
+
+.secondary-river {
+  text-align:center;
+  vertical-align: middle;
+  background-color: #007D84;
+  color: #FFF;
+  text-shadow: 0 0 2px #333;
+}
+.secondary-river .remark-slide-number {
+  display: none;
+}
+.secondary-silver {
+  text-align:center;
+  vertical-align: middle;
+  background-color: #9EABAE;
+  color: #FFF;
+  text-shadow: 0 0 2px #333;
+}
+.secondary-silver .remark-slide-number {
+  display: none;
+}
+.secondary-mesa {
+  text-align:center;
+  vertical-align: middle;
+  background-color: #A95C42;
+  color: #FFF;
+  text-shadow: 0 0 2px #333;
+}
+.secondary-mesa .remark-slide-number {
+  display: none;
+}
+/* example slide with background colour to distinguish
+it from other content slides */
+.eg {
+  background-color: #F1F1F1;
+  /* rgb(231, 238, 242); */
+}
+.eg.nobackground {
+  background-color:white;
+}
+
+/* Link colord */
+a { 
+    color: #001C48; 
+}
+
+a:visited {
+    color: #378DBD;
+}
+
+.columns-2 {
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  columns: 2;
+  -webkit-column-gap: 1em;
+  -moz-column-gap: 1em;
+  column-gap: 1em;
+}
+
+.columns-21 {
+  -webkit-columns: 66%, 33%;
+  -moz-columns: 66%, 33%;
+  columns: 66%, 33%;
+  -webkit-column-gap: 1em;
+  -moz-column-gap: 1em;
+  column-gap: 1em;
+}
+
+
+ /* Inline code: background */
+ .remark-inline-code {
+  background: transparent;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+
+
+/******************
+ * Arizona Highlight box colors
+ ****************/
+.content-box { 
+    box-sizing: border-box;
+    background-color: #e2e2e2;
+}
+.content-box-bloom,
+.content-box-sky,
+.content-box-oasis,
+.content-box-chili,
+.content-box-azurite,
+.content-box-midnight {
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin: 0 0 15px;
+  overflow: hidden;
+  padding: 0px 20px 0px 20px;
+  width: 100%;
+}
+
+.content-box-bloom { background-color: #EF4056; }
+.content-box-sky { background-color: #81D3EB; }
+.content-box-oasis {	background-color: #378DBD; }
+.content-box-chili {	background-color: #8B0015; color: white; }
+.content-box-azurite { background-color: #1E5288; color: white; }
+.content-box-midnight { background-color: #001C48; color: white; }
+
+/* Inline code highlights */
+.content-box-bloom .remark-inline-code,
+.content-box-sky .remark-inline-code,
+.content-box-oasis .remark-inline-code,
+.content-box-chili .remark-inline-code,
+.content-box-azurite .remark-inline-code,
+.content-box-midnight .remark-inline-code { 
+  background: none;
+}
+
+.full-width {
+    display: flex;
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+
+
+/* CSS tweaks*/
+
+.opaque{ opacity: 0.5; }
+
+.blur {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.grayscale img {
+    -webkit-filter: grayscale(100%); /* Safari */
+    filter: grayscale(100%);
+}
+
+.rotate-left {
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    transform: rotate(-2deg); 
+}
+.rotate-right {
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    transform: rotate(2deg);     
+}
+
+
+.polaroid img {
+    border: 10px solid #fff;
+    border-bottom: 45px solid #fff;
+    -webkit-box-shadow: 3px 3px 3px #111;
+    -moz-box-shadow: 3px 3px 3px #111;
+    box-shadow: 3px 3px 3px #111;
+}
+.shadow {
+    -moz-border-radius: 5px;
+    -moz-box-shadow: 5px 5px 5px #aaa;
+    -webkit-box-shadow: 5px 5px 5px #aaa;
+    box-shadow: 5px 5px 5px #aaa;
+    border-radius: 2px;  
+}
+
+
+/* Disables background color for printing */
+
+@page { margin: 0; }
+@media print {
+  .inverse, .segue, .segue-yellow, .segue-red, .arizona-blue, .arizona-yellow, .arizona-red {
+    background-color: transparent;
+    color: black;
+    text-shadow: none;
+  }
+  .inverse h1, .inverse h2, .inverse h3, .inverse h4, .inverse h5, .segue {
+    background-color: transparent;
+    color: black;
+    text-shadow: none;
+  }
+  .eg {
+    background-color: transparent;
+  }
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
+
+
+
+/* Specific Arizona details */
+
+.title-slide {
+  background-image: url(ua_horiz_rgb_4.svg);
+  /* background-image: url(https://arizona.edu.au/etc/designs/corporate-commons/bower_components/corporate-frontend/dist/assets/img/USydLogo.svg); */
+  background-position: 10% 90%;
+  background-size: 160px;
+  background-color: #E2E9EB;
+  text-align:left;
+  vertical-align: top;
+  text-shadow: none;
+  /*text-shadow: 0 0 5px #333;*/
+  padding-left: 100px;   /* delete this for 4:3 aspect ratio */
+}
+
+/* H1 fonts  */
+.title-slide h1 {
+  color: #1D1614;
+  font-weight: normal;
+  font-size: 45px;
+  padding: 20px;
+  text-align: left;
+  vertical-align: middle;
+  margin-bottom: 18px;
+}
+
+/* H2 fonts */
+.title-slide h2 {
+  color: black !important; /* first of type is master brand red */
+  font-size: 35px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  margin-top: 0px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* H3 fonts */
+.title-slide h3 {
+  font-size: 28px;
+  font-weight: normal;
+  color: black;
+  padding-left: 20px;
+  margin: 0px;
+  line-height: 1;
+  text-align: left;
+  vertical-align: middle;
+}
+
+/* Remove slide count */
+.title-slide .remark-slide-number {
+  display: none;
+}
+
+/* Blockquote */
+blockquote, .blockquote {
+  display: block;
+  margin-top: 0.1em;
+  margin-bottom: 0.2em;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-left: solid 10px #0C234B;
+  border-top: solid 2px #0C234B;
+  border-bottom: solid 2px #0C234B;
+  border-right: solid 2px #0C234B;
+  box-shadow: 0 0 6px rgba(0,0,0,0.5);
+  /* background-color: #e64626; */
+  color: #111;
+  padding: 0.5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.blockquote p {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.blockquote > h1:first-of-type {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.blockquote > h2:first-of-type {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.blockquote > h3:first-of-type {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.blockquote > h4:first-of-type {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.text-shadow {
+  text-shadow: 0 0 4px #424242;
+}
+
+
+/* Brand color details
+
+Arizona Red
+CMYK 18, 100, 83, 8
+RGB 171, 5, 32
+HEX #AB0520
+PANTONE 200
+
+Arizona Blue
+CMYK 100, 71, 0, 58
+RGB 21, 36, 74
+HEX #0C234B
+PANTONE 281/282
+
+Bloom
+cmyk 0, 90, 60, 0
+rgb 239, 64, 86
+hex #EF4056
+Pantone 710
+
+Sky
+cmyk 45, 0, 5, 0
+rgb 129, 211, 235
+hex #81D3EB
+Pantone 2905
+
+Oasis
+cmyk 76, 34, 10, 0
+rgb 55, 141, 189
+hex #378DBD
+Pantone 7689
+
+Chili
+cmyk 0, 100, 83, 50
+rgb 139, 0 , 21
+hex #8B0015
+Pantone 202
+
+Azurite
+cmyk 95, 73, 21, 6
+rgb 30, 82, 136
+hex #1E5288
+Pantone 647
+
+Midnight
+cmyk 100, 60, 0, 75
+rgb 0, 28, 72
+hex #001C48
+Pantone 2768
+
+Warm (Gray)
+cmyk 100, 60, 0, 75
+rgb 0, 28, 72
+hex #001C48
+Pantone 2768
+
+Cool (Gray)
+cmyk 10, 4, 5, 0
+rgb 226, 233, 235
+hex #E2E9EB
+
+Leaf
+cmyk 60, 5, 80, 0
+rgb 112, 184, 101
+hex #70B865
+
+River
+cmyk 88, 36, 46, 6
+rgb 0, 125, 132
+hex #007D84
+
+Silver
+cmyk 34, 20, 22, 8
+rgb 158, 171, 174
+hex #9EABAE
+
+Mesa
+cmyk 26, 70, 78, 14
+rgb 169, 92, 66
+hex #A95C42
+
+*/

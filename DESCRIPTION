@@ -1,14 +1,14 @@
-Package: uarizona
-Title: Consolidated tools and templates for staff at University of Arizona
+Package: azcast
+Title: Consolidated tools and templates for staff at University of Arizona's College of Applied Science and Technology
 Version: 0.0.0.1
 Authors@R: 
     c(person(given = "Ryan",
            family = "Straight",
            role = c("aut", "cre"),
            email = "ryanstraight@arizona.edu",
-           comment = c(ORCID = "0000-0002-6251-5662"))
-Description: Rmarkdown templates and other tools for use at the University of Arizona, Applied Computing program.
-License: GPL-3
+           comment = c(ORCID = "0000-0002-6251-5662")))
+Description: Rmarkdown templates and other tools for use at the University of Arizona, Applied Computing program. It is a fork of numats/monash.
+License: GPL (>= 3)
 Encoding: UTF-8
 Language: en
 Roxygen: list(markdown = TRUE)
@@ -37,7 +37,8 @@ Imports:
     whisker,
     yaml
 Suggests: 
-    binb,
+    xaringan,
+    xaringanExtra,
     knitr,
     rmarkdown,
     testthat
