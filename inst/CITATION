@@ -1,0 +1,16 @@
+citHeader("To cite `azcast` in publications use:")
+
+citEntry(
+  entry    = "Misc",
+  title    = "azcast: Templates for the College of Applied Science and Technology at the University of Arizona",
+  author   = "Straight, Ryan",
+  journal  = ,
+  year     = 2022,
+  volume   = ,
+  number   = ,
+  pages    = ,
+  url      = ,
+  textVersion = paste(
+
+  )
+)
