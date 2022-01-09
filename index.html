@@ -57,12 +57,6 @@
   </a>
   <ul class="dropdown-menu" role="menu">
 <li>
-      <a href="articles/file-structure.html">File structure</a>
-    </li>
-    <li>
-      <a href="articles/github-classroom.html">GitHub Classroom</a>
-    </li>
-    <li>
       <a href="articles/template.html">Creating a document from a template</a>
     </li>
   </ul>
@@ -90,16 +84,20 @@
 
 <p>The <code>azcast</code> R-package is a utility package with consolidated tools and templates prepared for the University of Arizona’s College of Applied Science and Technology. It contains a variety of templates that I have been using and tweaking for some time, as well as new-to-me templates from the wonderful <code>numbats/monash</code> package. A good amount of the original Monash content is still here and will be altered or removed as appropriate. The package is mainly templates and easy access to assets like logos and colors.</p>
 <div class="section level2">
-<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+<h2 id="package-information">Package Information<a class="anchor" aria-label="anchor" href="#package-information"></a>
 </h2>
+<div class="section level3">
+<h3 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h3>
 <p>You can install the <code>azcast</code> R-package like this:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># install.packages("remotes")</span>
 <span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"ryanstraight/azcast"</span><span class="op">)</span></code></pre></div>
 </div>
-<div class="section level2">
-<h2 id="templates">Templates<a class="anchor" aria-label="anchor" href="#templates"></a>
-</h2>
+<div class="section level3">
+<h3 id="templates">Templates<a class="anchor" aria-label="anchor" href="#templates"></a>
+</h3>
+<p>One of the core functions of this package is to easily create branded documents.</p>
 <ul>
 <li>Exam: a paper exam. <a href="/inst/rmarkdown/templates/exam/skeleton/skeleton.pdf">Example</a>
 </li>
@@ -115,41 +113,76 @@
 </ul>
 <p>(The original <code>monash</code> package includes theses templates. These were not updated and included in this package. Using <a href="https://github.com/kelseygonzalez/beardown" class="external-link">kelseygonzalez/beardown: An updated R Markdown thesis template using the bookdown package for University of Arizona</a> is preferred.)</p>
 </div>
-<div class="section level2">
-<h2 id="get-azcast-logo">Get azcast logo<a class="anchor" aria-label="anchor" href="#get-azcast-logo"></a>
-</h2>
-<p>You can get a copy of the logo into the directory you wish with below.</p>
+<div class="section level3">
+<h3 id="get-a-university-of-arizona-logo">Get a University of Arizona logo<a class="anchor" aria-label="anchor" href="#get-a-university-of-arizona-logo"></a>
+</h3>
+<p>You can get a copy of the logo into the directory you wish using the <code><a href="reference/logo_get.html">logo_get()</a></code> function:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># default logo</span>
 <span class="fu">azcast</span><span class="fu">::</span><span class="fu"><a href="reference/logo_get.html">logo_get</a></span><span class="op">(</span><span class="op">)</span>
 <span class="co"># monochrome block version of the logo</span>
 <span class="fu">azcast</span><span class="fu">::</span><span class="fu"><a href="reference/logo_get.html">logo_get</a></span><span class="op">(</span>color <span class="op">=</span> <span class="st">"black"</span>, style <span class="op">=</span> <span class="st">"block"</span><span class="op">)</span></code></pre></div>
 <p>And then you can reference the logo file that you copied.</p>
+<div class="section level4">
+<h4 id="logo-examples">Logo examples<a class="anchor" aria-label="anchor" href="#logo-examples"></a>
+</h4>
 <p><img src="reference/figures/ua_horiz_rgb.png"><img src="reference/figures/ua_block_rgb_black.png"></p>
-</div>
-<div class="section level2">
-<h2 id="get-azcast-brand-colors">Get azcast brand colors<a class="anchor" aria-label="anchor" href="#get-azcast-brand-colors"></a>
-</h2>
-<p>These are handy commands to quickly see University of Arizona brand colors and be able to copy-and-paste the hex color codes. You can find more info like <code>cmyk</code>, <code>rgb</code>, and <code>Pantone</code> codes and formulas here: <a href="https://brand.arizona.edu/applying-the-brand/colors" class="external-link">Colors | University of Arizona Brand Resources</a></p>
+<p>You’ll notice these are high resolution and thus pretty large. You are encouraged to use the <code>knitr</code> function <code>include_graphics()</code> rather than the standard <code>![](image.jpg)</code> markdown image syntax. This allows you to easily resize the figures, like so:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/include_graphics.html" class="external-link">include_graphics</a></span><span class="op">(</span><span class="st">"man/figures/ua_block_rgb_black.png"</span><span class="op">)</span></code></pre></div>
+<p><img src="reference/figures/ua_block_rgb_black.png" title="A smaller logo." alt="A smaller logo." width="10%"></p>
+</div>
+</div>
+<div class="section level3">
+<h3 id="get-university-of-arizona-brand-colors">Get University of Arizona Brand colors<a class="anchor" aria-label="anchor" href="#get-university-of-arizona-brand-colors"></a>
+</h3>
+<p>These are handy commands to quickly see University of Arizona brand colors and be able to copy-and-paste the hex color codes. You can find more info like <code>cmyk</code>, <code>rgb</code>, and <code>Pantone</code> codes and formulas here: <a href="https://brand.arizona.edu/applying-the-brand/colors" class="external-link">Colors | University of Arizona Brand Resources</a></p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">azcast</span><span class="fu">::</span><span class="fu"><a href="reference/azcast-color.html">color_show</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
 <p><img src="reference/figures/README-colors-1.png" width="100%"></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co">#&gt; arizonablue  arizonared       bloom         sky       oasis       chili </span></span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="co">#&gt;   "#0C234B"   "#AB0520"   "#EF4056"   "#81D3EB"   "#378DBD"   "#8B0015" </span></span>
-<span id="cb4-3"><a href="#cb4-3"></a><span class="co">#&gt;     azurite    midnight       black       white    warmgray    coolgray </span></span>
-<span id="cb4-4"><a href="#cb4-4"></a><span class="co">#&gt;   "#1E5288"   "#001C48"   "#000000"   "#FFFFFF"   "#F4EDE5"   "#E2E9EB" </span></span>
-<span id="cb4-5"><a href="#cb4-5"></a><span class="co">#&gt;        leaf       river      silver        mesa </span></span>
-<span id="cb4-6"><a href="#cb4-6"></a><span class="co">#&gt;   "#70B865"   "#007D84"   "#9EABAE"   "#A95C42"</span></span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="co">#&gt; arizonablue  arizonared       bloom         sky       oasis       chili </span></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="co">#&gt;   "#0C234B"   "#AB0520"   "#EF4056"   "#81D3EB"   "#378DBD"   "#8B0015" </span></span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="co">#&gt;     azurite    midnight       black       white    warmgray    coolgray </span></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="co">#&gt;   "#1E5288"   "#001C48"   "#000000"   "#FFFFFF"   "#F4EDE5"   "#E2E9EB" </span></span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="co">#&gt;        leaf       river      silver        mesa </span></span>
+<span id="cb5-6"><a href="#cb5-6"></a><span class="co">#&gt;   "#70B865"   "#007D84"   "#9EABAE"   "#A95C42"</span></span></code></pre></div>
+</div>
+<div class="section level3">
+<h3 id="settings">Settings<a class="anchor" aria-label="anchor" href="#settings"></a>
+</h3>
+<p>(WIP) The azcast package makes use of some values, listed below, from your R profile. You can modify this by using <code><a href="https://usethis.r-lib.org/reference/edit.html" class="external-link">usethis::edit_r_profile()</a></code> and adding below with values modified to your own values.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="kw">options</span>(<span class="dt">azcast.full_name =</span> <span class="st">"Dr. Ryan Straight"</span>,</span>
+<span id="cb6-2"><a href="#cb6-2"></a>        <span class="dt">azcast.email =</span> <span class="st">"ryanstraight@arizona.edu"</span>,</span>
+<span id="cb6-3"><a href="#cb6-3"></a>        <span class="dt">azcast.orgunit =</span> <span class="st">"College of Applied Science and Technology"</span>,</span>
+<span id="cb6-4"><a href="#cb6-4"></a>        <span class="dt">azcast.teaching_dir =</span> <span class="st">"~/teaching/azcast/"</span>,</span>
+<span id="cb6-5"><a href="#cb6-5"></a>        <span class="dt">azcast.workshop_dir =</span> <span class="st">"~/workshop/"</span>)</span></code></pre></div>
+</div>
 </div>
 <div class="section level2">
-<h2 id="settings">Settings<a class="anchor" aria-label="anchor" href="#settings"></a>
+<h2 id="university-of-arizona">University of Arizona<a class="anchor" aria-label="anchor" href="#university-of-arizona"></a>
 </h2>
-<p>(WIP) The azcast package makes use of some values, listed below, from your R profile. You can modify this by using <code><a href="https://usethis.r-lib.org/reference/edit.html" class="external-link">usethis::edit_r_profile()</a></code> and adding below with values modified to your own values.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">options</span>(<span class="dt">azcast.full_name =</span> <span class="st">"Dr. Ryan Straight"</span>,</span>
-<span id="cb5-2"><a href="#cb5-2"></a>        <span class="dt">azcast.email =</span> <span class="st">"ryanstraight@arizona.edu"</span>,</span>
-<span id="cb5-3"><a href="#cb5-3"></a>        <span class="dt">azcast.orgunit =</span> <span class="st">"College of Applied Science and Technology"</span>,</span>
-<span id="cb5-4"><a href="#cb5-4"></a>        <span class="dt">azcast.teaching_dir =</span> <span class="st">"~/teaching/azcast/"</span>,</span>
-<span id="cb5-5"><a href="#cb5-5"></a>        <span class="dt">azcast.workshop_dir =</span> <span class="st">"~/workshop/"</span>)</span></code></pre></div>
+<p><em>Information about the university follows.</em></p>
+<p>The University of Arizona, a land-grant university with two independently accredited medical schools, is one of the nation’s top 40 public universities, according to U.S. News &amp; World Report. Established in 1885, the university is widely recognized as a student-centric university and has been designated as a Hispanic Serving Institution by the U.S. Department of Education. The university ranked in the top 20 in 2019 in research expenditures among all public universities, according to the National Science Foundation, and is a leading Research 1 institution with $734 million in annual research expenditures. The university advances the frontiers of interdisciplinary scholarship and entrepreneurial partnerships as a member of the Association of American Universities, the 65 leading public and private research universities in the U.S. It benefits the state with an estimated economic impact of $4.1 billion annually. For the latest on the University of Arizona response to the novel coronavirus, visit the university’s <a href="https://covid19.arizona.edu/" class="external-link">COVID-19 webpage</a>.</p>
+<div class="section level3">
+<h3 id="the-college-of-applied-science-and-technology-cast">The College of Applied Science and Technology (CAST)<a class="anchor" aria-label="anchor" href="#the-college-of-applied-science-and-technology-cast"></a>
+</h3>
+<blockquote>
+<p>The College of Applied Science &amp; Technology (CAST) provides opportunities for students to earn high-quality and meaningful University of Arizona degrees at sites throughout Southern Arizona, including key border communities in Cochise and Santa Cruz Counties. CAST partners with community colleges to offer regionally-relevant transfer programs that are low cost, and geographically accessible.</p>
+<p>Students can choose from Bachelor of Applied Science programs, select Master’s programs, and a variety of continuing education programs designed to meet the workforce needs of area industry.</p>
+<p>~<a href="https://azcast.arizona.edu/about" class="external-link">About | AZCAST</a></p>
+</blockquote>
+</div>
+<div class="section level3">
+<h3 id="our-values">Our Values<a class="anchor" aria-label="anchor" href="#our-values"></a>
+</h3>
+<p>Who we are and what we stand for:</p>
+<p><strong>INTEGRITY</strong> Be honest, respectful and just.<br><strong>COMPASSION</strong> Choose to care.<br><strong>EXPLORATION</strong> Be insatiably curious.<br><strong>ADAPTATION</strong> Stay open-minded and eager for what’s next.<br><strong>INCLUSION Harness</strong> the power of diversity.<br><strong>DETERMINATION</strong> Bear Down.</p>
+</div>
+<div class="section level3">
+<h3 id="land-acknowledgment">Land Acknowledgment<a class="anchor" aria-label="anchor" href="#land-acknowledgment"></a>
+</h3>
+<p>We respectfully acknowledge the University of Arizona is on the land and territories of Indigenous peoples. Today, Arizona is home to 22 federally recognized tribes, with Tucson being home to the O’odham and the Yaqui. Committed to diversity and inclusion, the University strives to build sustainable relationships with sovereign Native Nations and Indigenous communities through education offerings, partnerships, and community service.</p>
+</div>
 </div>
 </div>
   </div>
@@ -184,6 +217,7 @@
 <li><a href="https://github.com/ryanstraight/azcast/commits/master" class="external-link"><img src="https://img.shields.io/github/last-commit/ryanstraight/azcast.svg"></a></li>
 <li><a href="https://lifecycle.r-lib.org/articles/stages.html#experimental" class="external-link"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg"></a></li>
 <li><a href="https://github.com/ryanstraight/azcast/actions/workflows/pkgdown.yaml" class="external-link"><img src="https://github.com/ryanstraight/azcast/actions/workflows/pkgdown.yaml/badge.svg" alt="pkgdown"></a></li>
+<li><a href="https://github.com/ryanstraight/azcast/actions/workflows/cff-validator.yml" class="external-link"><img src="https://github.com/ryanstraight/azcast/actions/workflows/cff-validator.yml/badge.svg" alt="CITATION-cff"></a></li>
 </ul>
 </div>
 
