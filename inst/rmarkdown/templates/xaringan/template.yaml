@@ -1,4 +1,3 @@
-name: UArizona Xaringan deck
-description: >
-   A University of Arizona themed Xaringan slide deck.
+name: Slide deck (xaringan)
+description: A University of Arizona themed Xaringan slide deck.
 create_dir: TRUE

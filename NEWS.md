@@ -1,4 +1,4 @@
-# uarizona 0.0.0.9000
+# azcast 0.0.0.9000
 
 * Added `upload` argument to `zoom_attendance()` for automatically uploading
   to the spreadsheet.

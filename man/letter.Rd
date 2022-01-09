@@ -6,7 +6,7 @@
 \alias{workingpaper}
 \alias{report}
 \alias{memo}
-\title{Output formats for uarizona EBS documents}
+\title{Output formats for azcast documents}
 \usage{
 letter(...)
 
@@ -26,8 +26,8 @@ An R Markdown output format object.
 }
 \description{
 Each function is a wrapper for \code{\link[bookdown]{pdf_document2}} to
-produce documents in uarizona EBS style.
+produce documents in azcast style.
 }
 \author{
-Rob J Hyndman
+Ryan Straight (Original: Rob J Hyndman)
 }

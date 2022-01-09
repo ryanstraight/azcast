@@ -1,10 +1,10 @@
 ---
-title: Memo on Current Policies
+title: Memo on Lorem Ipsum
 author: Dr. Ryan Straight
-branding: true
+branding: TRUE
 output: azcast::memo
 ---
 
 ```{r lorem, echo=FALSE}
-lorem::ipsum(paragraphs = 3, sentences = c(1, 2, 3))
+lorem::ipsum(paragraphs = 3, sentences = c(6, 12, 4))
 ```

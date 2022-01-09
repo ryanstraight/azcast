@@ -10,7 +10,7 @@ openbook: false
 calculators: true
 special: "Laptops" # List any special materials they can use.
 output: 
-  uarizona::exam:
+  azcast::exam:
     fig_caption: true
     fig_height: 3.7
     fig_width: 6

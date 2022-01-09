@@ -52,7 +52,7 @@ report <- function(...) {
 #' @rdname letter
 #' @export
 memo <- function(...) {
-  template <- system.file("rmarkdown/templates/memo/resources/azcastamemo.tex",
+  template <- system.file("rmarkdown/templates/memo/resources/azcastmemo.tex",
                           package="azcast")
   bookdown::pdf_document2(...,
                           citation_package = 'biblatex',

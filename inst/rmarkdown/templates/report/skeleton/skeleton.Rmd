@@ -1,23 +1,23 @@
 ---
-title: "Expert advice from experts"
+title: "Digital Basket Weaving: A Report"
 author:
+- familyname: Straight
+  othernames: Ryan
+  address: University of Arizona
+  qualifications: PhD
 - familyname: Curie
   othernames: Marie
   address: University of Paris
   qualifications: Nobel Prize, PhD
-- familyname: Curie
-  othernames: Pierre
-  address: University of Paris
-  qualifications: Nobel Prize, PhD
-email: mcurie.notreal@gmail.com
-phone: (03) 9905 2478
-department: Department of\newline Econometrics &\newline Business Statistics
+email: ryanstraight@arizona.edu
+phone: (520) 458-8278
+department: Department of\newline Applied \newline Technology
 organization: Acme Corporation
 bibliography: references.bib
-biblio-style: authoryear-comp
+biblio-style: apa
 linestretch: 1.5
 output:
-  uarizona::report:
+  azcast::report:
     fig_caption: yes
     fig_height: 5
     fig_width: 8
@@ -46,4 +46,8 @@ qplot(exp(rnorm(200)))
 Consider the logNormal data plotted in Figure \ref{fig:histogram}.
 
 $$s^2 = \sum_{i=1}^n (x_i-\bar{x})^2$$
+
+```{r lorem}
+lorem::ipsum(paragraphs = 5)
+```
 

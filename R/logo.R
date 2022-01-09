@@ -1,9 +1,9 @@
 
 
-#' Get uarizona logo
+#' Get azcast logo
 #'
 #' @description
-#' A quick way of getting the uarizona logo.
+#' A quick way of getting the azcast logo.
 #'
 #' @param path the path to save the file to
 #' @param style `horiz`, `stack` or `block`
@@ -55,7 +55,7 @@ logo_path <- function(style = c("horiz", "stack", "block"),
 
 logo_find <- function(logo_filename) {
   path <- tryCatch(
-    path_package(package = "uarizona", "logos", logo_filename),
+    path_package(package = "azcast", "logos", logo_filename),
     error = function(e) ""
   )
   if (identical(path, "")) {

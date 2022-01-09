@@ -1,24 +1,24 @@
 folder:
   site:
     .files:
-      - "`r system.file('assets', 'site', 'styles.css', package = 'uarizona')`"
-      - "`r system.file('templates', '_course.yml', package = 'uarizona')`"
-      - "`r system.file('templates', '_site.yml', package = 'uarizona')`"
+      - "`r system.file('assets', 'site', 'styles.css', package = 'azcast')`"
+      - "`r system.file('templates', '_course.yml', package = 'azcast')`"
+      - "`r system.file('templates', '_site.yml', package = 'azcast')`"
   lectures:
     images:
     assets:
       .files:
-        - "`r system.file('assets', 'slides', 'titleslide.Rmd', package = 'uarizona')`"
-        - "`r system.file('assets', 'slides', 'endslide.Rmd', package = 'uarizona')`"
-        - "`r system.file('assets', 'slides', 'animate.css', package = 'uarizona')`"
-        - "`r system.file('assets', 'slides', 'boxes.css', package = 'uarizona')`"
-        - "`r system.file('assets', 'slides', 'custom.css', package = 'uarizona')`"
-        - "`r system.file('assets', 'slides', 'uarizona-brand.css', package = 'uarizona')`"
-        - "`r system.file('assets', 'slides', 'uarizona-fonts.css', package = 'uarizona')`"
-        - "`r system.file('assets', 'slides', 'uarizona-logo.css', package = 'uarizona')`"
-        - "`r system.file('assets', 'slides', 'panelset.css', package = 'uarizona')`"
-        - "`r system.file('assets', 'slides', 'panelset-modified.js', package = 'uarizona')`"
-        - "`r system.file('assets', 'slides', 'table.css', package = 'uarizona')`"
+        - "`r system.file('assets', 'slides', 'titleslide.Rmd', package = 'azcast')`"
+        - "`r system.file('assets', 'slides', 'endslide.Rmd', package = 'azcast')`"
+        - "`r system.file('assets', 'slides', 'animate.css', package = 'azcast')`"
+        - "`r system.file('assets', 'slides', 'boxes.css', package = 'azcast')`"
+        - "`r system.file('assets', 'slides', 'custom.css', package = 'azcast')`"
+        - "`r system.file('assets', 'slides', 'azcast-brand.css', package = 'azcast')`"
+        - "`r system.file('assets', 'slides', 'azcast-fonts.css', package = 'azcast')`"
+        - "`r system.file('assets', 'slides', 'azcast-logo.css', package = 'azcast')`"
+        - "`r system.file('assets', 'slides', 'panelset.css', package = 'azcast')`"
+        - "`r system.file('assets', 'slides', 'panelset-modified.js', package = 'azcast')`"
+        - "`r system.file('assets', 'slides', 'table.css', package = 'azcast')`"
   tutorial:
     images:
   assessments:
@@ -26,9 +26,9 @@ folder:
   grades:
   misc:
   .files:
-    - "`r system.file('templates', '_public.yml', package = 'uarizona')`"
-    - "`r system.file('templates', 'next-time.md', package = 'uarizona')`"
-    - "`r system.file('templates', 'README.md', package = 'uarizona')`"
+    - "`r system.file('templates', '_public.yml', package = 'azcast')`"
+    - "`r system.file('templates', 'next-time.md', package = 'azcast')`"
+    - "`r system.file('templates', 'README.md', package = 'azcast')`"
 
 
 

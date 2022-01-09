@@ -1,27 +1,27 @@
 ---
-title: "Our great idea"
+title: "A Working Paper"
 author:
-- familyname: Curie
-  othernames: Marie
-  address: University of Paris
-  email: mcurie.notreal@gmail.com
+- familyname: Ryan
+  othernames: Straight
+  address: University of Arizona
+  email: ryanstraight@arizona.edu
   correspondingauthor: true
-  qualifications: Nobel Prize, PhD
+  qualifications: PhD
 - familyname: Curie
   othernames: Pierre
   address: University of Paris
   qualifications: Nobel Prize, PhD
-abstract: "A brief summary of our ideas"
-keywords: "blah, blah"
-wpnumber: no/yr
-jelcodes: C10,C14,C22
+abstract: "This is the abstract. `r lorem::ipsum(paragraphs = 1)`"
+keywords: "keyword1, keyword2, andsoon"
+wpnumber: 101/2022 # Working paper number / year.
+doi: 10.000/XXXXXXXXXXX
 blind: false
 cover: true
 toc: false
 bibliography: references.bib
-biblio-style: authoryear-comp
+biblio-style: apa
 output:
-  uarizona::workingpaper:
+  azcast::workingpaper:
     fig_caption: yes
     fig_height: 5
     fig_width: 8
@@ -52,4 +52,8 @@ qplot(exp(rnorm(200)))
 Consider the logNormal data plotted in Figure \ref{fig:histogram}.
 
 $$s^2 = \sum_{i=1}^n (x_i-\bar{x})^2$$
+
+```{r lorem}
+lorem::ipsum(paragraphs = 5)
+```
 

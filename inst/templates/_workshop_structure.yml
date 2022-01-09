@@ -4,10 +4,10 @@ folder:
   data:
   misc:
   .files:
-    - "`r system.file('templates', '_public.yml', package = 'uarizona')`"
-    - "`r system.file('templates', '_site.yml', package = 'uarizona')`"
-    - "`r system.file('templates', 'next-time.md', package = 'uarizona')`"
-    - "`r system.file('templates', 'README.md', package = 'uarizona')`"
+    - "`r system.file('templates', '_public.yml', package = 'azcast')`"
+    - "`r system.file('templates', '_site.yml', package = 'azcast')`"
+    - "`r system.file('templates', 'next-time.md', package = 'azcast')`"
+    - "`r system.file('templates', 'README.md', package = 'azcast')`"
 
 
 

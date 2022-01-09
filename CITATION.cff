@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this package, please cite it as below."
+authors:
+  - family-names: Straight
+    given-names: Ryan
+    orcid: https://orcid.org/0000-0002-6251-5662
+title: "azcast: RMarkdown templates and more for the College of Applied Science and Technology at the University of Arizona"
+version: 0.0.1
+doi:
+date-released: 2022-01-09

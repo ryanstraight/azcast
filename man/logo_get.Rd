@@ -2,16 +2,15 @@
 % Please edit documentation in R/logo.R
 \name{logo_get}
 \alias{logo_get}
-\title{Get uarizona logo}
+\title{Get azcast logo}
 \source{
-https://www.uarizona.edu/brandbook/brand-elements/our-logo
+https://brand.arizona.edu/applying-the-brand/logo
 }
 \usage{
 logo_get(
   path = ".",
-  stack = TRUE,
-  color = c("blue", "black", "white"),
-  type = c("png", "jpg", "ai"),
+  style = c("horiz", "stack", "block"),
+  color = c("rgb", "black", "blue"),
   hq = FALSE,
   overwrite = TRUE,
   filename = NULL
@@ -20,18 +19,16 @@ logo_get(
 \arguments{
 \item{path}{the path to save the file to}
 
-\item{stack}{TRUE for stacked logo, FALSE for one-line logo}
+\item{style}{\code{horiz}, \code{stack} or \code{block}}
 
-\item{color}{\code{blue}, \code{black} or \code{white}}
+\item{color}{\code{rgb}, \code{black} or \code{blue}}
 
-\item{type}{\code{png}, \code{jpg} or \code{ai}}
-
-\item{hq}{TRUE for high-quality image (larger file size)}
+\item{hq}{TRUE for eps}
 
 \item{overwrite}{TRUE for overwriting (should it enquire?), FALSE for not. Not implemented yet.}
 
 \item{filename}{A new file name for the logo. Not implemented yet.}
 }
 \description{
-A quick way of getting the uarizona logo.
+A quick way of getting the azcast logo.
 }

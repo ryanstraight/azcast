@@ -1,0 +1,16 @@
+citHeader("To cite `azcast` in publications use:")
+
+citEntry(
+  entry    = "Article",
+  title    = "azcast: RMarkdown templates and more for the College of Applied Science and Technology at the University of Arizona",
+  author   = "Ryan Straight",
+  journal  = ,
+  year     = 2022,
+  volume   = ,
+  number   = ,
+  pages    = ,
+  url      = https://github.com/ryanstraight/azcast,
+  textVersion = paste(
+
+  )
+)
