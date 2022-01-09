@@ -82,7 +82,10 @@ And then you can reference the logo file that you copied.
 You’ll notice these are high resolution and thus pretty large. You are
 encouraged to use the `knitr` function `include_graphics()` rather than
 the standard `![](image.jpg)` markdown image syntax. This allows you to
-easily resize the figures, like so:
+easily resize the figures. For example, the following uses chunk options
+`out.width=10%` and `fig.cap="A smaller logo."` You can learn more about
+R code chunks at [Options - Chunk options and package options - Yihui
+Xie \| 谢益辉](https://yihui.org/knitr/options/).
 
 ``` r
 knitr::include_graphics("man/figures/ua_block_rgb_black.png")
