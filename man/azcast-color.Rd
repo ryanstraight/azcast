@@ -5,10 +5,8 @@
 \alias{color_all}
 \alias{color_show}
 \alias{color_primary}
-\alias{color_highlight}
-\alias{color_neutral}
 \alias{color_secondary}
-\title{azcast brand colors}
+\title{AZCAST brand colors}
 \usage{
 color_all() # show both primary and secondary colors
 
@@ -16,46 +14,19 @@ color_show(print = TRUE)
 
 color_primary()
 
-color_highlight()
-
-color_neutral()
-
 color_secondary()
 }
 \arguments{
 \item{print}{whether to print the color vector}
 }
 \description{
-azcast brand colors
+AZCAST brand colors
 }
 \section{Primary palette}{
-\itemize{
-\item azcast Blue is our most identifiable colour. It conveys youthfulness,
-possibility and openness. It should always be considered first.
-\item Black conveys prestige, timelessness and sophistication.
-\item White is often shown as white space and conveys the brand personality
-of being open and youthful.
-\item Greys can be any percentage of black and provides additional flexibility
-to our primary colour palette.
-}
-
-The primary colour palette is preferred for digital work.
+The basic blue and red. These are used most often.
 }
 
 \section{Secondary palette}{
-Inspired by the colours of our academic robes, we have a range of bright,
-colourful secondary colours.
-
-Secondary colours are to be used:
-\itemize{
-\item in charts and diagrams to highlight key findings
-\item as headings and subheadings
-\item sparingly to provide highlights or accents – ideally one or two secondary
-colours per double page spread
-\item to speak to a particular audience group. For instance, colours that would
-resonate best with our prospective undergraduate audience would be colourful,
-bright and youthful. Industry and research would suit a more corporate/mature
-choice to reflect focus and prestige.
-}
+These range from highlights to secondary colors to neutrals.
 }
 
