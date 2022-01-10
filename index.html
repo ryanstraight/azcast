@@ -127,7 +127,7 @@
 <h4 id="logo-examples">Logo examples<a class="anchor" aria-label="anchor" href="#logo-examples"></a>
 </h4>
 <p><img src="reference/figures/ua_horiz_rgb.png"><img src="reference/figures/ua_block_rgb_black.png"></p>
-<p>You’ll notice these are high resolution and thus pretty large. You are encouraged to use the <code>knitr</code> function <code>include_graphics()</code> rather than the standard <code>![](image.jpg)</code> markdown image syntax. This allows you to easily resize the figures, like so:</p>
+<p>You’ll notice these are high resolution and thus pretty large. You are encouraged to use the <code>knitr</code> function <code>include_graphics()</code> rather than the standard <code>![](image.jpg)</code> markdown image syntax. This allows you to easily resize the figures. For example, the following uses chunk options <code>out.width=10%</code> and <code>fig.cap="A smaller logo."</code> You can learn more about R code chunks at <a href="https://yihui.org/knitr/options/" class="external-link">Options - Chunk options and package options - Yihui Xie | 谢益辉</a>.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/include_graphics.html" class="external-link">include_graphics</a></span><span class="op">(</span><span class="st">"man/figures/ua_block_rgb_black.png"</span><span class="op">)</span></code></pre></div>
 <p><img src="reference/figures/ua_block_rgb_black.png" title="A smaller logo." alt="A smaller logo." width="10%"></p>
