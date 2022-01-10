@@ -28,9 +28,6 @@
     <loc>/reference/azcast-package.html</loc>
   </url>
   <url>
-    <loc>/reference/edit_release_ignore.html</loc>
-  </url>
-  <url>
     <loc>/reference/index.html</loc>
   </url>
   <url>
@@ -40,15 +37,9 @@
     <loc>/reference/logo_get.html</loc>
   </url>
   <url>
-    <loc>/reference/release-functions.html</loc>
-  </url>
-  <url>
     <loc>/reference/ui-questions.html</loc>
   </url>
   <url>
     <loc>/reference/ui.html</loc>
-  </url>
-  <url>
-    <loc>/reference/working-dir.html</loc>
   </url>
 </urlset>
