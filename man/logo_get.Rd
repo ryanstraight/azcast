@@ -30,5 +30,5 @@ logo_get(
 \item{filename}{A new file name for the logo. Not implemented yet.}
 }
 \description{
-A quick way of getting the azcast logo.
+A quick way of getting the University of Arizona logo.
 }

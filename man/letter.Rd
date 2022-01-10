@@ -29,7 +29,7 @@ An R Markdown output format object.
 }
 \description{
 Each function is a wrapper for \code{\link[bookdown]{pdf_document2}} to
-produce documents for AZCAST.
+produce documents styled for AZCAST.
 }
 \author{
 Ryan Straight (Original: Rob J Hyndman)

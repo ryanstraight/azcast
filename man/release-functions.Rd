@@ -11,7 +11,7 @@ release_lecture(
   week,
   dir = "tutorials",
   output_dir = "release",
-  ignore = getOption("azcast.lecture.ignore"),
+  ignore = getOption("monash.lecture.ignore"),
   interactive = rlang::is_interactive(),
   overwrite = TRUE
 )
@@ -20,7 +20,7 @@ release_tutorial(
   week,
   dir = "tutorials",
   output_dir = "release",
-  ignore = getOption("azcast.tutorial.ignore"),
+  ignore = getOption("monash.tutorial.ignore"),
   interactive = rlang::is_interactive(),
   overwrite = TRUE
 )
@@ -29,7 +29,7 @@ release_tutorial_solution(
   week,
   dir = "tutorials",
   output_dir = "release",
-  ignore = getOption("azcast.tutorial.ignore"),
+  ignore = getOption("monash.tutorial.ignore"),
   interactive = rlang::is_interactive(),
   overwrite = TRUE
 )
