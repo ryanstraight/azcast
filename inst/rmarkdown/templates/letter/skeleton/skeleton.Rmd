@@ -9,14 +9,16 @@ fromphone: "(520) 458-8278"
 fromaddress: "1140 N. Colombo Ave, Sierra Vista, AZ 85635"
 fromsignature: sigfile.png
 
-toname: Jacques Curie
-toaddress: University of Montpellier
+toname: Wilma Wildcat
+toaddress: University of Arizona
 
-opening: Dear Jacques
+opening: Dear Wilma,
 closing: Best wishes
 spacing: 1.4
 output: azcast::letter
 ---
 
-I am writing to ask you to \dots
+`r lorem::ipsum(paragraphs = 3)`
+
+
 

@@ -378,19 +378,19 @@ $endif$
 $if(department)$
   \def\name{$department$}
 $else$
-  \def\name{Department of \hbox{Econometrics \&} \hbox{Business Statistics}}
+  \def\name{Department of \hbox{Applied \&} \hbox{Technology}}
 $endif$
 
 $if(phone)$
   \telephone{$phone$}
 $else$
-  \telephone{(03) 9905 2478}
+  \telephone{}
 $endif$
 
 $if(email)$
   \email{$email$}
 $else$
-  \email{BusEco-Econometrics@azcast.edu}
+  \email{}
 $endif$
 
 \def\webaddress{\url{http://azcast.arizona.edu/}}
@@ -422,9 +422,9 @@ $endif$
 \hspace*{-1.4cm}
 \hbox to 16cm{
   \hbox to 6.5cm{\vbox to 14cm{\vbox to 25cm{
-    \includegraphics[width=6cm]{CAST_scripted_WEB-HEADER_0.png}
+    \includegraphics[width=6cm]{banner}
     \vfill
-    %\includegraphics[width=3.5cm]{MBSportrait}
+    \includegraphics[width=3.5cm]{logo}
     \vspace{0.4cm}
     \par
     \parbox{6.3cm}{\raggedright
@@ -499,6 +499,8 @@ $if(lof)$
 $endif$
 $body$
 
+\newpage
+
 $if(natbib)$
 $if(bibliography)$
 $if(biblio-title)$
@@ -513,6 +515,7 @@ $endif$
 $endif$
 $endif$
 $if(biblatex)$
+
 \printbibliography$if(biblio-title)$[title=$biblio-title$]$endif$
 
 $endif$

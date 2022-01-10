@@ -211,7 +211,7 @@ $if(author)$
 \author{$author$}
 $endif$
 
-%% azcast STUFF
+%% MONASH STUFF
 
 %% CAPTIONS
 \RequirePackage{caption}
@@ -344,12 +344,12 @@ $endif$
 
 \pretitle{%
 $if(branding)$%
-\begin{textblock}{4}(1.9,0.85)\includegraphics[height=1.5cm]{CAST_scripted_WEB-HEADER_0}\end{textblock}%
+\begin{textblock}{4}(1.9,0.85)\includegraphics[height=1.5cm]{banner}\end{textblock}%
 %\begin{textblock}{4}(15.55,0.8)\includegraphics[height=1.5cm]{MBSPortrait}\end{textblock}%
 %\begin{textblock}{6}(13,28)\includegraphics[height=0.7cm]{AACSB}~~~
 %        \includegraphics[height=0.7cm]{EQUIS}~~~
 %        \includegraphics[height=0.7cm]{AMBA}
-\end{textblock}
+%\end{textblock}
 \vspace*{-.8cm}
 $else$
 \vspace*{-1.2cm}
@@ -363,7 +363,7 @@ $endif$
 
 \raggedbottom
 
-\usepackage[australian]{babel}
+\usepackage[american]{babel}
 $if(date)$
 \date{$date$}
 $else$
@@ -378,7 +378,7 @@ $endfor$
 \begin{document}
 $if(title)$
 $if(branding)$\vspace*{0cm}$else$\vspace*{-2cm}$endif$
-\definecolor{shadecolor}{RGB}{210,210,210}
+\definecolor{shadecolor}{RGB}{244,237,229}
 \begin{snugshade}\sffamily
 \maketitle
 \end{snugshade}\vspace*{0.5cm}

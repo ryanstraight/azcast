@@ -23,7 +23,7 @@ output:
     fig_width: 8
     includes:
       in_header: preamble.tex
-    keep_tex: yes
+    keep_tex: no
     number_sections: yes
     citation_package: biblatex
     toc: false

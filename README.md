@@ -40,7 +40,10 @@ remotes::install_github("ryanstraight/azcast")
 ### Templates
 
 One of the core functions of this package is to easily create branded
-documents.
+documents. (You are *highly* encouraged to use the
+[`tinytex()`](https://yihui.org/tinytex/) package as your LaTeX
+environment. When knitting these templates for the first time, please be
+patient as packages are installed.)
 
 -   Exam: a paper exam.
     [Example](/inst/rmarkdown/templates/exam/skeleton/skeleton.pdf)
@@ -52,7 +55,9 @@ documents.
     [Example](/inst/rmarkdown/templates/report/skeleton/skeleton.pdf)
 -   Working paper: a mask-able working paper template.
     [Example](/inst/rmarkdown/templates/working-paper/skeleton/skeleton.pdf)
--   Xaringan: a themed Xaringan slide deck.
+-   Xaringan: a themed Xaringan slide deck. [Deck code
+    example](https://github.com/ryanstraight/ac21-postphenom) and [the
+    published deck](https://ryanstraight.github.io/ac21-postphenom/#1).
 
 (The original `monash` package includes theses templates. These were not
 updated and included in this package. Using [kelseygonzalez/beardown: An
@@ -128,6 +133,17 @@ and adding below with values modified to your own values.
             azcast.orgunit = "College of Applied Science and Technology",
             azcast.teaching_dir = "~/teaching/azcast/",
             azcast.workshop_dir = "~/workshop/")
+
+### Building the hex sticker
+
+``` r
+#library(hexSticker)
+#library(here)
+
+imgloc <- here::here("man", "figures", "cat.png")
+
+sticker(imgloc, package="AZCAST", p_size=20, s_x=1, s_y=.75, h_fill="#0C234B", h_color="#8B0015", s_width=.6, p_family = "Aller_Rg", filename="man/figures/logo.png")
+```
 
 ## University of Arizona
 
