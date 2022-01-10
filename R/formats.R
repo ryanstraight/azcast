@@ -18,6 +18,18 @@ letter <- function(...) {
    )
 }
 
+
+#' @rdname letter
+#' @export
+assignment <- function(...) {
+  template <- system.file("rmarkdown/templates/assignment/resources/assignmenttemplate.tex",
+                          package="azcast")
+  bookdown::pdf_document2(...,
+                          template = template
+  )
+}
+
+
 #' @rdname letter
 #' @export
 exam <- function(...) {
@@ -56,16 +68,6 @@ memo <- function(...) {
                           package="azcast")
   bookdown::pdf_document2(...,
                           citation_package = 'biblatex',
-                          template = template
-  )
-}
-
-#' @rdname letter
-#' @export
-assignment <- function(...) {
-  template <- system.file("rmarkdown/templates/assignment/resources/assignmenttemplate.tex",
-                          package="azcast")
-  bookdown::pdf_document2(...,
                           template = template
   )
 }

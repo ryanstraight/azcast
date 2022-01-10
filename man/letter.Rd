@@ -2,14 +2,16 @@
 % Please edit documentation in R/formats.R
 \name{letter}
 \alias{letter}
+\alias{assignment}
 \alias{exam}
 \alias{workingpaper}
 \alias{report}
 \alias{memo}
-\alias{assignment}
 \title{Output formats for azcast documents}
 \usage{
 letter(...)
+
+assignment(...)
 
 exam(...)
 
@@ -18,8 +20,6 @@ workingpaper(...)
 report(...)
 
 memo(...)
-
-assignment(...)
 }
 \arguments{
 \item{\dots}{Arguments passed to \code{\link[bookdown]{pdf_document2}}.}
