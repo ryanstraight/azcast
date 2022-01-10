@@ -112,12 +112,12 @@ azcast::color_show()
 
 <img src="man/figures/README-colors-1.png" width="100%" />
 
-    #> arizonablue  arizonared       bloom         sky       oasis       chili 
-    #>   "#0C234B"   "#AB0520"   "#EF4056"   "#81D3EB"   "#378DBD"   "#8B0015" 
-    #>     azurite    midnight       black       white    warmgray    coolgray 
-    #>   "#1E5288"   "#001C48"   "#000000"   "#FFFFFF"   "#F4EDE5"   "#E2E9EB" 
-    #>        leaf       river      silver        mesa 
-    #>   "#70B865"   "#007D84"   "#9EABAE"   "#A95C42"
+    #> arizonablue  arizonared        leaf       river      silver        mesa 
+    #>   "#0C234B"   "#AB0520"   "#70B865"   "#007D84"   "#9EABAE"   "#A95C42" 
+    #>       bloom         sky       oasis       chili     azurite    midnight 
+    #>   "#EF4056"   "#81D3EB"   "#378DBD"   "#8B0015"   "#1E5288"   "#001C48" 
+    #>       black       white    warmgray    coolgray 
+    #>   "#000000"   "#FFFFFF"   "#F4EDE5"   "#E2E9EB"
 
 The `xaringan` themed slide deck mentioned in the template list above
 employs heavy use of these colors, as you can imagine.
