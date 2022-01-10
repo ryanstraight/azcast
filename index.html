@@ -97,7 +97,7 @@
 <div class="section level3">
 <h3 id="templates">Templates<a class="anchor" aria-label="anchor" href="#templates"></a>
 </h3>
-<p>One of the core functions of this package is to easily create branded documents.</p>
+<p>One of the core functions of this package is to easily create branded documents. (You are <em>highly</em> encouraged to use the <a href="https://yihui.org/tinytex/" class="external-link"><code>tinytex()</code></a> package as your LaTeX environment. When knitting these templates for the first time, please be patient as packages are installed.)</p>
 <ul>
 <li>Exam: a paper exam. <a href="/inst/rmarkdown/templates/exam/skeleton/skeleton.pdf">Example</a>
 </li>
@@ -109,7 +109,7 @@
 </li>
 <li>Working paper: a mask-able working paper template. <a href="/inst/rmarkdown/templates/working-paper/skeleton/skeleton.pdf">Example</a>
 </li>
-<li>Xaringan: a themed Xaringan slide deck.</li>
+<li>Xaringan: a themed Xaringan slide deck. <a href="https://github.com/ryanstraight/ac21-postphenom" class="external-link">Deck code example</a> and <a href="https://ryanstraight.github.io/ac21-postphenom/#1" class="external-link">the published deck</a>.</li>
 </ul>
 <p>(The original <code>monash</code> package includes theses templates. These were not updated and included in this package. Using <a href="https://github.com/kelseygonzalez/beardown" class="external-link">kelseygonzalez/beardown: An updated R Markdown thesis template using the bookdown package for University of Arizona</a> is preferred.)</p>
 </div>
@@ -157,6 +157,17 @@
 <span id="cb6-3"><a href="#cb6-3"></a>        <span class="dt">azcast.orgunit =</span> <span class="st">"College of Applied Science and Technology"</span>,</span>
 <span id="cb6-4"><a href="#cb6-4"></a>        <span class="dt">azcast.teaching_dir =</span> <span class="st">"~/teaching/azcast/"</span>,</span>
 <span id="cb6-5"><a href="#cb6-5"></a>        <span class="dt">azcast.workshop_dir =</span> <span class="st">"~/workshop/"</span>)</span></code></pre></div>
+</div>
+<div class="section level3">
+<h3 id="building-the-hex-sticker">Building the hex sticker<a class="anchor" aria-label="anchor" href="#building-the-hex-sticker"></a>
+</h3>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co">#library(hexSticker)</span>
+<span class="co">#library(here)</span>
+
+<span class="va">imgloc</span> <span class="op">&lt;-</span> <span class="fu">here</span><span class="fu">::</span><span class="fu"><a href="https://here.r-lib.org//reference/here.html" class="external-link">here</a></span><span class="op">(</span><span class="st">"man"</span>, <span class="st">"figures"</span>, <span class="st">"cat.png"</span><span class="op">)</span>
+
+<span class="fu">sticker</span><span class="op">(</span><span class="va">imgloc</span>, package<span class="op">=</span><span class="st">"AZCAST"</span>, p_size<span class="op">=</span><span class="fl">20</span>, s_x<span class="op">=</span><span class="fl">1</span>, s_y<span class="op">=</span><span class="fl">.75</span>, h_fill<span class="op">=</span><span class="st">"#0C234B"</span>, h_color<span class="op">=</span><span class="st">"#8B0015"</span>, s_width<span class="op">=</span><span class="fl">.6</span>, p_family <span class="op">=</span> <span class="st">"Aller_Rg"</span>, filename<span class="op">=</span><span class="st">"man/figures/logo.png"</span><span class="op">)</span></code></pre></div>
 </div>
 </div>
 <div class="section level2">
