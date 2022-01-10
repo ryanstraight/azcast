@@ -6,6 +6,7 @@
 \alias{workingpaper}
 \alias{report}
 \alias{memo}
+\alias{assignment}
 \title{Output formats for azcast documents}
 \usage{
 letter(...)
@@ -17,6 +18,8 @@ workingpaper(...)
 report(...)
 
 memo(...)
+
+assignment(...)
 }
 \arguments{
 \item{\dots}{Arguments passed to \code{\link[bookdown]{pdf_document2}}.}
@@ -26,7 +29,7 @@ An R Markdown output format object.
 }
 \description{
 Each function is a wrapper for \code{\link[bookdown]{pdf_document2}} to
-produce documents in azcast style.
+produce documents for AZCAST.
 }
 \author{
 Ryan Straight (Original: Rob J Hyndman)

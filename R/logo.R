@@ -42,8 +42,7 @@ logo_path <- function(style = c("horiz", "stack", "block"),
   # get logo path
   color <- switch(color,
                   blue = "rgb_blue",
-                  black = "rgb_black",
-                  rgb = "rgb")
+                  black = "rgb_black")
   hq <- ifelse(hq, "eps", "png")
   filename <- glue("ua_{style}_{color}.{hq}")
   logo <- logo_find(filename)
@@ -66,13 +65,6 @@ logo_find <- function(logo_filename) {
   path
 }
 
-#' NUMBAT logo
-#'
-#' @description
-#'
-#' From Di: some history of the file: it is a photo that I took at
-#' Healesville zoon when they still had numbats. I had to paint in
-#' the legs so it looked more complete. and photoshop was used to make
-#' it a little ore artistic
+
 
 

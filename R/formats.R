@@ -1,7 +1,7 @@
 #' Output formats for azcast documents
 #'
 #' Each function is a wrapper for \code{\link[bookdown]{pdf_document2}} to
-#' produce documents in azcast style.
+#' produce documents styled for AZCAST.
 #'
 #' @param \dots Arguments passed to \code{\link[bookdown]{pdf_document2}}.
 #'
@@ -56,6 +56,16 @@ memo <- function(...) {
                           package="azcast")
   bookdown::pdf_document2(...,
                           citation_package = 'biblatex',
+                          template = template
+  )
+}
+
+#' @rdname letter
+#' @export
+assignment <- function(...) {
+  template <- system.file("rmarkdown/templates/assignment/resources/assignmenttemplate.tex",
+                          package="azcast")
+  bookdown::pdf_document2(...,
                           template = template
   )
 }

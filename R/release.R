@@ -19,11 +19,11 @@ NULL
 #' @rdname release-functions
 #' @export
 release_lecture <- function(week,
-                             dir = "tutorials",
-                             output_dir = "release",
-                             ignore = getOption("azcast.lecture.ignore"),
-                             interactive = rlang::is_interactive(),
-                             overwrite = TRUE) {
+                            dir = "tutorials",
+                            output_dir = "release",
+                            ignore = getOption("monash.lecture.ignore"),
+                            interactive = rlang::is_interactive(),
+                            overwrite = TRUE) {
   release_base("^lecture-%.2d(\\.Rmd|\\.html|\\.pdf)",
                "^(?!lecture-[0-9][0-9]).*",
                week, dir, output_dir, ignore, interactive, overwrite)
@@ -32,11 +32,11 @@ release_lecture <- function(week,
 #' @rdname release-functions
 #' @export
 release_tutorial <- function(week,
-                              dir = "tutorials",
-                              output_dir = "release",
-                              ignore = getOption("azcast.tutorial.ignore"),
-                              interactive = rlang::is_interactive(),
-                              overwrite = TRUE) {
+                             dir = "tutorials",
+                             output_dir = "release",
+                             ignore = getOption("monash.tutorial.ignore"),
+                             interactive = rlang::is_interactive(),
+                             overwrite = TRUE) {
   release_base("^tutorial-%.2d(\\.Rmd|\\.html|\\.pdf)",
                "^(?!tutorial-[0-9][0-9]).*",
                week, dir, output_dir, ignore, interactive, overwrite)
@@ -45,11 +45,11 @@ release_tutorial <- function(week,
 #' @rdname release-functions
 #' @export
 release_tutorial_solution <- function(week,
-                             dir = "tutorials",
-                             output_dir = "release",
-                             ignore = getOption("azcast.tutorial.ignore"),
-                             interactive = rlang::is_interactive(),
-                             overwrite = TRUE) {
+                                      dir = "tutorials",
+                                      output_dir = "release",
+                                      ignore = getOption("monash.tutorial.ignore"),
+                                      interactive = rlang::is_interactive(),
+                                      overwrite = TRUE) {
   release_base("^tutorial-%.2dsol(\\.Rmd|\\.html|\\.pdf)",
                "^(?!tutorial-[0-9][0-9]).*",
                week, dir, output_dir, ignore, interactive, overwrite)
@@ -90,7 +90,7 @@ release_base <- function(pos_pattern, neg_pattern, week, dir, output_dir, ignore
 
 
 release_changes <- function(dir,
-                           output_dir = fs::path("release", dir)) {
+                            output_dir = fs::path("release", dir)) {
   # note: don't use list.files(pattern = ...) (parsed in fileSnapshot ...)
   # it doesn't do negative look behind.
   s1 <- utils::fileSnapshot(dir)

@@ -11,7 +11,7 @@
 zoom_attendance <- function(.data, .sheet, sheetname = "Lecture", week,
                             upload = FALSE) {
   df <- googlesheets4::read_sheet(.sheet, sheetname, skip = 3,
-                            col_names = c("id", paste0("wk", 1:12), "away", "excused", "absent", "x"))
+                                  col_names = c("id", paste0("wk", 1:12), "away", "excused", "absent", "x"))
 
   out <- .data %>%
     mutate(id = stringr::str_match(email, "([a-zA-Z0-9]+)@.+")[,2])
@@ -44,7 +44,7 @@ zoom_attendance <- function(.data, .sheet, sheetname = "Lecture", week,
 #' not because the student happens to be lingering before/after.
 #'
 #' In order to identify the student, the zoom meeting should be
-#' set to authenticate and restricted to azcast id alone.
+#' set to authenticate and restricted to Monash id alone.
 #' This makes the data linkage easier with record in LMS.
 #' @param file The file name for the zoom meeting report.
 #' @param info TRUE or FALSE of whether the meeting information is included in the file.
@@ -55,16 +55,16 @@ zoom_attendance <- function(.data, .sheet, sheetname = "Lecture", week,
 zoom_read <- function(file, info = TRUE, date_format = "%m/%d/%Y %I:%M:%S %p") {
   nskip <- ifelse(info, 4, 1)
   read_csv(file, skip = nskip,
-                 col_names = c("name", "email", "join", "leave", "duration", "guest", "consent"),
-                 col_types = cols(
-                   name = col_character(),
-                   email = col_character(),
-                   join = col_datetime(date_format),
-                   leave = col_datetime(date_format),
-                   duration = col_double(),
-                   guest = col_character(),
-                   consent = col_character()
-                 ))
+           col_names = c("name", "email", "join", "leave", "duration", "guest", "consent"),
+           col_types = cols(
+             name = col_character(),
+             email = col_character(),
+             join = col_datetime(date_format),
+             leave = col_datetime(date_format),
+             duration = col_double(),
+             guest = col_character(),
+             consent = col_character()
+           ))
 
 }
 
@@ -78,7 +78,7 @@ zoom_read <- function(file, info = TRUE, date_format = "%m/%d/%Y %I:%M:%S %p") {
 #' @import dplyr
 #' @export
 zoom_process <- function(.data, start = NA, end = NA, length = 120,
-                                accept = c("A" = length * 1/2, "P" = length * 3/4)) {
+                         accept = c("A" = length * 1/2, "P" = length * 3/4)) {
   if(!is.na(start)) {
     .data <- .data %>%
       mutate(join = case_when(join < start ~ start,
