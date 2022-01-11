@@ -16,6 +16,8 @@ CITATION.cff](https://github.com/ryanstraight/azcast/actions/workflows/update-ci
 build](https://github.com/ryanstraight/azcast/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ryanstraight/azcast/actions/workflows/pages/pages-build-deployment)
 <!-- badges: end -->
 
+**Work in progress! Lots probably won’t work quite yet.**
+
 The `azcast` R-package is a utility package with consolidated tools and
 templates prepared for the University of Arizona’s College of Applied
 Science and Technology. It contains a variety of templates that I have
@@ -53,12 +55,17 @@ patient as packages are installed.
     **[papaja](https://github.com/crsh/papaja)** package.
 -   Exam: a paper exam.
     [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/exam/skeleton/skeleton.pdf)
+    -   While unlikely to be used all that often, who knows, it may come
+        in handy at some point.
 -   Document: all-purpose document based on the
     [svmiller/stevetemplates](https://github.com/svmiller/stevetemplates)
     `statement` template.
     [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/document/skeleton/skeleton.pdf)
+    -   This is a good template for assignments that don’t require APA
+        formatting.
 -   Letter: letter with CAST banner at top left.
     [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/letter/skeleton/skeleton.pdf)
+    -   Note the `\newline` requirement in the to-address.
 -   Memo: a casual memo with optional branding.
     [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/memo/skeleton/skeleton.pdf)
 -   Report: for reports sent to external clients.

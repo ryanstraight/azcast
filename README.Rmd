@@ -27,6 +27,8 @@ repo <- "ryanstraight/azcast"
 [![GitHub Pages build](https://github.com/ryanstraight/azcast/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ryanstraight/azcast/actions/workflows/pages/pages-build-deployment)
 <!-- badges: end -->
 
+**Work in progress! Lots probably won't work quite yet.**
+
 The `azcast` R-package is a utility package with consolidated tools and templates prepared for the University of Arizona's College of Applied Science and Technology. It contains a variety of templates that I have been using and tweaking for some time, as well as new-to-me templates from the wonderful `numbats/monash` package. The package is mainly templates and easy access to assets like logos and colors.
 
 **Please note that these are _my personal templates_ and not "official" by any means.**
@@ -50,8 +52,11 @@ One of the core functions of this package is to easily create branded documents.
 
 + Class paper: no template provided; when APA is required, use the **[papaja](https://github.com/crsh/papaja)** package.
 + Exam: a paper exam. [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/exam/skeleton/skeleton.pdf)
+    + While unlikely to be used all that often, who knows, it may come in handy at some point.
 + Document: all-purpose document based on the [svmiller/stevetemplates](https://github.com/svmiller/stevetemplates) `statement` template. [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/document/skeleton/skeleton.pdf)
+    + This is a good template for assignments that don't require APA formatting.
 + Letter: letter with CAST banner at top left. [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/letter/skeleton/skeleton.pdf)
+    + Note the `\newline` requirement in the to-address.
 + Memo: a casual memo with optional branding. [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/memo/skeleton/skeleton.pdf)
 + Report: for reports sent to external clients. [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/report/skeleton/skeleton.pdf)
 + Thesis: no template is provided; use **[kelseygonzalez/beardown: An updated R Markdown thesis template using the bookdown package for University of Arizona](https://github.com/kelseygonzalez/beardown)** instead.
