@@ -119,10 +119,14 @@
 </ul>
 </div>
 <div class="section level3">
-<h3 id="get-a-university-of-arizona-logo">Get a University of Arizona logo<a class="anchor" aria-label="anchor" href="#get-a-university-of-arizona-logo"></a>
+<h3 id="get-a-logo">Get a logo<a class="anchor" aria-label="anchor" href="#get-a-logo"></a>
 </h3>
-<p>You can get a copy of the logo into the directory you wish using the <code><a href="reference/logo_get.html">logo_get()</a></code> function. See the vignette for more info on how to use this.</p>
+<p>(WIP!) You can get the CAST webheader like this:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># any webheader you like as long as it's this one</span>
+<span class="fu">azcast</span><span class="fu">::</span><span class="fu"><a href="reference/logo_get_cast.html">logo_get_cast</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<p>You can get a copy of the official University of Arizona logo into the directory you wish using the <code><a href="reference/logo_get.html">logo_get()</a></code> function. See the vignette for more info on how to use this.</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># default logo</span>
 <span class="fu">azcast</span><span class="fu">::</span><span class="fu"><a href="reference/logo_get.html">logo_get</a></span><span class="op">(</span><span class="op">)</span>
 <span class="co"># monochrome block version of the logo</span>
@@ -133,7 +137,7 @@
 </h4>
 <p><img src="reference/figures/ua_horiz_rgb.png"><img src="reference/figures/ua_block_rgb_black.png"></p>
 <p>You’ll notice these are high resolution and thus pretty large. You are encouraged to use the <code>knitr</code> function <code>include_graphics()</code> rather than the standard <code>![](image.jpg)</code> markdown image syntax. This allows you to easily resize the figures. For example, the following uses chunk options <code>out.width=10%</code> and <code>fig.cap="A smaller logo."</code> You can learn more about R code chunks at <a href="https://yihui.org/knitr/options/" class="external-link">Options - Chunk options and package options - Yihui Xie | 谢益辉</a>.</p>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/include_graphics.html" class="external-link">include_graphics</a></span><span class="op">(</span><span class="st">"man/figures/ua_block_rgb_black.png"</span><span class="op">)</span></code></pre></div>
 <p><img src="reference/figures/ua_block_rgb_black.png" title="A smaller logo." alt="A smaller logo." width="10%"></p>
 </div>
@@ -142,31 +146,31 @@
 <h3 id="get-university-of-arizona-brand-colors">Get University of Arizona Brand colors<a class="anchor" aria-label="anchor" href="#get-university-of-arizona-brand-colors"></a>
 </h3>
 <p>These are handy commands to quickly see University of Arizona brand colors and be able to copy-and-paste the hex color codes. You can find more info like <code>cmyk</code>, <code>rgb</code>, and <code>Pantone</code> codes and formulas here: <a href="https://brand.arizona.edu/applying-the-brand/colors" class="external-link">Colors | University of Arizona Brand Resources</a></p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">azcast</span><span class="fu">::</span><span class="fu"><a href="reference/azcast-color.html">color_show</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
 <p><img src="reference/figures/README-colors-1.png" width="100%"></p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="co">#&gt; arizonablue  arizonared        leaf       river      silver        mesa </span></span>
-<span id="cb5-2"><a href="#cb5-2"></a><span class="co">#&gt;   "#0C234B"   "#AB0520"   "#70B865"   "#007D84"   "#9EABAE"   "#A95C42" </span></span>
-<span id="cb5-3"><a href="#cb5-3"></a><span class="co">#&gt;       bloom         sky       oasis       chili     azurite    midnight </span></span>
-<span id="cb5-4"><a href="#cb5-4"></a><span class="co">#&gt;   "#EF4056"   "#81D3EB"   "#378DBD"   "#8B0015"   "#1E5288"   "#001C48" </span></span>
-<span id="cb5-5"><a href="#cb5-5"></a><span class="co">#&gt;       black       white    warmgray    coolgray </span></span>
-<span id="cb5-6"><a href="#cb5-6"></a><span class="co">#&gt;   "#000000"   "#FFFFFF"   "#F4EDE5"   "#E2E9EB"</span></span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="co">#&gt; arizonablue  arizonared        leaf       river      silver        mesa </span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="co">#&gt;   "#0C234B"   "#AB0520"   "#70B865"   "#007D84"   "#9EABAE"   "#A95C42" </span></span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="co">#&gt;       bloom         sky       oasis       chili     azurite    midnight </span></span>
+<span id="cb6-4"><a href="#cb6-4"></a><span class="co">#&gt;   "#EF4056"   "#81D3EB"   "#378DBD"   "#8B0015"   "#1E5288"   "#001C48" </span></span>
+<span id="cb6-5"><a href="#cb6-5"></a><span class="co">#&gt;       black       white    warmgray    coolgray </span></span>
+<span id="cb6-6"><a href="#cb6-6"></a><span class="co">#&gt;   "#000000"   "#FFFFFF"   "#F4EDE5"   "#E2E9EB"</span></span></code></pre></div>
 <p>The <code>xaringan</code> themed slide deck mentioned in the template list above employs heavy use of these colors, as you can imagine.</p>
 </div>
 <div class="section level3">
 <h3 id="settings">Settings<a class="anchor" aria-label="anchor" href="#settings"></a>
 </h3>
 <p>(WIP) The azcast package makes use of some values, listed below, from your R profile. You can modify this by using <code><a href="https://usethis.r-lib.org/reference/edit.html" class="external-link">usethis::edit_r_profile()</a></code> and adding below with values modified to your own values.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="kw">options</span>(<span class="dt">azcast.full_name =</span> <span class="st">"Dr. Ryan Straight"</span>,</span>
-<span id="cb6-2"><a href="#cb6-2"></a>        <span class="dt">azcast.email =</span> <span class="st">"ryanstraight@arizona.edu"</span>,</span>
-<span id="cb6-3"><a href="#cb6-3"></a>        <span class="dt">azcast.orgunit =</span> <span class="st">"College of Applied Science and Technology"</span>,</span>
-<span id="cb6-4"><a href="#cb6-4"></a>        <span class="dt">azcast.teaching_dir =</span> <span class="st">"~/teaching/azcast/"</span>,</span>
-<span id="cb6-5"><a href="#cb6-5"></a>        <span class="dt">azcast.workshop_dir =</span> <span class="st">"~/workshop/"</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">options</span>(<span class="dt">azcast.full_name =</span> <span class="st">"Dr. Ryan Straight"</span>,</span>
+<span id="cb7-2"><a href="#cb7-2"></a>        <span class="dt">azcast.email =</span> <span class="st">"ryanstraight@arizona.edu"</span>,</span>
+<span id="cb7-3"><a href="#cb7-3"></a>        <span class="dt">azcast.orgunit =</span> <span class="st">"College of Applied Science and Technology"</span>,</span>
+<span id="cb7-4"><a href="#cb7-4"></a>        <span class="dt">azcast.teaching_dir =</span> <span class="st">"~/teaching/azcast/"</span>,</span>
+<span id="cb7-5"><a href="#cb7-5"></a>        <span class="dt">azcast.workshop_dir =</span> <span class="st">"~/workshop/"</span>)</span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="building-the-hex-sticker">Building the hex sticker<a class="anchor" aria-label="anchor" href="#building-the-hex-sticker"></a>
 </h3>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co">#library(hexSticker)</span>
 <span class="co">#library(here)</span>
 
