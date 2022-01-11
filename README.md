@@ -20,10 +20,14 @@ The `azcast` R-package is a utility package with consolidated tools and
 templates prepared for the University of Arizona’s College of Applied
 Science and Technology. It contains a variety of templates that I have
 been using and tweaking for some time, as well as new-to-me templates
-from the wonderful `numbats/monash` package. A good amount of the
-original Monash content is still here and will be altered or removed as
-appropriate. The package is mainly templates and easy access to assets
-like logos and colors.
+from the wonderful `numbats/monash` package. The package is mainly
+templates and easy access to assets like logos and colors.
+
+**Please note that these are *my personal templates* and not “official”
+by any means.**
+
+These templates will be tweaked and updated as time goes on and as my
+personal tastes change. I hope folks find it useful!
 
 ## Package Details
 
@@ -40,11 +44,13 @@ remotes::install_github("ryanstraight/azcast")
 ### Templates
 
 One of the core functions of this package is to easily create branded
-documents. (You are *highly* encouraged to use the
+documents. You are *highly* encouraged to use the
 [`tinytex()`](https://yihui.org/tinytex/) package as your LaTeX
 environment. When knitting these templates for the first time, please be
-patient as packages are installed.)
+patient as packages are installed.
 
+-   Class paper: no template provided; when APA is required, use the
+    **[papaja](https://github.com/crsh/papaja)** package.
 -   Exam: a paper exam.
     [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/exam/skeleton/skeleton.pdf)
 -   Document: all-purpose document based on the
@@ -57,22 +63,21 @@ patient as packages are installed.)
     [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/memo/skeleton/skeleton.pdf)
 -   Report: for reports sent to external clients.
     [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/report/skeleton/skeleton.pdf)
+-   Thesis: no template is provided; use **[kelseygonzalez/beardown: An
+    updated R Markdown thesis template using the bookdown package for
+    University of Arizona](https://github.com/kelseygonzalez/beardown)**
+    instead.
 -   Working paper: a mask-able working paper template.
     [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/working-paper/skeleton/skeleton.pdf)
 -   Xaringan: a themed Xaringan slide deck. [Deck code
     example](https://github.com/ryanstraight/ac21-postphenom) and [the
     published deck](https://ryanstraight.github.io/ac21-postphenom/#1).
 
-(The original `monash` package includes theses templates. These were not
-updated and included in this package. Using [kelseygonzalez/beardown: An
-updated R Markdown thesis template using the bookdown package for
-University of Arizona](https://github.com/kelseygonzalez/beardown) is
-preferred.)
-
 ### Get a University of Arizona logo
 
 You can get a copy of the logo into the directory you wish using the
-`logo_get()` function:
+`logo_get()` function. See the vignette for more info on how to use
+this.
 
 ``` r
 # default logo
@@ -81,7 +86,7 @@ azcast::logo_get()
 azcast::logo_get(color = "black", style = "block")
 ```
 
-And then you can reference the logo file that you copied.
+You can then reference the logo file that you copied.
 
 #### Logo examples
 
