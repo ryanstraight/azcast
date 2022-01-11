@@ -9,12 +9,20 @@ fromphone: "(520) 458-8278"
 fromaddress: "1140 N. Colombo Ave, Sierra Vista, AZ 85635"
 fromsignature: sigfile.png
 
-toname: Wilma Wildcat
-toaddress: University of Arizona
+toname: Wilma Wildcat # Below: use \newline if you want multiple address lines
+toaddress: |
+  1234 Speedway Ave. \newline
+  University of Arizona \newline
+  Tucson, AZ 85721
 
 opening: Dear Wilma,
-closing: Best wishes
-spacing: 1.4
+closing: Best wishes,
+
+fontfamily: cochineal
+fontsize: 11pt
+geometry: margin=1in # Creates equal margins of this measurement
+spacing: 1.25
+
 output: azcast::letter
 ---
 
