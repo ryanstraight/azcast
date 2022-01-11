@@ -121,7 +121,7 @@
 <div class="section level3">
 <h3 id="get-a-logo">Get a logo<a class="anchor" aria-label="anchor" href="#get-a-logo"></a>
 </h3>
-<p>(WIP!) You can get the CAST webheader like this:</p>
+<p>You can get the CAST webheader like this:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># any webheader you like as long as it's this one</span>
 <span class="fu">azcast</span><span class="fu">::</span><span class="fu"><a href="reference/logo_get_cast.html">logo_get_cast</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
@@ -136,10 +136,11 @@
 <h4 id="logo-examples">Logo examples<a class="anchor" aria-label="anchor" href="#logo-examples"></a>
 </h4>
 <p><img src="reference/figures/ua_horiz_rgb.png"><img src="reference/figures/ua_block_rgb_black.png"></p>
+<p><img src="reference/figures/banner.png"></p>
 <p>You’ll notice these are high resolution and thus pretty large. You are encouraged to use the <code>knitr</code> function <code>include_graphics()</code> rather than the standard <code>![](image.jpg)</code> markdown image syntax. This allows you to easily resize the figures. For example, the following uses chunk options <code>out.width=10%</code> and <code>fig.cap="A smaller logo."</code> You can learn more about R code chunks at <a href="https://yihui.org/knitr/options/" class="external-link">Options - Chunk options and package options - Yihui Xie | 谢益辉</a>.</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/include_graphics.html" class="external-link">include_graphics</a></span><span class="op">(</span><span class="st">"man/figures/ua_block_rgb_black.png"</span><span class="op">)</span></code></pre></div>
-<p><img src="reference/figures/ua_block_rgb_black.png" title="A smaller logo." alt="A smaller logo." width="10%"></p>
+<code class="sourceCode R"><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/include_graphics.html" class="external-link">include_graphics</a></span><span class="op">(</span><span class="st">"man/figures/banner.png"</span><span class="op">)</span></code></pre></div>
+<p><img src="reference/figures/banner.png" title="A smaller webheader" alt="A smaller webheader" width="20%"></p>
 </div>
 </div>
 <div class="section level3">
