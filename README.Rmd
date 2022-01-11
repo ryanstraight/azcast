@@ -61,7 +61,7 @@ One of the core functions of this package is to easily create branded documents.
 
 ### Get a logo
 
-(WIP!) You can get the CAST webheader like this:
+You can get the CAST webheader like this:
 
 ``` r
 # any webheader you like as long as it's this one
@@ -84,10 +84,12 @@ You can then reference the logo file that you copied.
 ![](man/figures/ua_horiz_rgb.png)
 ![](man/figures/ua_block_rgb_black.png)
 
+![](man/figures/banner.png)
+
 You'll notice these are high resolution and thus pretty large. You are encouraged to use the `knitr` function `include_graphics()` rather than the standard `![](image.jpg)` markdown image syntax. This allows you to easily resize the figures. For example, the following uses chunk options `out.width=10%` and `fig.cap="A smaller logo."` You can learn more about R code chunks at [Options - Chunk options and package options - Yihui Xie | 谢益辉](https://yihui.org/knitr/options/).
 
-```{r logo-resize-example, echo=TRUE, out.width="10%", fig.cap="A smaller logo."}
-knitr::include_graphics("man/figures/ua_block_rgb_black.png")
+```{r banner-resize-example, echo=TRUE, out.width="20%", fig.cap="A smaller webheader"}
+knitr::include_graphics("man/figures/banner.png")
 ```
 
 

@@ -75,7 +75,7 @@ patient as packages are installed.
 
 ### Get a logo
 
-(WIP!) You can get the CAST webheader like this:
+You can get the CAST webheader like this:
 
 ``` r
 # any webheader you like as long as it's this one
@@ -100,6 +100,8 @@ You can then reference the logo file that you copied.
 ![](man/figures/ua_horiz_rgb.png)
 ![](man/figures/ua_block_rgb_black.png)
 
+![](man/figures/banner.png)
+
 You’ll notice these are high resolution and thus pretty large. You are
 encouraged to use the `knitr` function `include_graphics()` rather than
 the standard `![](image.jpg)` markdown image syntax. This allows you to
@@ -109,10 +111,10 @@ R code chunks at [Options - Chunk options and package options - Yihui
 Xie \| 谢益辉](https://yihui.org/knitr/options/).
 
 ``` r
-knitr::include_graphics("man/figures/ua_block_rgb_black.png")
+knitr::include_graphics("man/figures/banner.png")
 ```
 
-<img src="man/figures/ua_block_rgb_black.png" title="A smaller logo." alt="A smaller logo." width="10%" />
+<img src="man/figures/banner.png" title="A smaller webheader" alt="A smaller webheader" width="20%" />
 
 ### Get University of Arizona Brand colors
 
