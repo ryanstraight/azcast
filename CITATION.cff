@@ -9,7 +9,7 @@ type: software
 license: GPL-3.0-or-later
 title: 'azcast: Templates for the College of Applied Science and Technology at the
   University of Arizona'
-version: 0.0.1
+version: 0.0.2
 abstract: RMarkdown templates and other tools for use in the College of Applied Science
   and Technology at the University of Arizona.
 authors:
@@ -26,7 +26,7 @@ preferred-citation:
     given-names: Ryan
     email: ryanstraight@arizona.edu
     orcid: https://orcid.org/0000-0002-6251-5662
-  version: 0.0.1
+  version: 0.0.2
   abstract: RMarkdown templates and other tools for use in the College of Applied
     Science and Technology at the University of Arizona.
   url: https://osf.io/48zv2/
