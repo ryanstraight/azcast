@@ -30,7 +30,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, cache=TRUE, messages=FALSE, warning=FALSE)
+knitr::opts_chunk$set(echo = FALSE, cache=FALSE, messages=FALSE, warning=FALSE)
 library(ggplot2)
 ```
 

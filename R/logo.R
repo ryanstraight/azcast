@@ -13,6 +13,7 @@
 #' @param filename A new file name for the logo. Not implemented yet.
 #'
 #' @source https://brand.arizona.edu/applying-the-brand/logo
+#' @rdname logo_get
 #' @export
 logo_get <- function(path = ".",
                      style = c("horiz", "stack", "block"),
@@ -64,7 +65,4 @@ logo_find <- function(logo_filename) {
   }
   path
 }
-
-
-
 
