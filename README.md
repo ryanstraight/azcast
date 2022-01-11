@@ -73,11 +73,18 @@ patient as packages are installed.
     example](https://github.com/ryanstraight/ac21-postphenom) and [the
     published deck](https://ryanstraight.github.io/ac21-postphenom/#1).
 
-### Get a University of Arizona logo
+### Get a logo
 
-You can get a copy of the logo into the directory you wish using the
-`logo_get()` function. See the vignette for more info on how to use
-this.
+(WIP!) You can get the CAST webheader like this:
+
+``` r
+# any webheader you like as long as it's this one
+azcast::logo_get_cast()
+```
+
+You can get a copy of the official University of Arizona logo into the
+directory you wish using the `logo_get()` function. See the vignette for
+more info on how to use this.
 
 ``` r
 # default logo
