@@ -40,7 +40,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">AZCAST</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.2</span>
       </span>
     </div>
 
@@ -82,7 +82,9 @@
 </h1></div>
 <!-- badges: start -->
 
-<p>The <code>azcast</code> R-package is a utility package with consolidated tools and templates prepared for the University of Arizona’s College of Applied Science and Technology. It contains a variety of templates that I have been using and tweaking for some time, as well as new-to-me templates from the wonderful <code>numbats/monash</code> package. A good amount of the original Monash content is still here and will be altered or removed as appropriate. The package is mainly templates and easy access to assets like logos and colors.</p>
+<p>The <code>azcast</code> R-package is a utility package with consolidated tools and templates prepared for the University of Arizona’s College of Applied Science and Technology. It contains a variety of templates that I have been using and tweaking for some time, as well as new-to-me templates from the wonderful <code>numbats/monash</code> package. The package is mainly templates and easy access to assets like logos and colors.</p>
+<p><strong>Please note that these are <em>my personal templates</em> and not “official” by any means.</strong></p>
+<p>These templates will be tweaked and updated as time goes on and as my personal tastes change. I hope folks find it useful!</p>
 <div class="section level2">
 <h2 id="package-details">Package Details<a class="anchor" aria-label="anchor" href="#package-details"></a>
 </h2>
@@ -97,8 +99,9 @@
 <div class="section level3">
 <h3 id="templates">Templates<a class="anchor" aria-label="anchor" href="#templates"></a>
 </h3>
-<p>One of the core functions of this package is to easily create branded documents. (You are <em>highly</em> encouraged to use the <a href="https://yihui.org/tinytex/" class="external-link"><code>tinytex()</code></a> package as your LaTeX environment. When knitting these templates for the first time, please be patient as packages are installed.)</p>
+<p>One of the core functions of this package is to easily create branded documents. You are <em>highly</em> encouraged to use the <a href="https://yihui.org/tinytex/" class="external-link"><code>tinytex()</code></a> package as your LaTeX environment. When knitting these templates for the first time, please be patient as packages are installed.</p>
 <ul>
+<li>Class paper: no template provided; when APA is required, use the <strong><a href="https://github.com/crsh/papaja" class="external-link">papaja</a></strong> package.</li>
 <li>Exam: a paper exam. <a href="https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/exam/skeleton/skeleton.pdf" class="external-link">Example</a>
 </li>
 <li>Document: all-purpose document based on the <a href="https://github.com/svmiller/stevetemplates" class="external-link">svmiller/stevetemplates</a> <code>statement</code> template. <a href="https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/document/skeleton/skeleton.pdf" class="external-link">Example</a>
@@ -109,22 +112,22 @@
 </li>
 <li>Report: for reports sent to external clients. <a href="https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/report/skeleton/skeleton.pdf" class="external-link">Example</a>
 </li>
+<li>Thesis: no template is provided; use <strong><a href="https://github.com/kelseygonzalez/beardown" class="external-link">kelseygonzalez/beardown: An updated R Markdown thesis template using the bookdown package for University of Arizona</a></strong> instead.</li>
 <li>Working paper: a mask-able working paper template. <a href="https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/working-paper/skeleton/skeleton.pdf" class="external-link">Example</a>
 </li>
 <li>Xaringan: a themed Xaringan slide deck. <a href="https://github.com/ryanstraight/ac21-postphenom" class="external-link">Deck code example</a> and <a href="https://ryanstraight.github.io/ac21-postphenom/#1" class="external-link">the published deck</a>.</li>
 </ul>
-<p>(The original <code>monash</code> package includes theses templates. These were not updated and included in this package. Using <a href="https://github.com/kelseygonzalez/beardown" class="external-link">kelseygonzalez/beardown: An updated R Markdown thesis template using the bookdown package for University of Arizona</a> is preferred.)</p>
 </div>
 <div class="section level3">
 <h3 id="get-a-university-of-arizona-logo">Get a University of Arizona logo<a class="anchor" aria-label="anchor" href="#get-a-university-of-arizona-logo"></a>
 </h3>
-<p>You can get a copy of the logo into the directory you wish using the <code><a href="reference/logo_get.html">logo_get()</a></code> function:</p>
+<p>You can get a copy of the logo into the directory you wish using the <code><a href="reference/logo_get.html">logo_get()</a></code> function. See the vignette for more info on how to use this.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># default logo</span>
 <span class="fu">azcast</span><span class="fu">::</span><span class="fu"><a href="reference/logo_get.html">logo_get</a></span><span class="op">(</span><span class="op">)</span>
 <span class="co"># monochrome block version of the logo</span>
 <span class="fu">azcast</span><span class="fu">::</span><span class="fu"><a href="reference/logo_get.html">logo_get</a></span><span class="op">(</span>color <span class="op">=</span> <span class="st">"black"</span>, style <span class="op">=</span> <span class="st">"block"</span><span class="op">)</span></code></pre></div>
-<p>And then you can reference the logo file that you copied.</p>
+<p>You can then reference the logo file that you copied.</p>
 <div class="section level4">
 <h4 id="logo-examples">Logo examples<a class="anchor" aria-label="anchor" href="#logo-examples"></a>
 </h4>
