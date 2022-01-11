@@ -5,7 +5,7 @@
 
 <!-- badges: start -->
 
-[![](https://img.shields.io/github/last-commit/ryanstraight/azcast.svg)](https://github.com/ryanstraight/azcast/commits/master)
+[![](https://img.shields.io/github/last-commit/ryanstraight/azcast.svg)](https://github.com/ryanstraight/azcast/commits/main)
 [![](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 ![License](https://img.shields.io/github/license/ryanstraight/azcast)
 ![Release](https://img.shields.io/github/v/release/ryanstraight/azcast?include_prereleases)
@@ -16,14 +16,16 @@ CITATION.cff](https://github.com/ryanstraight/azcast/actions/workflows/update-ci
 build](https://github.com/ryanstraight/azcast/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ryanstraight/azcast/actions/workflows/pages/pages-build-deployment)
 <!-- badges: end -->
 
-**Work in progress! Lots probably won’t work quite yet.**
+**Work in progress! Don’t be surprised if things are wonky.**
 
 The `azcast` R-package is a utility package with consolidated tools and
 templates prepared for the University of Arizona’s College of Applied
 Science and Technology. It contains a variety of templates that I have
 been using and tweaking for some time, as well as new-to-me templates
 from the wonderful `numbats/monash` package. The package is mainly
-templates and easy access to assets like logos and colors.
+templates and easy access to assets like logos and colors. The goal is
+for this to be useful not just for me, but for others in CAST, whether
+they be faculty, staff, or students.
 
 **Please note that these are *my personal templates* and not “official”
 by any means.**
@@ -46,39 +48,53 @@ remotes::install_github("ryanstraight/azcast")
 ### Templates
 
 One of the core functions of this package is to easily create branded
-documents. You are *highly* encouraged to use the
+documents. (Ironically, the *functions* aren’t working right now, but
+you can still create files using the RMarkdown tempaltes. You can see
+these steps in [the
+vignette](https://ryanstraight.github.io/azcast/articles/template.html).)
+You are *highly* encouraged to use the
 [`tinytex()`](https://yihui.org/tinytex/) package as your LaTeX
 environment. When knitting these templates for the first time, please be
 patient as packages are installed.
 
--   Class paper: no template provided; when APA is required, use the
-    **[papaja](https://github.com/crsh/papaja)** package.
--   Exam: a paper exam.
+-   `Class paper`: no template provided; when APA is required, use the
+    **[papaja](https://github.com/crsh/papaja)** package. Otherwise, use
+    `document`.
+-   `Exam`: a paper exam.
     [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/exam/skeleton/skeleton.pdf)
     -   While unlikely to be used all that often, who knows, it may come
         in handy at some point.
--   Document: all-purpose document based on the
+-   `Document`: all-purpose document based on the
     [svmiller/stevetemplates](https://github.com/svmiller/stevetemplates)
     `statement` template.
     [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/document/skeleton/skeleton.pdf)
     -   This is a good template for assignments that don’t require APA
         formatting.
--   Letter: letter with CAST banner at top left.
+-   `Letter`: letter with CAST banner at top left.
     [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/letter/skeleton/skeleton.pdf)
     -   Note the `\newline` requirement in the to-address.
--   Memo: a casual memo with optional branding.
+-   `Memo`: a casual memo with optional branding.
     [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/memo/skeleton/skeleton.pdf)
--   Report: for reports sent to external clients.
+-   `Report`: for reports sent to external clients.
     [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/report/skeleton/skeleton.pdf)
--   Thesis: no template is provided; use **[kelseygonzalez/beardown: An
-    updated R Markdown thesis template using the bookdown package for
+-   `Thesis`: no template is provided; use **[kelseygonzalez/beardown:
+    An updated R Markdown thesis template using the bookdown package for
     University of Arizona](https://github.com/kelseygonzalez/beardown)**
     instead.
--   Working paper: a mask-able working paper template.
+-   `Working paper`: a mask-able working paper template.
     [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/working-paper/skeleton/skeleton.pdf)
--   Xaringan: a themed Xaringan slide deck. [Deck code
+-   `Xaringan`: a themed Xaringan slide deck. [Deck code
     example](https://github.com/ryanstraight/ac21-postphenom) and [the
     published deck](https://ryanstraight.github.io/ac21-postphenom/#1).
+    -   The slide deck template *heavily* employs the
+        [`xaringanExtra`](https://pkg.garrickadenbuie.com/xaringanExtra/)
+        package and attempts to demonstrate virtually all functions and
+        options possible within the template file. If you’re unfamiliar
+        with Xaringan, see the [GitHub repository and documented linked
+        therein](https://github.com/yihui/xaringan).
+    -   Fun fact: the `Infinite Moon Reader` live edit/preview Add-In
+        that comes with Xaringan works for any Rmd file, not just the
+        slide decks.
 
 ### Get a logo
 
@@ -104,10 +120,11 @@ You can then reference the logo file that you copied.
 
 #### Logo examples
 
-![](man/figures/ua_horiz_rgb.png)
-![](man/figures/ua_block_rgb_black.png)
+![UArizona horizontal logo](man/figures/ua_horiz_rgb.png)
 
-![](man/figures/banner.png)
+![UArizona black block logo style](man/figures/ua_block_rgb_black.png)
+
+![CAST webheader](man/figures/banner.png)
 
 You’ll notice these are high resolution and thus pretty large. You are
 encouraged to use the `knitr` function `include_graphics()` rather than
@@ -161,6 +178,10 @@ and adding below with values modified to your own values.
 
 ### Building the hex sticker
 
+If for any reason you’d need to, you can build the hex sticker (the
+`azcast` R package logo above) by forking the repository and using this
+script:
+
 ``` r
 #library(hexSticker)
 #library(here)
@@ -172,7 +193,7 @@ sticker(imgloc, package="AZCAST", p_size=20, s_x=1, s_y=.75, h_fill="#0C234B", h
 
 ## University of Arizona
 
-*Information about the university follows.*
+*Sundry information about the university follows.*
 
 > The University of Arizona, a land-grant university with two
 > independently accredited medical schools, is one of the nation’s top
