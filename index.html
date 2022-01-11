@@ -82,8 +82,8 @@
 </h1></div>
 <!-- badges: start -->
 
-<p><strong>Work in progress! Lots probably won’t work quite yet.</strong></p>
-<p>The <code>azcast</code> R-package is a utility package with consolidated tools and templates prepared for the University of Arizona’s College of Applied Science and Technology. It contains a variety of templates that I have been using and tweaking for some time, as well as new-to-me templates from the wonderful <code>numbats/monash</code> package. The package is mainly templates and easy access to assets like logos and colors.</p>
+<p><strong>Work in progress! Don’t be surprised if things are wonky.</strong></p>
+<p>The <code>azcast</code> R-package is a utility package with consolidated tools and templates prepared for the University of Arizona’s College of Applied Science and Technology. It contains a variety of templates that I have been using and tweaking for some time, as well as new-to-me templates from the wonderful <code>numbats/monash</code> package. The package is mainly templates and easy access to assets like logos and colors. The goal is for this to be useful not just for me, but for others in CAST, whether they be faculty, staff, or students.</p>
 <p><strong>Please note that these are <em>my personal templates</em> and not “official” by any means.</strong></p>
 <p>These templates will be tweaked and updated as time goes on and as my personal tastes change. I hope folks find it useful!</p>
 <div class="section level2">
@@ -100,32 +100,46 @@
 <div class="section level3">
 <h3 id="templates">Templates<a class="anchor" aria-label="anchor" href="#templates"></a>
 </h3>
-<p>One of the core functions of this package is to easily create branded documents. You are <em>highly</em> encouraged to use the <a href="https://yihui.org/tinytex/" class="external-link"><code>tinytex()</code></a> package as your LaTeX environment. When knitting these templates for the first time, please be patient as packages are installed.</p>
+<p>One of the core functions of this package is to easily create branded documents. (Ironically, the <em>functions</em> aren’t working right now, but you can still create files using the RMarkdown tempaltes. You can see these steps in <a href="https://ryanstraight.github.io/azcast/articles/template.html" class="external-link">the vignette</a>.) You are <em>highly</em> encouraged to use the <a href="https://yihui.org/tinytex/" class="external-link"><code>tinytex()</code></a> package as your LaTeX environment. When knitting these templates for the first time, please be patient as packages are installed.</p>
 <ul>
-<li>Class paper: no template provided; when APA is required, use the <strong><a href="https://github.com/crsh/papaja" class="external-link">papaja</a></strong> package.</li>
-<li>Exam: a paper exam. <a href="https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/exam/skeleton/skeleton.pdf" class="external-link">Example</a>
+<li>
+<code>Class paper</code>: no template provided; when APA is required, use the <strong><a href="https://github.com/crsh/papaja" class="external-link">papaja</a></strong> package. Otherwise, use <code>document</code>.</li>
+<li>
+<code>Exam</code>: a paper exam. <a href="https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/exam/skeleton/skeleton.pdf" class="external-link">Example</a>
 <ul>
 <li>While unlikely to be used all that often, who knows, it may come in handy at some point.</li>
 </ul>
 </li>
-<li>Document: all-purpose document based on the <a href="https://github.com/svmiller/stevetemplates" class="external-link">svmiller/stevetemplates</a> <code>statement</code> template. <a href="https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/document/skeleton/skeleton.pdf" class="external-link">Example</a>
+<li>
+<code>Document</code>: all-purpose document based on the <a href="https://github.com/svmiller/stevetemplates" class="external-link">svmiller/stevetemplates</a> <code>statement</code> template. <a href="https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/document/skeleton/skeleton.pdf" class="external-link">Example</a>
 <ul>
 <li>This is a good template for assignments that don’t require APA formatting.</li>
 </ul>
 </li>
-<li>Letter: letter with CAST banner at top left. <a href="https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/letter/skeleton/skeleton.pdf" class="external-link">Example</a>
+<li>
+<code>Letter</code>: letter with CAST banner at top left. <a href="https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/letter/skeleton/skeleton.pdf" class="external-link">Example</a>
 <ul>
 <li>Note the <code>\newline</code> requirement in the to-address.</li>
 </ul>
 </li>
-<li>Memo: a casual memo with optional branding. <a href="https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/memo/skeleton/skeleton.pdf" class="external-link">Example</a>
+<li>
+<code>Memo</code>: a casual memo with optional branding. <a href="https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/memo/skeleton/skeleton.pdf" class="external-link">Example</a>
 </li>
-<li>Report: for reports sent to external clients. <a href="https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/report/skeleton/skeleton.pdf" class="external-link">Example</a>
+<li>
+<code>Report</code>: for reports sent to external clients. <a href="https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/report/skeleton/skeleton.pdf" class="external-link">Example</a>
 </li>
-<li>Thesis: no template is provided; use <strong><a href="https://github.com/kelseygonzalez/beardown" class="external-link">kelseygonzalez/beardown: An updated R Markdown thesis template using the bookdown package for University of Arizona</a></strong> instead.</li>
-<li>Working paper: a mask-able working paper template. <a href="https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/working-paper/skeleton/skeleton.pdf" class="external-link">Example</a>
+<li>
+<code>Thesis</code>: no template is provided; use <strong><a href="https://github.com/kelseygonzalez/beardown" class="external-link">kelseygonzalez/beardown: An updated R Markdown thesis template using the bookdown package for University of Arizona</a></strong> instead.</li>
+<li>
+<code>Working paper</code>: a mask-able working paper template. <a href="https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/working-paper/skeleton/skeleton.pdf" class="external-link">Example</a>
 </li>
-<li>Xaringan: a themed Xaringan slide deck. <a href="https://github.com/ryanstraight/ac21-postphenom" class="external-link">Deck code example</a> and <a href="https://ryanstraight.github.io/ac21-postphenom/#1" class="external-link">the published deck</a>.</li>
+<li>
+<code>Xaringan</code>: a themed Xaringan slide deck. <a href="https://github.com/ryanstraight/ac21-postphenom" class="external-link">Deck code example</a> and <a href="https://ryanstraight.github.io/ac21-postphenom/#1" class="external-link">the published deck</a>.
+<ul>
+<li>The slide deck template <em>heavily</em> employs the <a href="https://pkg.garrickadenbuie.com/xaringanExtra/" class="external-link"><code>xaringanExtra</code></a> package and attempts to demonstrate virtually all functions and options possible within the template file. If you’re unfamiliar with Xaringan, see the <a href="https://github.com/yihui/xaringan" class="external-link">GitHub repository and documented linked therein</a>.</li>
+<li>Fun fact: the <code>Infinite Moon Reader</code> live edit/preview Add-In that comes with Xaringan works for any Rmd file, not just the slide decks.</li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="section level3">
@@ -145,8 +159,15 @@
 <div class="section level4">
 <h4 id="logo-examples">Logo examples<a class="anchor" aria-label="anchor" href="#logo-examples"></a>
 </h4>
-<p><img src="reference/figures/ua_horiz_rgb.png"><img src="reference/figures/ua_block_rgb_black.png"></p>
-<p><img src="reference/figures/banner.png"></p>
+<div class="figure">
+<img src="reference/figures/ua_horiz_rgb.png" alt=""><p class="caption">UArizona horizontal logo</p>
+</div>
+<div class="figure">
+<img src="reference/figures/ua_block_rgb_black.png" alt=""><p class="caption">UArizona black block logo style</p>
+</div>
+<div class="figure">
+<img src="reference/figures/banner.png" alt=""><p class="caption">CAST webheader</p>
+</div>
 <p>You’ll notice these are high resolution and thus pretty large. You are encouraged to use the <code>knitr</code> function <code>include_graphics()</code> rather than the standard <code>![](image.jpg)</code> markdown image syntax. This allows you to easily resize the figures. For example, the following uses chunk options <code>out.width=10%</code> and <code>fig.cap="A smaller logo."</code> You can learn more about R code chunks at <a href="https://yihui.org/knitr/options/" class="external-link">Options - Chunk options and package options - Yihui Xie | 谢益辉</a>.</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/include_graphics.html" class="external-link">include_graphics</a></span><span class="op">(</span><span class="st">"man/figures/banner.png"</span><span class="op">)</span></code></pre></div>
@@ -181,6 +202,7 @@
 <div class="section level3">
 <h3 id="building-the-hex-sticker">Building the hex sticker<a class="anchor" aria-label="anchor" href="#building-the-hex-sticker"></a>
 </h3>
+<p>If for any reason you’d need to, you can build the hex sticker (the <code>azcast</code> R package logo above) by forking the repository and using this script:</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co">#library(hexSticker)</span>
 <span class="co">#library(here)</span>
@@ -193,7 +215,7 @@
 <div class="section level2">
 <h2 id="university-of-arizona">University of Arizona<a class="anchor" aria-label="anchor" href="#university-of-arizona"></a>
 </h2>
-<p><em>Information about the university follows.</em></p>
+<p><em>Sundry information about the university follows.</em></p>
 <blockquote>
 <p>The University of Arizona, a land-grant university with two independently accredited medical schools, is one of the nation’s top 40 public universities, according to U.S. News &amp; World Report. Established in 1885, the university is widely recognized as a student-centric university and has been designated as a Hispanic Serving Institution by the U.S. Department of Education. The university ranked in the top 20 in 2019 in research expenditures among all public universities, according to the National Science Foundation, and is a leading Research 1 institution with $734 million in annual research expenditures. The university advances the frontiers of interdisciplinary scholarship and entrepreneurial partnerships as a member of the Association of American Universities, the 65 leading public and private research universities in the U.S. It benefits the state with an estimated economic impact of $4.1 billion annually. For the latest on the University of Arizona response to the novel coronavirus, visit the university’s <a href="https://covid19.arizona.edu/" class="external-link">COVID-19 webpage</a>.</p>
 </blockquote>
@@ -250,7 +272,7 @@
 <div class="dev-status">
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://github.com/ryanstraight/azcast/commits/master" class="external-link"><img src="https://img.shields.io/github/last-commit/ryanstraight/azcast.svg"></a></li>
+<li><a href="https://github.com/ryanstraight/azcast/commits/main" class="external-link"><img src="https://img.shields.io/github/last-commit/ryanstraight/azcast.svg"></a></li>
 <li><a href="https://lifecycle.r-lib.org/articles/stages.html#experimental" class="external-link"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg"></a></li>
 <li><a href="https://github.com/ryanstraight/azcast/actions/workflows/pkgdown.yaml" class="external-link"><img src="https://github.com/ryanstraight/azcast/actions/workflows/pkgdown.yaml/badge.svg" alt="pkgdown"></a></li>
 <li><a href="https://github.com/ryanstraight/azcast/actions/workflows/update-citation-cff.yaml" class="external-link"><img src="https://github.com/ryanstraight/azcast/actions/workflows/update-citation-cff.yaml/badge.svg" alt="Update CITATION.cff"></a></li>
