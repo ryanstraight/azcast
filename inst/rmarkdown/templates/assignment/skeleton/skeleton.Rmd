@@ -1,28 +1,62 @@
 ---
 output: 
-  azcast::assignment:
-    includes:
-      in_header: preamble.tex
-       
-header-includes:
-    - \usepackage{setspace}
-    - \setstretch{1.25}
+    azcast::document:
+        keep_tex: FALSE
+
+title: "A Document that Could Be an Assignment or Something Else"
+shorttitle: "Short title"
+author: "Dr. Ryan Straight"
+course: "APCV 101"
+email: "ryanstraight@arizona.edu"
 
 fontfamily: cochineal
-fontsize: 12pt
+fontsize: 11pt
+geometry: margin=1in # Creates equal margins of this measurement
 
-title: "An Assignment"
-author: "Dr. Ryan Straight."
-left-footer: "Dr. Ryan Straight - ryanstraight@arizona.edu"
-right-footer: "CYBV 329: Cyber Ethics, Law, and Policy"
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  echo = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  comment = "#>",
+  out.width = "75%"
+)
 ```
 
-# Title
 
-## Header 2
+# Part 1
+ 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac ipsum vel lacus eleifend ultrices. Donec metus lectus, pulvinar faucibus pretium id, sollicitudin vel purus. Nulla et metus eu quam tincidunt interdum. Phasellus mi urna, pellentesque et auctor nec, pharetra ultrices ex. Curabitur pretium velit porttitor risus efficitur condimentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras et semper elit. Ut interdum semper venenatis. Nunc vitae massa ut ipsum laoreet posuere. Nulla non libero sed risus finibus mollis a at tellus. Suspendisse egestas sodales lorem. Vivamus eu massa quis lacus blandit mattis. Proin consectetur nunc at elit egestas scelerisque. Morbi vitae metus metus.
 
-`r lorem::ipsum(paragraphs = 15)`
+Donec mi felis, placerat vitae metus eu, lobortis suscipit quam. Vivamus finibus aliquam tempus. Nulla interdum interdum risus ut rhoncus. Nulla interdum ligula ac ligula porta convallis. Duis rutrum ante quis dolor dignissim maximus. Phasellus at vulputate tortor, vitae laoreet felis. Pellentesque sed orci vulputate, vestibulum magna et, tincidunt justo. Sed elementum libero quis sapien vestibulum, sit amet consectetur est porttitor. Etiam in turpis in erat vehicula sollicitudin id eget libero. Suspendisse potenti. Phasellus in felis nibh. Proin laoreet laoreet arcu accumsan finibus.
+
+Morbi auctor pulvinar metus et facilisis. Cras eget mollis lorem. In hac habitasse platea dictumst. Fusce facilisis nec ligula in egestas. Maecenas turpis tortor, accumsan eget lacus facilisis, interdum egestas nibh. In efficitur dictum accumsan. Etiam a porta ante. Ut dui nibh, vestibulum in aliquet et, mollis nec enim.
+
+# Part 2
+
+Nam nec nisi et ligula pretium bibendum ut commodo erat. Mauris viverra, magna vel consequat volutpat, nulla diam tempor ipsum, at imperdiet ex quam placerat ante. Nunc mollis gravida velit non placerat. Fusce ac lobortis sapien. Etiam semper arcu eget sagittis consectetur. Quisque ex sapien, lacinia in tortor sit amet, porta posuere purus. Proin volutpat turpis justo, ac finibus est malesuada a. Quisque lectus enim, dignissim non ornare id, finibus sit amet risus. In sit amet risus urna. Sed quis luctus purus.
+
+Maecenas semper non nisi ac suscipit. Sed aliquam tellus mauris, non tristique lacus placerat ultrices. Nulla facilisi. Praesent mi erat, pretium a fringilla ut, euismod non leo. Cras tincidunt mi ut leo finibus, placerat iaculis felis dictum. Ut vel nunc aliquam velit finibus efficitur a at lacus. Nunc fermentum ultricies ligula, et pretium sem lobortis et.
+
+Proin iaculis et leo at sagittis. Nulla sagittis dolor vitae vehicula varius. Morbi fringilla tellus non iaculis eleifend. Nunc at lacus a leo tempor tincidunt et ut justo. Etiam ornare eget orci vel molestie. Mauris sit amet dui ex. Vestibulum tempus nulla a quam molestie, a tincidunt orci volutpat. Nullam quis viverra augue, sit amet iaculis massa. Nullam eros orci, mattis id nisl eget, tristique efficitur mi.
+
+Etiam erat augue, imperdiet sed elit eget, sodales vehicula turpis. Aenean lacus purus, lacinia vitae justo a, tempus rutrum ipsum. Nunc vehicula dictum tellus in finibus. Sed tincidunt nulla in arcu euismod, id interdum diam sodales. Curabitur imperdiet sit amet leo id malesuada. Fusce ornare quam nibh, sed mollis velit molestie in. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas tempus, ante eu finibus pharetra, nulla erat semper lacus, in interdum mi nisl at elit. Donec eu laoreet ante. Nam semper, dolor in lacinia vestibulum, lectus lacus varius mauris, id aliquam purus urna sed nulla. Morbi fringilla metus a lorem placerat molestie. Sed vitae tellus et odio placerat aliquam ac ac urna.
+
+# Part 3
+
+And so on.
+
+```{r}
+head(mtcars)
+```
+
+
+And now a graph:
+
+```{r}
+plot(mtcars$mpg)
+```
+

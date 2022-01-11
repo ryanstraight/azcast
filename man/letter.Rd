@@ -2,7 +2,7 @@
 % Please edit documentation in R/formats.R
 \name{letter}
 \alias{letter}
-\alias{assignment}
+\alias{document}
 \alias{exam}
 \alias{workingpaper}
 \alias{report}
@@ -11,7 +11,7 @@
 \usage{
 letter(...)
 
-assignment(...)
+document(...)
 
 exam(...)
 

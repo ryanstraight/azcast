@@ -46,15 +46,19 @@ environment. When knitting these templates for the first time, please be
 patient as packages are installed.)
 
 -   Exam: a paper exam.
-    [Example](/inst/rmarkdown/templates/exam/skeleton/skeleton.pdf)
+    [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/exam/skeleton/skeleton.pdf)
+-   Document: all-purpose document based on the
+    [svmiller/stevetemplates](https://github.com/svmiller/stevetemplates)
+    `statement` template.
+    [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/document/skeleton/skeleton.pdf)
 -   Letter: letter with CAST banner at top left.
-    [Example](/inst/rmarkdown/templates/letter/skeleton/skeleton.pdf)
+    [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/letter/skeleton/skeleton.pdf)
 -   Memo: a casual memo with optional branding.
-    [Example](/inst/rmarkdown/templates/memo/skeleton/skeleton.pdf)
+    [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/memo/skeleton/skeleton.pdf)
 -   Report: for reports sent to external clients.
-    [Example](/inst/rmarkdown/templates/report/skeleton/skeleton.pdf)
+    [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/report/skeleton/skeleton.pdf)
 -   Working paper: a mask-able working paper template.
-    [Example](/inst/rmarkdown/templates/working-paper/skeleton/skeleton.pdf)
+    [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/working-paper/skeleton/skeleton.pdf)
 -   Xaringan: a themed Xaringan slide deck. [Deck code
     example](https://github.com/ryanstraight/ac21-postphenom) and [the
     published deck](https://ryanstraight.github.io/ac21-postphenom/#1).
