@@ -45,11 +45,12 @@ remotes::install_github("ryanstraight/azcast")
 
 One of the core functions of this package is to easily create branded documents. (You are *highly* encouraged to use the [`tinytex()`](https://yihui.org/tinytex/) package as your LaTeX environment. When knitting these templates for the first time, please be patient as packages are installed.)
 
-+ Exam: a paper exam. [Example](/inst/rmarkdown/templates/exam/skeleton/skeleton.pdf)
-+ Letter: letter with CAST banner at top left. [Example](/inst/rmarkdown/templates/letter/skeleton/skeleton.pdf)
-+ Memo: a casual memo with optional branding. [Example](/inst/rmarkdown/templates/memo/skeleton/skeleton.pdf)
-+ Report: for reports sent to external clients. [Example](/inst/rmarkdown/templates/report/skeleton/skeleton.pdf)
-+ Working paper: a mask-able working paper template. [Example](/inst/rmarkdown/templates/working-paper/skeleton/skeleton.pdf)
++ Exam: a paper exam. [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/exam/skeleton/skeleton.pdf)
++ Document: all-purpose document based on the [svmiller/stevetemplates](https://github.com/svmiller/stevetemplates) `statement` template. [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/document/skeleton/skeleton.pdf)
++ Letter: letter with CAST banner at top left. [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/letter/skeleton/skeleton.pdf)
++ Memo: a casual memo with optional branding. [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/memo/skeleton/skeleton.pdf)
++ Report: for reports sent to external clients. [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/report/skeleton/skeleton.pdf)
++ Working paper: a mask-able working paper template. [Example](https://github.com/ryanstraight/azcast/blob/master/inst/rmarkdown/templates/working-paper/skeleton/skeleton.pdf)
 + Xaringan: a themed Xaringan slide deck. [Deck code example](https://github.com/ryanstraight/ac21-postphenom) and [the published deck](https://ryanstraight.github.io/ac21-postphenom/#1).
 
 (The original `monash` package includes theses templates. These were not updated and included in this package. Using [kelseygonzalez/beardown: An updated R Markdown thesis template using the bookdown package for University of Arizona](https://github.com/kelseygonzalez/beardown) is preferred.)

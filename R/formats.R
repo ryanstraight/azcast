@@ -21,8 +21,8 @@ letter <- function(...) {
 
 #' @rdname letter
 #' @export
-assignment <- function(...) {
-  template <- system.file("rmarkdown/templates/assignment/resources/assignmenttemplate.tex",
+document <- function(...) {
+  template <- system.file("rmarkdown/templates/assignment/resources/doctemplate.tex",
                           package="azcast")
   bookdown::pdf_document2(...,
                           template = template
