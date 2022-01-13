@@ -187,6 +187,11 @@ $header-includes$
 $endfor$
 
 
+%$if(spacing)$
+%\setstretch{$spacing$}
+%$endif$
+
+
 \begin{document}
 
 
@@ -211,6 +216,10 @@ $email$\\
 
 \vspace{6 mm}
 
+
+$if(spacing)$
+\setstretch{$spacing$}
+$endif$
 
 
 $body$

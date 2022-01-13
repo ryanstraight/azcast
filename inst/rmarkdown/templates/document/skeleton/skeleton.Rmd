@@ -12,6 +12,7 @@ email: "ryanstraight@arizona.edu"
 fontfamily: cochineal
 fontsize: 11pt
 geometry: margin=1in # Creates equal margins of this measurement
+spacing: 2 # 1 = single space, 2 = double space, 1.5 = ... well, you get it.
 
 ---
 
