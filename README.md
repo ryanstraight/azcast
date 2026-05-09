@@ -16,7 +16,7 @@ CITATION.cff](https://github.com/ryanstraight/azcast/actions/workflows/update-ci
 build](https://github.com/ryanstraight/azcast/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ryanstraight/azcast/actions/workflows/pages/pages-build-deployment)
 <!-- badges: end -->
 
-**Work in progress! Don’t be surprised if things are wonky.**
+**UPDATE: the College of Applied Science and Technology is no longer an academic unit at the University of Arizona. Archiving this repo accordingly. -RS**
 
 The `azcast` R-package is a utility package with consolidated tools and
 templates prepared for the University of Arizona’s College of Applied
